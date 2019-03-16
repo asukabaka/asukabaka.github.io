@@ -1,0 +1,252 @@
+body{
+  background-color: black;
+}
+
+h1{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h3{
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+}
+
+.topbar-responsive {
+  background: black;
+  padding: 1rem 1.5rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2em;
+}
+
+.topbar-responsive .topbar-responsive-logo {
+  color: #fefefe;
+  vertical-align: middle;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.topbar-responsive .topbar-responsive-logo:hover {
+  opacity: .6;
+}
+
+.topbar-responsive .menu {
+  background: black;
+}
+
+.topbar-responsive .menu li:last-of-type {
+  margin-right: 0;
+}
+
+.topbar-responsive .menu a {
+  color: #fefefe;
+  transition: color 0.15s ease-in;
+}
+
+.topbar-responsive .menu a:hover {
+  color: #c6d1d8;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu a {
+    padding: 0.875rem 0;
+  }
+}
+
+.topbar-responsive .menu .topbar-responsive-button {
+  color: #fefefe;
+  border-color: #fefefe;
+  border-radius: 5000px;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
+}
+
+.topbar-responsive .menu .topbar-responsive-button:hover {
+  color: #c6d1d8;
+  border-color: #c6d1d8;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu .topbar-responsive-button {
+    width: 100%;
+    margin: 0.875rem 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive {
+    padding: 0.75rem;
+  }
+  .topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
+  }
+  .topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    width: 100%;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+}
+
+.hero-section {
+  background: url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+
+.marketing-site-content-section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.marketing-site-content-section .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-img {
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+.marketing-site-content-section .marketing-site-content-section-block {
+  padding: 1rem;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #191919;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-block {
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    padding: 2rem;
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+
