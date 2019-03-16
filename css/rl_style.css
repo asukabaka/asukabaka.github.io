@@ -147,6 +147,8 @@ h5{
   }
 }
 
+/*ZURB Hero image */
+
 .hero-section {
   background: url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
   background-size: cover;
@@ -166,6 +168,7 @@ h5{
 .hero-section .hero-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
+  margin-left: 18px;
 }
 
 
