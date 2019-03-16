@@ -37,10 +37,6 @@ h5{
   background: black;
 }
 
-.topbar-responsive .menu li:last-of-type {
-  margin-right: 0;
-}
-
 .topbar-responsive .menu a {
   color: #fefefe;
   transition: color 0.15s ease-in;
