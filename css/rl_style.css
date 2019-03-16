@@ -150,7 +150,8 @@ h5{
 /*ZURB Hero image */
 
 .hero-section {
-  background: url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
+
+  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
   background-size: cover;
   height: 50vh;
   text-align: center;
