@@ -484,7 +484,7 @@ z-index: -1;
 }
 
 .parallelogram img:hover {
-opacity: .6;
+opacity: 1;
 }
 
 .frontpage_hifumi {
@@ -505,10 +505,11 @@ left: -155px;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  height: 800px;
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
@@ -517,4 +518,5 @@ left: -155px;
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
+  height: 800px;
 }
