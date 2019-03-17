@@ -487,20 +487,6 @@ z-index: -1;
 opacity: .6;
 }
 
-.paralellogram p{
-  z-index: 1;
-  color: white;
-  text-align: center;
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
-  transform: skew(20deg);
-
-}
-
 .frontpage_hifumi {
 left: -130px;
 }
@@ -511,4 +497,24 @@ left: -150px;
 
 .frontpage_hifumi_wallpaper{
 left: -155px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
 }
