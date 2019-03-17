@@ -24,6 +24,8 @@ h5{
   max-width: 66%;
 }
 
+/*FOUNDATION ZURB TOPBAR */
+
 .topbar-responsive {
   background: black;
   padding: 1rem 1.5rem;
@@ -331,12 +333,6 @@ h5{
     margin-right: auto;
     margin-bottom: 3em;
     margin-top: 3em;
-    opacity: 1;
-    transition: .5s ease;
-}
-
-.footer_image:hover {
-  opacity:.6;
 }
 
 /*CSS GRID PROF HOBBS CODEPEN EXAMPLE 6 */
@@ -459,6 +455,7 @@ h5{
   overflow: hidden;
   text-align: center;
   position: relative;
+  transition: ease .5s;
 }
 
 .parallelogram:nth-child(1) {
@@ -480,7 +477,7 @@ h5{
 max-width: 2000px;
 position: absolute;
 opacity: 1;
-transition: .5s ease;
+transition: ease .5s;
 }
 
 .parallelogram img:hover {
