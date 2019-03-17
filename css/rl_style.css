@@ -525,3 +525,9 @@ left: -155px;
   opacity: 1;
   height: 800px;
 }
+
+.background_gradient {
+  background: -webkit-linear-gradient(transparent, transparent, #121212);
+  background: -o-linear-gradient(transparent, transparent, #121212);
+  background: linear-gradient(transparent, transparent, #121212);
+}
