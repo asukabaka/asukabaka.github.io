@@ -2,6 +2,11 @@ body{
   background-color: black;
 }
 
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
 h1{
   font-family: 'Rajdhani', sans-serif;
   margin: 0 auto;
@@ -10,6 +15,7 @@ h1{
 h3{
   font-family: 'Rajdhani', sans-serif;
   color: white;
+  font-size: 2em;
 }
 
 h5{
@@ -246,11 +252,11 @@ h5{
 }
 
 .marketing-site-content-section-block-header {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .marketing-site-content-section-block-subheader {
-  font-size: 13px;
+  font-size: 18px;
 }
 
 /*FOOTER by Zurb building blocks*/
@@ -394,7 +400,7 @@ h5{
   font-size: 2em;
   color: black;
   text-align: center;
-  background-color: white;
+  background-color: #D4D4D4;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -429,4 +435,69 @@ h5{
 
   /** Unhide lightbox **/
   display: block;
+}
+
+/* PARALLELOGRAM */
+.parallelograms {
+  padding-top: 100px;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  800px;
+  grid-template-areas: "side1 side2 side3" ;
+}
+
+.parallelogram {
+  width: 300px; 
+  height: 800px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.parallelogram:nth-child(1) {
+  grid-area: side1;
+}
+
+.parallelogram:nth-child(2) {
+  grid-area: side2;
+}
+
+.parallelogram:nth-child(3) {
+  grid-area: side3;
+}
+
+.parallelogram img {
+-webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-o-transform: skew(20deg);
+max-width: 2000px;
+position: absolute;
+opacity: 1;
+transition: .5s ease;
+}
+
+.parallelogram img:hover {
+opacity: .6;
+}
+
+.frontpage_hifumi {
+top: -300px;
+left: -200px;
+}
+
+.frontpage_makoto_2038 {
+top: -50px;
+left: -800px;
+}
+
+.frontpage_hifumi_wallpaper{
+top: -0px;
+left: -400px;
 }
