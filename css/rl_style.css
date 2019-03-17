@@ -510,6 +510,11 @@ left: -155px;
   visibility: hidden;
   opacity: 0;
   height: 800px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
