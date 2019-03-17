@@ -451,6 +451,7 @@ h5{
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
+  transform: skew(-20deg);
   background: black;
   overflow: hidden;
   text-align: center;
@@ -474,6 +475,7 @@ h5{
 -webkit-transform: skew(20deg);
 -moz-transform: skew(20deg);
 -o-transform: skew(20deg);
+transform: skew(20deg);
 max-width: 2000px;
 position: absolute;
 opacity: 1;
@@ -484,17 +486,19 @@ transition: ease .5s;
 opacity: .6;
 }
 
+.paralellogram p{
+  color: white;
+
+}
+
 .frontpage_hifumi {
-top: -300px;
-left: -200px;
+left: -130px;
 }
 
 .frontpage_makoto_2038 {
-top: -50px;
-left: -800px;
+left: -150px;
 }
 
 .frontpage_hifumi_wallpaper{
-top: -0px;
-left: -400px;
+left: -155px;
 }
