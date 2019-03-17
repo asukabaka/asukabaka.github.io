@@ -324,16 +324,7 @@ h5{
   }
 }
 
-.footer_image {
-    -webkit-justify-content: center;
-      -ms-flex-pack: center;
-           justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    margin-top: 3em;
-}
+
 
 /*CSS GRID PROF HOBBS CODEPEN EXAMPLE 6 */
 
@@ -530,4 +521,19 @@ left: -155px;
   background: -webkit-linear-gradient(transparent, transparent, #121212);
   background: -o-linear-gradient(transparent, transparent, #121212);
   background: linear-gradient(transparent, transparent, #121212);
+}
+
+.SFD_logo_tall {
+  display: block;
+  width: 391px;
+  height: 200px;
+  background: url(../images/SFD_logo_tall.svg);
+  background-size: 391px 200px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+           justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 3em;
 }
