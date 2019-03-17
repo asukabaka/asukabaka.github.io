@@ -480,6 +480,7 @@ max-width: 2000px;
 position: absolute;
 opacity: 1;
 transition: ease .5s;
+z-index: -1;
 }
 
 .parallelogram img:hover {
@@ -487,7 +488,16 @@ opacity: .6;
 }
 
 .paralellogram p{
+  z-index: 1;
   color: white;
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(20deg);
 
 }
 
