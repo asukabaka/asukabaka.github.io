@@ -382,9 +382,13 @@ h5{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left:auto;
   margin-right:auto;
+}
+
+.cyberpunk_hifumi_resize {
+  max-height: 1100px;
 }
 
 .front_artwork_text{
@@ -412,21 +416,24 @@ h5{
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.8);
+  overflow: scroll;
 }
 
 .lightbox img {
   /** Pad the lightbox image */
-  max-width: 100%;
-  max-height: 90%;
+  max-width: 80%;
   margin-top: 2%;
+  overflow: scroll;
 }
 
 .lightbox:target {
   /** Remove default browser outline */
   outline: none;
+  overflow: scroll;
 
   /** Unhide lightbox **/
   display: block;
+  overflow: scroll;
 }
 
 /* PARALLELOGRAM */
