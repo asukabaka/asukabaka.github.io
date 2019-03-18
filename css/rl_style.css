@@ -421,10 +421,11 @@ h5{
 
 .lightbox img {
   /** Pad the lightbox image */
-  max-width: 80%;
+  max-width: 100%;
   margin-top: 2%;
   overflow: scroll;
 }
+
 
 .lightbox:target {
   /** Remove default browser outline */
