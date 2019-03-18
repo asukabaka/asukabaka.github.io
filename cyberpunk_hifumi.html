@@ -13,12 +13,14 @@
 
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
-    <a class="topbar-responsive-logo" href="index.html"><img src="images/SFD_logo_long_small.png" alt="bear logo"></img></a>
+    <a class="topbar-responsive-logo" href="index.html">
+      <div class="SFD_logo_long"></div>
+    </a>
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
       <ul class="menu simple vertical medium-horizontal">
-        <li><a href="gallery.html" style="margin-left: 18px">Gallery</a></li> <!––Inline styling because for the life of me I can't figuire out why the flexbox is making the Gallery button 18px off center.-->
+        <li><a href="gallery.html" style="margin-left: 18px">Gallery</a></li> <!––Inline code because for the life of me I can't figuire out why the flexbox is making the Gallery button off center.-->
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -27,11 +29,11 @@
 </nav>
 
 <body>
-
-<div class="front_artwork">
-  <img src="images/cyberpunk_hifumi_small.png"></img>
+<div class="background_gradient">
+  <div class="front_artwork">
+    <img src="images/cyberpunk_hifumi_small.png"></img>
+  </div>
 </div>
-
 <div class="front_artwork_text">
   <h1>AGENT DEPLOY:02 HIFUMI.TOGO</h1>
   <h5>Paying Homage to the Japanese animated classics Akira and Neon Genesis Evangelion, this piece attempts to explore the edgy and unsettling line between beauty and and mechanical horror of technology.</h5>
@@ -40,22 +42,16 @@
 <div class="cards_container">
 <div class="cards1">
   <div class="card1">
-    <a href="#img1">
-      <img src="images/cyberpunk_hifumi_finalrender_small.png" alt="Bristol harbour">
-    </a>
-    <p class="card_text">Isolated final render</p>
+    <a href="#img1"><img src="images/cyberpunk_hifumi_finalrender_small.png" alt="Bristol harbour"></a>
+    <a href="#img1"><p class="card_text">Isolated final render</p></a>
   </div>
   <div class="card1">
-    <a href="#img2">
-      <img src="images/cyberpunk_hifumi_linework_small.png" alt="Bristol harbour">
-    </a>
-    <p class="card_text">Lineart</p>
+    <a href="#img2"><img src="images/cyberpunk_hifumi_linework_small.png" alt="Bristol harbour"></a>
+    <a href="#img2"><p class="card_text">Lineart</p></a>
   </div>
   <div class="card1">
-    <a href="#img3">
-      <img src="images/cyberpunk_hifumi_backgroundart_small.png" alt="Coloured balloon">
-    </a>
-    <p class="card_text">Background art</p>
+    <a href="#img3"><img src="images/cyberpunk_hifumi_backgroundart_small.png" alt="Coloured balloon"></a>
+    <a href="#img3"><p class="card_text">Background art</p></a>
   </div>
 </div>
 </div>
@@ -74,21 +70,40 @@
 </a>
 
 <footer class="marketing-site-footer">
+
   <div class="marketing-site-footer-bottom">
     <div class="row large-unstack align-middle">
-    
-    <a href="index.html">
-      <img class="footer_image" src="images/SFD_logo_small.png"></img>
-    </a>
+       <div class="SFD_logo_tall"></div>
       <div class="column">
         <ul class="menu marketing-site-footer-bottom-links">
+          <li><a href="index.html">Homepage</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+
+          <div class="social-links"> <!--ZURB FOUNDATION SOCIAL MEDIA FOOTER-->
+            <div class="row">
+              <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+              </div>
+              <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+              </div>
+              <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a>
+              </div>
+              <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+              </div>
+            </div>
+          </div>
+
+
       </div>
     </div>
   </div>
+
 </footer>
 
 </body>
