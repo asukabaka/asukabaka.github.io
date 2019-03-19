@@ -709,5 +709,29 @@ left: -170px;
   opacity: .6;
 }
 
-/*ZURB HERO SLIDER*/
+/*Inquiries Page */
 
+.inquiries_box {
+  color: white;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding:  5px;
+  margin: auto;
+}
+
+input.requiredinfo {
+  display: inline;
+  max-width: 250px;
+}
+
+input.messagebox {
+  display: inline;
+  max-width: 500px;
+  height: 150px;
+}
+
+p.inquiries_message{
+  background-color: black;
+}
