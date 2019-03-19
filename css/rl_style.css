@@ -563,6 +563,19 @@ h5{
   grid-template-areas: "side1 side2 side3" ;
 }
 
+@media screen and (max-width: 1000px) {
+  .parallelograms {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  600px;
+  grid-template-areas: "side1 side2 side3" ;
+}
+}
+
 .parallelogram {
   display: block 
   width: 333px; 
@@ -578,6 +591,22 @@ h5{
   transition: ease .5s;
 }
 
+@media screen and (max-width: 1000px) {
+.parallelogram {
+  display: block 
+  width: 222px; 
+  height: 600px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+}
+}
 .parallelogram:nth-child(1) {
   grid-area: side1;
 }
@@ -615,10 +644,28 @@ left: -130px;
 left: -150px;
 }
 
+@media screen and (max-width: 1000px) {
+  .frontpage_makoto_2038 {
+left: -200px;
+}
+}
+
+
 .frontpage_hifumi_wallpaper{
 left: -170px;
 }
 
+@media screen and (max-width: 1300px) {
+  .frontpage_hifumi_wallpaper{
+left: -270px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_hifumi_wallpaper{
+left: -370px;
+}
+}
 .img__description {
   position: absolute;
   top: 0;
