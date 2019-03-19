@@ -560,9 +560,8 @@ h5{
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "side1 side2 side3" ;
 }
-}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .parallelograms {
   margin: 0 auto;
   max-width: 900px;
@@ -579,7 +578,7 @@ h5{
   .parallelograms {
   margin-left: -75px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 600px;
   max-height: 400px;
   display: grid;
   grid-gap: 5px;
