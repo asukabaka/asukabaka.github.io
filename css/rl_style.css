@@ -553,24 +553,22 @@ h5{
 
 /* PARALLELOGRAM */
 .parallelograms {
-  padding-top: 10px;
   margin: 0 auto;
   max-width: 1150px;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:  850px;
   grid-template-areas: "side1 side2 side3" ;
 }
 }
 
 @media screen and (max-width: 1000px) {
   .parallelograms {
-  padding-top: 10px;
   margin: 0 auto;
   max-width: 900px;
+  max-height: 600px;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:  600px;
   grid-template-areas: "side1 side2 side3" ;
@@ -580,11 +578,11 @@ h5{
 @media screen and (max-width: 600px) {
   .parallelograms {
   margin-left: -75px;
-  padding-top: 10px;
   margin: 0 auto;
   max-width: 900px;
+  max-height: 400px;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 5px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:  400px;
   grid-template-areas: "side1 side2 side3" ;
@@ -710,12 +708,6 @@ left: -370px;
 }
 }
 
-@media screen and (max-width: 400px) {
-  .frontpage_hifumi_wallpaper{
-left: -470px;
-}
-}
-
 .img__description {
   position: absolute;
   top: 0;
@@ -736,11 +728,74 @@ left: -470px;
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
+}
+
+@media screen and (max-width: 1000px) {
+  .img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  height: 600px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  height: 400px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+}
 
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
   height: 850px;
+}
+
+@media screen and (max-width: 1000px) {
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  height: 600px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  height: 400px;
+}
 }
 
 .background_gradient {
