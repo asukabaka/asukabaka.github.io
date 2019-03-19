@@ -182,7 +182,7 @@ h5{
 
   background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
   background-size: cover;
-  background-position: -30px;
+  background-position: -400px;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -745,7 +745,7 @@ left: -270px;
 
 @media screen and (max-width: 800px) {
   .frontpage_hifumi_wallpaper{
-left: -370px;
+left: -360px;
 }
 }
 
