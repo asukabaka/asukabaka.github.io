@@ -177,6 +177,27 @@ h5{
           justify-content: center;
 }
 
+@media screen and (max-width: 1000px) {
+.hero-section {
+
+  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.png") 50% no-repeat;
+  background-size: cover;
+  background-position: 5%;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    transition: ease .5s;
+}
+}
+
 .hero-section_about1{
 
   background: url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
@@ -603,7 +624,7 @@ h5{
   transition: ease .5s;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 .parallelogram {
   display: block 
   width: 222px; 
@@ -825,6 +846,7 @@ left: -370px;
   background-size: 362px 40px;
   opacity: 1;
   transition: ease .5s;
+  margin: 0 auto;
 }
 
 .SFD_logo_long:hover {
