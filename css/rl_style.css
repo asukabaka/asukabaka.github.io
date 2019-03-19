@@ -194,6 +194,58 @@ h5{
           justify-content: center;
 }
 
+.hero-section_about2{
+
+  background: url("../images/workspace.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.hero-section_about3{
+
+  background: url("../images/westolh.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section_about4{
+
+  background: url("../images/bike.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .hero-section .hero-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
@@ -201,6 +253,24 @@ h5{
 }
 
 .hero-section_about1 .hero-section-text_about1 {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  margin-left: 18px;
+}
+
+.hero-section_about2 .hero-section-text_about2 {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  margin-left: 18px;
+}
+
+.hero-section_about3 .hero-section-text_about3 {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  margin-left: 18px;
+}
+
+.hero-section_about4 .hero-section-text_about4 {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
   margin-left: 18px;
