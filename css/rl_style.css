@@ -564,19 +564,6 @@ h5{
 }
 }
 
-@media screen and (max-width: 500px) {
-  .parallelograms {
-  padding-top: 10px;
-  margin: 0 auto;
-  max-width: 600px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:  850px;
-  grid-template-areas: "side1 side2 side3" ;
-}
-}
-
 @media screen and (max-width: 1000px) {
   .parallelograms {
   padding-top: 10px;
@@ -685,6 +672,12 @@ opacity: 1;
 left: -130px;
 }
 
+@media screen and (max-width: 1000px) {
+.frontpage_hifumi {
+left: -165px;
+}
+}
+
 .frontpage_makoto_2038 {
 left: -150px;
 }
@@ -695,15 +688,14 @@ left: -200px;
 }
 }
 
+@media screen and (max-width: 700px) {
+  .frontpage_makoto_2038 {
+left: -220px;
+}
+}
 
 .frontpage_hifumi_wallpaper{
 left: -170px;
-}
-
-@media screen and (max-width: 1300px) {
-  .frontpage_hifumi_wallpaper{
-left: -220px;
-}
 }
 
 @media screen and (max-width: 1300px) {
