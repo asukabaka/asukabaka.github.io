@@ -771,7 +771,7 @@ left: -360px;
 }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .img__description {
   position: absolute;
   top: 0;
@@ -823,7 +823,7 @@ left: -360px;
   height: 850px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
@@ -843,6 +843,7 @@ left: -360px;
   background: -webkit-linear-gradient(transparent, transparent, #191919);
   background: -o-linear-gradient(transparent, transparent, #191919);
   background: linear-gradient(transparent, transparent, #191919);
+  width: 
 }
 
 .SFD_logo_tall {
