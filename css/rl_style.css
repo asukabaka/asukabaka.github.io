@@ -716,6 +716,7 @@ h5{
   text-align: center;
   position: relative;
   transition: ease .5s;
+  -moz-transform: transition: ease .5s;
 }
 }
 
