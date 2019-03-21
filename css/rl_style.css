@@ -219,6 +219,27 @@ h5{
 }
 }
 
+@media screen and (max-width: 700px), screen and (max-height: 700px) {
+.hero-section {
+
+  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
+  background-size: cover;
+  background-position: -400px;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    transition: ease .5s;
+}
+}
+
 .hero-section_about1{
 
   background: url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
@@ -845,14 +866,14 @@ left: -360px;
 }
 }
 
-.img__wrap:hover .img__description {
+.parallelogram:hover .img__description {
   visibility: visible;
   opacity: 1;
   height: 850px;
 }
 
 @media screen and (max-width: 900px) {
-.img__wrap:hover .img__description {
+.parallelogram:hover .img__description {
   visibility: visible;
   opacity: 1;
   height: 600px;
@@ -860,7 +881,7 @@ left: -360px;
 }
 
 @media screen and (max-width: 600px) {
-.img__wrap:hover .img__description {
+.parallelogram:hover .img__description {
   visibility: visible;
   opacity: 1;
   height: 400px;
