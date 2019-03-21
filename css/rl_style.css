@@ -240,6 +240,27 @@ h5{
 }
 }
 
+@media screen and (max-width: 500px), screen and (max-height: 700px) {
+.hero-section {
+
+  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
+  background-size: cover;
+  background-position: -350px;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    transition: ease .5s;
+}
+}
+
 .hero-section_about1{
 
   background: url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
