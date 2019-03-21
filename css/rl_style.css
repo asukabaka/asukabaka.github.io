@@ -497,6 +497,33 @@ h5{
   margin: 0 auto;
   padding: 5em;
   max-width: 1200px;
+  transition: ease .5s;
+}
+
+@media screen and (max-width: 900px) {
+.cards1 {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  margin: 0 auto;
+  padding: 3em;
+  max-width: 1200px;
+  transition: ease .5s; 
+}
+}
+
+@media screen and (max-width: 600px) {
+.cards1 {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
+  transition: ease .5s;
+}
 }
 
 .cards1 img {
@@ -844,7 +871,6 @@ left: -360px;
   background: -webkit-linear-gradient(transparent, transparent, #191919);
   background: -o-linear-gradient(transparent, transparent, #191919);
   background: linear-gradient(transparent, transparent, #191919);
-  width: 
 }
 
 .SFD_logo_tall {
