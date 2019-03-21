@@ -613,6 +613,7 @@ h5{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:  600px;
   grid-template-areas: "side1 side2 side3" ;
+  overflow: hidden;
 }
 }
 
