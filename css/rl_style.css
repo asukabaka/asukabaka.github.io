@@ -512,6 +512,9 @@ h5{
 /*CSS GRID PROF HOBBS CODEPEN EXAMPLE 6 */
 
 .cards_container {
+  background: -webkit-linear-gradient(#191919, #191919, black);
+  background: -o-linear-gradient(#191919, #191919, black);
+  background: linear-gradient(#191919, #191919, black);
   background-color: #191919;
 }
 
