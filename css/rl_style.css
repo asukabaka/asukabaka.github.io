@@ -688,7 +688,7 @@ h5{
 }
 
 .parallelogram {
-  display: block 
+  display: block;
   width: 333px; 
   height: 850px; 
   -webkit-transform: skew(-20deg);
@@ -704,7 +704,7 @@ h5{
 
 @media screen and (max-width: 900px) {
 .parallelogram {
-  display: block 
+  display: block;
   width: 222px; 
   height: 600px; 
   -webkit-transform: skew(-20deg);
@@ -722,7 +722,7 @@ h5{
 
 @media screen and (max-width: 600px) {
 .parallelogram {
-  display: block 
+  display: block;
   width: 150px; 
   height: 400px; 
   -webkit-transform: skew(-20deg);
@@ -749,7 +749,7 @@ h5{
 }
 
 .parallelogram img {
-  display: block 
+  display: block;
 -webkit-transform: skew(20deg);
 -moz-transform: skew(20deg);
 -o-transform: skew(20deg);
