@@ -644,6 +644,20 @@ h5{
 }
 }
 
+@media screen and (max-width: 450px) {
+  .parallelograms {
+  margin: 0 auto;
+  max-width: 450px;
+  max-height: 400px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  400px;
+  grid-template-areas: "side1 side2 side3" ;
+  overflow: hidden;
+}
+}
+
 .parallelogram {
   display: block;
   width: 333px; 
@@ -693,6 +707,25 @@ h5{
   transition: ease .5s;
 }
 }
+
+@media screen and (max-width: 450px) {
+.parallelogram {
+  margin-left: -15px;
+  display: block;
+  width: 130px; 
+  height: 400px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+}
+}
+
 .parallelogram:nth-child(1) {
   grid-area: side1;
 }
@@ -755,6 +788,12 @@ left: -170px;
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
 left: -270px;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .frontpage_hifumi_wallpaper{
+left: -310px;
 }
 }
 
@@ -858,16 +897,6 @@ left: -360px;
   background: -webkit-linear-gradient(transparent, transparent, #191919);
   background: -o-linear-gradient(transparent, transparent, #191919);
   background: linear-gradient(transparent, transparent, #191919);
-}
-
-@media screen and (max-width: 600px) {
-  .background_gradient {
-  background: -webkit-linear-gradient(transparent, transparent, #191919);
-  background: -o-linear-gradient(transparent, transparent, #191919);
-  background: linear-gradient(transparent, transparent, #191919);
-  margin-left: -20px;
-  transition: ease .5s;
-}
 }
 
 .SFD_logo_tall {
