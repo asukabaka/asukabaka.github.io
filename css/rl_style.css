@@ -675,7 +675,6 @@ h5{
 
 @media screen and (max-width: 600px) {
   .parallelograms {
-  margin-left: -75px;
   margin: 0 auto;
   max-width: 600px;
   max-height: 400px;
@@ -684,6 +683,7 @@ h5{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:  400px;
   grid-template-areas: "side1 side2 side3" ;
+  overflow: hidden;
 }
 }
 
@@ -901,6 +901,16 @@ left: -360px;
   background: -webkit-linear-gradient(transparent, transparent, #191919);
   background: -o-linear-gradient(transparent, transparent, #191919);
   background: linear-gradient(transparent, transparent, #191919);
+}
+
+@media screen and (max-width: 600px) {
+  .background_gradient {
+  background: -webkit-linear-gradient(transparent, transparent, #191919);
+  background: -o-linear-gradient(transparent, transparent, #191919);
+  background: linear-gradient(transparent, transparent, #191919);
+  margin-left: -20px;
+  transition: ease .5s;
+}
 }
 
 .SFD_logo_tall {
