@@ -180,51 +180,8 @@ h5{
 @media screen and (max-width: 1000px) {
 .hero-section {
 
-  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
+  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner_small.jpg") 50% no-repeat;
   background-size: cover;
-  background-position: -600px;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-    transition: ease .5s;
-}
-}
-
-@media screen and (max-width: 700px) {
-.hero-section {
-
-  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  background-position: -500px;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-    transition: ease .5s;
-}
-}
-
-@media screen and (max-width: 700px), screen and (max-height: 700px) {
-.hero-section {
-
-  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  background-position: -400px;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -675,7 +632,6 @@ h5{
 
 @media screen and (max-width: 600px) {
   .parallelograms {
-  margin-left: -75px;
   margin: 0 auto;
   max-width: 600px;
   max-height: 400px;
@@ -684,6 +640,21 @@ h5{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:  400px;
   grid-template-areas: "side1 side2 side3" ;
+  overflow: hidden;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .parallelograms {
+  margin: 0 auto;
+  max-width: 450px;
+  max-height: 400px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  400px;
+  grid-template-areas: "side1 side2 side3" ;
+  overflow: hidden;
 }
 }
 
@@ -736,6 +707,25 @@ h5{
   transition: ease .5s;
 }
 }
+
+@media screen and (max-width: 450px) {
+.parallelogram {
+  margin-left: -15px;
+  display: block;
+  width: 130px; 
+  height: 400px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+}
+}
+
 .parallelogram:nth-child(1) {
   grid-area: side1;
 }
@@ -798,6 +788,12 @@ left: -170px;
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
 left: -270px;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .frontpage_hifumi_wallpaper{
+left: -310px;
 }
 }
 
