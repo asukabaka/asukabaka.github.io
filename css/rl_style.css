@@ -24,6 +24,10 @@ h5{
   max-width: 66%;
 }
 
+form{
+  padding-bottom: 3rem;
+}
+
 /*FOUNDATION ZURB TOPBAR */
 
 .topbar-responsive {
@@ -905,13 +909,15 @@ left: -360px;
   height: 200px;
   background: url(../images/SFD_logo_tall.svg);
   background-size: 391px 200px;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-           justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem ;
+  opacity: 1;
+  transition: ease .5s;
+}
+
+.SFD_logo_tall:hover {
+  opacity: .6;
 }
 
 .SFD_logo_long {
@@ -940,9 +946,8 @@ left: -360px;
 }
 
 .social-links i.fa {
-  font-size: 1.4rem;
-  padding-right: 0.8rem;
-  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 39.9375em) {
