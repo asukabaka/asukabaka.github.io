@@ -336,6 +336,13 @@ form{
   border-radius: 5000px;
   text-transform: uppercase;
   margin-bottom: 0;
+  background-color: #3D3D3D;
+  transition: .5s ease;
+  opacity: 1;
+}
+
+.marketing-site-content-section .button.round:hover {
+  opacity: .6;
 }
 
 .marketing-site-content-section .marketing-site-content-section-img {
