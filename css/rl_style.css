@@ -793,24 +793,24 @@ left: -220px;
 }
 
 .frontpage_hifumi_wallpaper{
-left: -170px;
+left: -180px;
 }
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -270px;
+left: -210px;
 }
 }
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -310px;
+left: -250px;
 }
 }
 
 @media screen and (max-width: 800px) {
   .frontpage_hifumi_wallpaper{
-left: -360px;
+left: -280px;
 }
 }
 
