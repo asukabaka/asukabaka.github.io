@@ -1,46 +1,62 @@
-html,
-body {
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
-    background-color: black;
+body{
+  background-color: black;
 }
 
-/* Scale canvas with resize attribute to full size */
-canvas[resize] {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: absolute;
-}
-* {box-sizing: border-box;
+img{
+  height: 100%;
+  z-index: 1;
+  border-right: 1000px;
+  border-left: 1000px;
+  border-style: solid;
+  border-color: black;
 }
 
-.img-comp-container {
+@media screen and (max-width: 1700px) {
+  .cyberpunk_hifumi {
+  margin-left: 100px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 1500px) {
+  .cyberpunk_hifumi {
+  margin-left: 200px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .cyberpunk_hifumi {
+  margin-left: 300px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .cyberpunk_hifumi {
+  margin-left: 400px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .cyberpunk_hifumi {
+  margin-left: 450px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
   position: relative;
-  height: 1080px; /*should be the same height as the images*/
-}
-
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
-  border-radius: 50%;
+  justify-content: flex-start;
+  align-items: center;
 }
