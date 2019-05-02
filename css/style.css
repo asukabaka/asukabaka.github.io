@@ -53,6 +53,30 @@ img{
 }
 }
 
+@media screen and (max-width: 500px) {
+  .cyberpunk_hifumi {
+  margin-right: -250px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .cyberpunk_hifumi {
+  margin-right: -300px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .cyberpunk_hifumi {
+  margin-right: -200px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
 @media screen and (max-width: 600px) and (max-height: 800px) {
   .cyberpunk_hifumi {
   margin-left: 300px;
