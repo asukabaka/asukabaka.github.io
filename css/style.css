@@ -48,6 +48,22 @@ img{
 }
 }
 
+@media screen and (max-width: 700px) {
+  .cyberpunk_hifumi {
+  margin-left: 500px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .cyberpunk_hifumi {
+  margin-left: 800px;
+  height: 100%;
+  transition: ease .5s;
+}
+}
+
 .content {
   display: flex;
   flex-direction: column;
