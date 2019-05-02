@@ -19,11 +19,11 @@ $(document).ready(function(){
   var draw = setInterval(function(){
     //if(mousePos.x > 0 && mousePos.y > 0){
       
-      var range = 1000;
+      var range = 200;
       
       var color = "background: rgb(0,255,"+getRandomInt(0,255)+",.025);";
       
-      var sizeInt = getRandomInt(1000, 3000);
+      var sizeInt = getRandomInt(100, 300);
       size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
       
       var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
