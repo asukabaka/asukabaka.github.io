@@ -1,6 +1,6 @@
 'use strict';
 
-const particleCount = 10;
+const particleCount = 100;
 const particlePropCount = 9;
 const particlePropsLength = particleCount * particlePropCount;
 const rangeY = 200;
