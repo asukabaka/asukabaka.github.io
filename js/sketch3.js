@@ -21,7 +21,7 @@ $(document).ready(function(){
       
       var range = 200;
       
-      var color = "background: rgb(255,"+getRandomInt(0,255)+",0,.07);";
+      var color = "background: rgb("+getRandomInt(0,255)+",255,0,.08);";
       
       var sizeInt = getRandomInt(100, 300);
       size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
