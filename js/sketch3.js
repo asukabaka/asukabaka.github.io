@@ -19,7 +19,7 @@ $(document).ready(function(){
   var draw = setInterval(function(){
     //if(mousePos.x > 0 && mousePos.y > 0){
       
-      var range = 300;
+      var range = 400;
       
       var color = "background: rgb("+getRandomInt(0,255)+",255,0,.03);";
       
