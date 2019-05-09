@@ -101,4 +101,21 @@ img{
   position: relative;
   justify-content: flex-start;
   align-items: center;
+  z-index: -1;
+}
+
+.img1{
+    background-image: url('hifumi_isolated.png');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.img2{
+    background-image: url('particle.png');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
 }
