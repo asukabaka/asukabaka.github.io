@@ -203,5 +203,12 @@ canvas{
   position: absolute;
   width: 100%
   opacity: 1;
+  transform: translateX(-800px);
+}
+
+.img2:active{
+  position: absolute;
+  width: 100%
+  opacity: 1;
   transform: translateX(0px);
 }
