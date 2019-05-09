@@ -197,6 +197,7 @@ canvas{
   opacity: .25;
   transition: ease 5s;
   transform: translateX(-1000px);
+  overflow: hidden;
 }
 
 .img2:hover{
@@ -204,6 +205,7 @@ canvas{
   width: 100%
   opacity: 1;
   transform: translateX(-800px);
+  overflow: hidden;
 }
 
 .img2:active{
@@ -211,4 +213,5 @@ canvas{
   width: 100%
   opacity: 1;
   transform: translateX(0px);
+  overflow: hidden;
 }
