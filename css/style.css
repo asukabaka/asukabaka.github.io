@@ -101,7 +101,6 @@ img{
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  z-index: -1;
 }
 
 .img1{
