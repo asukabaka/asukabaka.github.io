@@ -193,19 +193,6 @@ canvas{
 
 .img2{
   position: absolute;
-  height: 50%;
-  width: 50%;
-  opacity: .25;
   transition: ease 5s;
-  transform: translateX(-1000px);
-  overflow: hidden;
-}
-
-.img2:hover{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transform: translateX(-0px);
   overflow: hidden;
 }
