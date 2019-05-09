@@ -24,7 +24,6 @@ body{
 
 body{
   width: 100vw;
-  overflow: hidden;
   background-color: black;
 }
 
@@ -188,11 +187,14 @@ canvas{
 
 .img1{
   position: absolute;
+  width: 100%;
   height: 100%;
   transition: ease .7s;
 }
 
 .img2{
+  width: 100%;
+  height: 100%;
   position: absolute;
   transition: ease 5s;
   overflow: hidden;
