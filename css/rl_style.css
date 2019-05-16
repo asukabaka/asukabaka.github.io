@@ -793,12 +793,12 @@ left: -220px;
 }
 
 .frontpage_hifumi_wallpaper{
-left: -180px;
+left: -210px;
 }
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -210px;
+left: -230px;
 }
 }
 
