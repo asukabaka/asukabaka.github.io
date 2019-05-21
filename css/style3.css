@@ -22,17 +22,10 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }*/
 
-body{
-  width: 100%;
-  overflow: hidden;
-  background-color: black;
-}
-
 canvas{
   display: block;
   vertical-align: bottom;
   width: 100%;
-
 }
 
 /* ---- particles.js container ---- */
@@ -50,6 +43,7 @@ canvas{
   position: absolute;
   height: 100%;
   transition: ease .7s;
+  max-width: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -57,6 +51,7 @@ canvas{
   margin-left: -100px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -65,6 +60,7 @@ canvas{
   margin-left: -150px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -73,6 +69,7 @@ canvas{
   margin-left: -200px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -81,6 +78,7 @@ canvas{
   margin-left: -250px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -89,6 +87,7 @@ canvas{
   margin-left: -300px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -97,6 +96,7 @@ canvas{
   margin-left: -350px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -105,6 +105,7 @@ canvas{
   margin-left: 0px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -113,6 +114,7 @@ canvas{
   margin-left: -50px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -121,6 +123,7 @@ canvas{
   margin-left: -100px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -129,6 +132,7 @@ canvas{
   margin-left: -150px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -136,6 +140,7 @@ canvas{
   position: absolute;
   height: 100%;
   transition: ease .7s;
+  max-width: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -143,6 +148,7 @@ canvas{
   margin-left: -50px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -151,6 +157,7 @@ canvas{
   margin-left: -75px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -159,6 +166,7 @@ canvas{
   margin-left: -100px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -167,6 +175,7 @@ canvas{
   margin-left: -125px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -175,6 +184,7 @@ canvas{
   margin-left: -150px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -183,6 +193,7 @@ canvas{
   margin-left: -175px;
   height: 100%;
   transition: ease .5s;
+  max-width: none;
 }
 }
 
@@ -190,4 +201,5 @@ canvas{
   position: absolute;
   height: 100%;
   transition: ease .7s;
+  max-width: none;
 }
