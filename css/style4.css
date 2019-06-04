@@ -52,30 +52,30 @@ canvas{
 
 @media screen and (max-width: 1500px) {
 .hifumi_image{
-  background-image: url('../images/hifumi_isolated.png');
+  background-image: url('../images/hifumi_isolated_75.png');
   background-repeat: no-repeat;
-  background-position: -200px;
-  height: 1080px;
+/*  background-position: -200px;*/
+  height: 810px;
   transition: ease 1s;
 }
 }
 
 @media screen and (max-width: 1300px) {
 .hifumi_image{
-  background-image: url('../images/hifumi_isolated.png');
+  background-image: url('../images/hifumi_isolated_75.png');
   background-repeat: no-repeat;
-  background-position: -400px;
-  height: 1080px;
+  background-position: -75px;
+  height: 810px;
   transition: ease 1s;
 }
 }
 
 @media screen and (max-width: 1100px) {
 .hifumi_image{
-  background-image: url('../images/hifumi_isolated.png');
+  background-image: url('../images/hifumi_isolated_50.png');
   background-repeat: no-repeat;
-  background-position: -450px;
-  height: 1080px;
+  background-position: -125px;
+  height: 540px;
   transition: ease 1s;
 }
 }
@@ -90,7 +90,35 @@ canvas{
   transition: ease 1s;
 }
 
+@media screen and (max-width: 1500px) {
+.text_image{
+  background-image: url('../images/2038_small.png');
+  background-repeat: no-repeat;
+  background-position: -300px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
 
+@media screen and (max-width: 1300px) {
+.text_image{
+  background-image: url('../images/2038_small_75.png');
+  background-repeat: no-repeat;
+  background-position: -500px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.text_image{
+  background-image: url('../images/2038_small_50.png');
+  background-repeat: no-repeat;
+  background-position: -500px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
 
 
 /*----------TEXT2_IMAGE--------------*/
@@ -106,7 +134,7 @@ canvas{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
   background-position: -300px;
-  height: 1080px;
+  height: 810px;
   transition: ease 1s;
 }
 }
@@ -116,7 +144,17 @@ canvas{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
   background-position: -575px;
-  height: 1080px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.text2_image{
+  background-image: url('../images/text_small.png');
+  background-repeat: no-repeat;
+  background-position: -575px;
+  height: 540px;
   transition: ease 1s;
 }
 }
@@ -137,7 +175,7 @@ canvas{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
   background-position: -200px;
-  height: 1080px;
+  height: 810px;
   transition: ease 1s;
 }
 }
@@ -147,7 +185,17 @@ canvas{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
   background-position: -400px;
-  height: 1080px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.particle_image{
+  background-image: url('../images/particle.png');
+  background-repeat: no-repeat;
+  background-position: -400px;
+  height: 540px;
   transition: ease 1s;
 }
 }
@@ -169,7 +217,7 @@ canvas{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
   background-position: -200px;
-  height: 1080px;
+  height: 810px;
   transition: ease 1s;
 }
 }
@@ -179,7 +227,7 @@ canvas{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
   background-position: -400px;
-  height: 1080px;
+  height: 810px;
   transition: ease 1s;
 }
 }
@@ -189,7 +237,7 @@ canvas{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
   background-position: -600px;
-  height: 1080px;
+  height: 540px;
   transition: ease 1s;
 }
 }
@@ -199,7 +247,7 @@ canvas{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
   background-position: -800px;
-  height: 1080px;
+  height: 540px;
   transition: ease 1s;
 }
 }
