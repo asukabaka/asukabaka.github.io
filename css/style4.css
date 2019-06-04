@@ -36,32 +36,161 @@ canvas{
   height: 100%;
   position: fixed;
   background-image: url('../images/background2.png');
+  background-repeat: no-repeat;
   background-color: black;
 
 }
 
-.hifumi_isolated{
-  z-index: 1000
-/*  position: absolute;*/
-  width: 100%;
-  transition: ease .7s;
-  max-width: none;
+
+/*---------HIFUMI_IMAGE----------*/
+.hifumi_image{
+  background-image: url('../images/hifumi_isolated.png');
+  background-repeat: no-repeat;
+  height: 1080px;
+  transition: ease 1s;
+}
+
+@media screen and (max-width: 1500px) {
+.hifumi_image{
+  background-image: url('../images/hifumi_isolated.png');
+  background-repeat: no-repeat;
+  background-position: -200px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.hifumi_image{
+  background-image: url('../images/hifumi_isolated.png');
+  background-repeat: no-repeat;
+  background-position: -400px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.hifumi_image{
+  background-image: url('../images/hifumi_isolated.png');
+  background-repeat: no-repeat;
+  background-position: -450px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+/*---------HIFUMI_IMAGE----------*/
+
+
+
+.text_image{
+  background-image: url('../images/2038_small.png');
+  background-repeat: no-repeat;
+  height: 1080px;
+  transition: ease 1s;
 }
 
 
-.text{
-  z-index: 900;
-/*  position: absolute;*/
-  height: 100%;
-  transition: ease .7s;
-  max-width: none;
-}
 
 
-.img1{
-  z-index: 800
-/*  position: absolute;*/
-  width: 100%;
-  transition: ease .7s;
-  max-width: none;
+/*----------TEXT2_IMAGE--------------*/
+.text2_image{
+  background-image: url('../images/text_small.png');
+  background-repeat: no-repeat;
+  height: 1080px;
+  transition: ease 1s;
 }
+
+@media screen and (max-width: 1500px) {
+.text2_image{
+  background-image: url('../images/text_small.png');
+  background-repeat: no-repeat;
+  background-position: -300px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.text2_image{
+  background-image: url('../images/text_small.png');
+  background-repeat: no-repeat;
+  background-position: -575px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+/*----------TEXT2_IMAGE--------------*/
+
+
+
+
+/*----------PARTICLE_IMAGE--------------*/
+.particle_image{
+  background-image: url('../images/particle.png');
+  background-repeat: no-repeat;
+  height: 1080px;
+  transition: ease 1s;
+}
+@media screen and (max-width: 1500px) {
+.particle_image{
+  background-image: url('../images/particle.png');
+  background-repeat: no-repeat;
+  background-position: -200px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.particle_image{
+  background-image: url('../images/particle.png');
+  background-repeat: no-repeat;
+  background-position: -400px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+/*----------PARTICLE_IMAGE--------------*/
+
+
+
+
+/*---------------NERV_IMAGE----------------*/
+.nerv_image{
+  background-image: url('../images/nerv_small.png');
+  background-repeat: no-repeat;
+  height: 1080px;
+  transition: ease 1s;
+}
+
+@media screen and (max-width: 1500px) {
+.nerv_image{
+  background-image: url('../images/nerv_small.png');
+  background-repeat: no-repeat;
+  background-position: -200px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.nerv_image{
+  background-image: url('../images/nerv_small.png');
+  background-repeat: no-repeat;
+  background-position: -400px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.nerv_image{
+  background-image: url('../images/nerv_small.png');
+  background-repeat: no-repeat;
+  background-position: -600px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
+/*---------------NERV_IMAGE----------------*/
