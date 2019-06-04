@@ -193,4 +193,14 @@ canvas{
   transition: ease 1s;
 }
 }
+
+@media screen and (max-width: 900px) {
+.nerv_image{
+  background-image: url('../images/nerv_small.png');
+  background-repeat: no-repeat;
+  background-position: -800px;
+  height: 1080px;
+  transition: ease 1s;
+}
+}
 /*---------------NERV_IMAGE----------------*/
