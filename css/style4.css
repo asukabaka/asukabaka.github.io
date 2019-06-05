@@ -46,8 +46,7 @@ canvas{
 .hifumi_image{
   background-image: url('../images/hifumi_isolated.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1920px;
+  background-size: cover;
   height: 1080px;
   transition: ease 1s;
 }
@@ -56,9 +55,8 @@ canvas{
 .hifumi_image{
   background-image: url('../images/hifumi_isolated.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 /*  background-position: -200px;*/
-  width: 1440px;
   height: 810px;
   transition: ease 1s;
 }
@@ -68,9 +66,8 @@ canvas{
 .hifumi_image{
   background-image: url('../images/hifumi_isolated.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: -75px;
-  width: 960px;
   height: 810px;
   transition: ease 1s;
 }
@@ -80,9 +77,8 @@ canvas{
 .hifumi_image{
   background-image: url('../images/hifumi_isolated.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: -125px;
-  width: 960px;
   height: 540px;
   transition: ease 1s;
 }
@@ -94,6 +90,7 @@ canvas{
 .text_image{
   background-image: url('../images/2038_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 1080px;
   transition: ease 1s;
 }
@@ -102,6 +99,7 @@ canvas{
 .text_image{
   background-image: url('../images/2038_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -300px;
   height: 810px;
   transition: ease 1s;
@@ -110,9 +108,10 @@ canvas{
 
 @media screen and (max-width: 1300px) {
 .text_image{
-  background-image: url('../images/2038_small_75.png');
+  background-image: url('../images/2038_small.png');
   background-repeat: no-repeat;
-  background-position: -500px;
+  background-size: cover;
+  background-position: -400px;
   height: 810px;
   transition: ease 1s;
 }
@@ -120,8 +119,9 @@ canvas{
 
 @media screen and (max-width: 1100px) {
 .text_image{
-  background-image: url('../images/2038_small_50.png');
+  background-image: url('../images/2038_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -500px;
   height: 540px;
   transition: ease 1s;
@@ -133,6 +133,7 @@ canvas{
 .text2_image{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 1080px;
   transition: ease 1s;
 }
@@ -141,6 +142,7 @@ canvas{
 .text2_image{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -300px;
   height: 810px;
   transition: ease 1s;
@@ -151,6 +153,7 @@ canvas{
 .text2_image{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -575px;
   height: 810px;
   transition: ease 1s;
@@ -161,6 +164,7 @@ canvas{
 .text2_image{
   background-image: url('../images/text_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -575px;
   height: 540px;
   transition: ease 1s;
@@ -175,6 +179,7 @@ canvas{
 .particle_image{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 1080px;
   transition: ease 1s;
 }
@@ -182,6 +187,7 @@ canvas{
 .particle_image{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -200px;
   height: 810px;
   transition: ease 1s;
@@ -192,6 +198,7 @@ canvas{
 .particle_image{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -400px;
   height: 810px;
   transition: ease 1s;
@@ -202,6 +209,7 @@ canvas{
 .particle_image{
   background-image: url('../images/particle.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -400px;
   height: 540px;
   transition: ease 1s;
@@ -216,6 +224,7 @@ canvas{
 .nerv_image{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 1080px;
   transition: ease 1s;
 }
@@ -224,6 +233,7 @@ canvas{
 .nerv_image{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -200px;
   height: 810px;
   transition: ease 1s;
@@ -234,6 +244,7 @@ canvas{
 .nerv_image{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -400px;
   height: 810px;
   transition: ease 1s;
@@ -244,6 +255,7 @@ canvas{
 .nerv_image{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -600px;
   height: 540px;
   transition: ease 1s;
@@ -254,6 +266,7 @@ canvas{
 .nerv_image{
   background-image: url('../images/nerv_small.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -800px;
   height: 540px;
   transition: ease 1s;
