@@ -361,14 +361,13 @@ form{
 
 .marketing-site-content-section .marketing-site-content-section-img img {
   width: 100%;
-  opacity: 1;
   transition: .5s ease;
 }
 .marketing-site-content-section .marketing-site-content-section-img img:hover {
   opacity: .7;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .marketing-site-content-section .marketing-site-content-section-img {
     -webkit-flex: 1 0 50%;
         -ms-flex: 1 0 50%;
@@ -399,7 +398,7 @@ form{
           align-items: flex-start;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .marketing-site-content-section .marketing-site-content-section-block {
     -webkit-flex: 1 0 50%;
         -ms-flex: 1 0 50%;

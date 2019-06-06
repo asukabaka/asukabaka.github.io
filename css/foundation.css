@@ -1934,7 +1934,7 @@ textarea {
       -ms-flex-order: 6;
           order: 6; }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 60em) {
   .medium-order-1 {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
