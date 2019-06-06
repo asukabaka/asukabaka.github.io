@@ -925,6 +925,20 @@ left: -280px;
   opacity: 1;
   transition: ease .5s;
 }
+@media screen and (max-width: 400px) {
+  .SFD_logo_tall {
+  display: block;
+  width: 351px;
+  height: 160px;
+  background: url(../images/SFD_logo_tall.svg);
+  background-size: 351px 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem ;
+  opacity: 1;
+  transition: ease .5s;    
+}
+}
 
 .SFD_logo_tall:hover {
   opacity: .6;

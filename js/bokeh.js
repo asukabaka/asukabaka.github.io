@@ -18,8 +18,8 @@ var ParticleEngine = (function() {
 		this.totalHeight = this.canvasHeight = document.getElementById(canvas_id).height = document.getElementById(canvas_id).offsetHeight;
 		this.compositeStyle = "lighter";
 
-		this.particleSettings = [{id:"small", num:400, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#0cdbf3", fill:false}, 
-								{id:"medium", num:300, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:1, color:"#f4c242", fill:true}, 
+		this.particleSettings = [{id:"small", num:350, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#0cdbf3", fill:false}, 
+								{id:"medium", num:270, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:1, color:"#f4c242", fill:true}, 
 								{id:"large", num:250, fromX:0, toX:this.totalWidth, ballwidth:30,  alphamax:0.4, areaHeight:1, color:"#93e9f3", fill:true}];
 		this.particleArray = [];
 		this.lights = [{ellipseWidth:300, ellipseHeight:100, alpha:0.1, offsetX:0, offsetY:0, color:"#6ac6e8"}, 
