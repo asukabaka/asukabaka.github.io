@@ -140,6 +140,17 @@ body{
   transition: ease 1s;
 }
 }
+
+@media screen and (max-width: 900px) {
+.makoto{
+  background-image: url('../images/makoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
 /*-----------------MAKOTO--------------------*/
 
 
