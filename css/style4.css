@@ -36,8 +36,10 @@ canvas{
   height: 100%;
   position: fixed;
   background-image: url('../images/background2.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: black;
+  transition: ease 1s;
 
 }
 
