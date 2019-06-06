@@ -141,7 +141,7 @@ body{
 }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 .makoto{
   background-image: url('../images/makoto.png');
   background-repeat: no-repeat;
