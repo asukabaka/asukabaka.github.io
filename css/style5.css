@@ -5,7 +5,7 @@ body{
 	height:100%; 
 	padding:0px; 
 	margin:0px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-attachment: fixed
 }
@@ -15,7 +15,7 @@ body{
   	background-repeat: no-repeat;
   	background-size: cover;
 	z-index: -100;
-  position: absolute; 
+  position: fixed; 
   top: 0px;
   left: 0px;
   width:100%;
@@ -25,7 +25,7 @@ body{
 .center-div {
 	width:580px;
     height:374px;
-    position:absolute;
+    position:fixed;
     left:50%;
     top:50%;
     margin-left: -290px;
@@ -34,7 +34,7 @@ body{
 
 #preloaderDiv
 {
-	position:absolute;
+	position:fixed;
 	left:50%;
     top:50%;
     margin-left: -27px;
@@ -48,7 +48,7 @@ body{
 
 #date2014
 {
-	position:absolute;
+	position:fixed;
 	padding-left: 210px;
 	padding-top:15px;
 	opacity:0;
@@ -65,7 +65,40 @@ body{
   	height: 1080px;
   	transition: ease 1s;
 }
+@media screen and (max-width: 1500px) {
+.logos{
+  background-image: url('../images/logos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
 
+@media screen and (max-width: 1300px) {
+.logos{
+  background-image: url('../images/logos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -75px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.logos{
+  background-image: url('../images/logos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
+
+/*-----------------MAKOTO--------------------*/
 .makoto{
 	z-index: 100;
   	background-image: url('../images/makoto.png');
@@ -74,6 +107,40 @@ body{
   	height: 1080px;
   	transition: ease 1s;
 }
+@media screen and (max-width: 1500px) {
+.makoto{
+  background-image: url('../images/makoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.makoto{
+  background-image: url('../images/makoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -75px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.makoto{
+  background-image: url('../images/makoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
+/*-----------------MAKOTO--------------------*/
+
 
 .makoto_particles{
 	z-index: 100;
@@ -83,3 +150,36 @@ body{
   	height: 1080px;
   	transition: ease 1s;
 }
+@media screen and (max-width: 1500px) {
+.makoto_particles{
+  background-image: url('../images/makoto_particles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.makoto_particles{
+  background-image: url('../images/makoto_particles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -75px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.makoto_particles{
+  background-image: url('../images/makoto_particles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
+/*-----------------MAKOTO--------------------*/
