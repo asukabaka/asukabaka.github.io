@@ -1,8 +1,8 @@
 body {
 	width: 100wh;
 	height: 100vh;
-	color: #fff;
-	background: linear-gradient(-45deg, #ff0000, #000000, #000000, #00e9ff);
+	color: black;
+	background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -15,7 +15,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: #fff;
-  background: linear-gradient(-45deg, #ff0000, #000000, #000000, #00e9ff);
+  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -177,6 +177,7 @@ z-index: -1000;
   background-image: url('../images/sikyo_isolated.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 200px;
   height: 1080px;
   transition: ease 1s;
 }
@@ -186,7 +187,7 @@ z-index: -1000;
   background-image: url('../images/sikyo_isolated.png');
   background-repeat: no-repeat;
   background-size: cover;
-/*  background-position: -200px;*/
+  background-position: 150px;
   height: 810px;
   transition: ease 1s;
 }
@@ -197,7 +198,7 @@ z-index: -1000;
   background-image: url('../images/sikyo_isolated.png');
   background-repeat: no-repeat;
   background-size: cover;
-/*  background-position: -75px;*/
+  background-position: 100px;
   height: 810px;
   transition: ease 1s;
 }
@@ -208,11 +209,23 @@ z-index: -1000;
   background-image: url('../images/sikyo_isolated.png');
   background-repeat: no-repeat;
   background-size: cover;
-/*  background-position: -125px;*/
+  background-position: 50px;
   height: 540px;
   transition: ease 1s;
 }
 }
+
+@media screen and (max-width: 900px) {
+.sikyo_isolated{
+  background-image: url('../images/sikyo_isolated.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
+
 
 .sikyo_bottom{
 	z-index: 100;
