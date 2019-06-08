@@ -10,6 +10,48 @@ body {
 	position: relative;
 }
 
+@media screen and (max-width: 1500px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ff0000, #000000, #000000, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1300px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1100px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+}
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -57,32 +99,77 @@ z-index: -1000;
  background-image: url('../images/sikyo_background.png');
    position: fixed; 
    width : 100%; 
-   height : 100%; 
+   height : 1080px; 
    top: 80px ; 
    left : 0; 
 /*   background-position:center;  */
-   -moz-background-size:contain;
-   -o-background-size:contain;
-   -webkit-background-size:contain;
-   background-size:contain;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   -webkit-background-size:cover;
+   background-size:cover;
    background-repeat: no-repeat;
-   opacity : 1
+   opacity : 1;
+   width: 100vw
  } 
 
-.gif2{
-  background-image: url('../images/2.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1080px;
-  transition: ease 1s;
-}
-
-.background{
+@media screen and (max-width: 1500px) {
+.glitch-img{
   background-image: url('../images/sikyo_background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1080px;
-  transition: ease 1s;
+  height: 810px;
+  width: 100vw;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.glitch-img{
+  background-image: url('../images/sikyo_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 810px;
+  width: 100vw;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.glitch-img{
+  background-image: url('../images/sikyo_background_small.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 100vw;
+}
+}
+
+@media screen and (max-width: 900px) {
+.glitch-img{
+  background-image: url('../images/sikyo_background_small.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 100vw;
+}
+}
+
+@media screen and (max-width: 700px) {
+.glitch-img{
+  background-image: url('../images/sikyo_background_small.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 100vw;
+}
+}
+
+@media screen and (max-width: 500px) {
+.glitch-img{
+  background-image: url('../images/sikyo_background_small.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 100vw;
+}
 }
 
 .sikyo_isolated{
@@ -94,6 +181,39 @@ z-index: -1000;
   transition: ease 1s;
 }
 
+@media screen and (max-width: 1500px) {
+.sikyo_isolated{
+  background-image: url('../images/sikyo_isolated.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.sikyo_isolated{
+  background-image: url('../images/sikyo_isolated.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -75px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.sikyo_isolated{
+  background-image: url('../images/sikyo_isolated.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -125px;*/
+  height: 540px;
+  transition: ease 1s;
+}
+}
+
 .sikyo_bottom{
 	z-index: 100;
   background-image: url('../images/sikyo_bottom.png');
@@ -101,6 +221,39 @@ z-index: -1000;
   background-size: cover;
   height: 1080px;
   transition: ease 1s;
+}
+
+@media screen and (max-width: 1500px) {
+.sikyo_bottom{
+  background-image: url('../images/sikyo_bottom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.sikyo_bottom{
+  background-image: url('../images/sikyo_bottom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -75px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.sikyo_bottom{
+  background-image: url('../images/sikyo_bottom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px;
+  height: 540px;
+  transition: ease 1s;
+}
 }
 
 .sikyo_SFS{
@@ -112,6 +265,40 @@ z-index: -1000;
   transition: ease 1s;
 }
 
+@media screen and (max-width: 1500px) {
+.sikyo_SFS{
+  background-image: url('../images/sikyo_SFS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -200px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.sikyo_SFS{
+  background-image: url('../images/sikyo_SFS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.sikyo_SFS{
+  background-image: url('../images/sikyo_SFS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -400px;
+  height: 540px;
+  transition: ease 1s;
+}
+}
+
+
 .sikyo_boxes{
 	z-index: 100;
   background-image: url('../images/sikyo_boxes.png');
@@ -120,4 +307,37 @@ z-index: -1000;
   background-blend-mode: screen;
   height: 1080px;
   transition: ease 1s;
+}
+
+@media screen and (max-width: 1500px) {
+.sikyo_boxes{
+  background-image: url('../images/sikyo_boxes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -200px;*/
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.sikyo_boxes{
+  background-image: url('../images/sikyo_boxes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -75px;
+  height: 810px;
+  transition: ease 1s;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.sikyo_boxes{
+  background-image: url('../images/sikyo_boxes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px;
+  height: 540px;
+  transition: ease 1s;
+}
 }
