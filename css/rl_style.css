@@ -922,6 +922,12 @@ left: -300px;
 }
 }
 
+@media screen and (max-width: 500px) {
+.frontpage_hifumi {
+left: -320px;
+}
+}
+
 .frontpage_makoto_2038 {
 left: -220px;
 }
