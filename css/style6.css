@@ -52,7 +52,7 @@ body {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 body {
   width: 100wh;
   height: 100vh;
