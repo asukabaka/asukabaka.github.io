@@ -103,3 +103,12 @@ z-index: -1000;
   height: 1080px;
   transition: ease 1s;
 }
+
+.sikyo_SFS{
+	z-index: 100;
+  background-image: url('../images/sikyo_SFS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  transition: ease 1s;
+}
