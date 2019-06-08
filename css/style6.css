@@ -14,7 +14,7 @@ body {
 body {
   width: 100wh;
   height: 100vh;
-  color: #fff;
+  color: black;
   background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
@@ -28,7 +28,7 @@ body {
 body {
   width: 100wh;
   height: 100vh;
-  color: #fff;
+  color: black;
   background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
@@ -42,7 +42,7 @@ body {
 body {
   width: 100wh;
   height: 100vh;
-  color: #fff;
+  color: black;
   background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
@@ -134,7 +134,7 @@ z-index: -1000;
 
 @media screen and (max-width: 1100px) {
 .glitch-img{
-  background-image: url('../images/sikyo_background_small.png');
+  background-image: url('../images/sikyo_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
@@ -144,7 +144,7 @@ z-index: -1000;
 
 @media screen and (max-width: 900px) {
 .glitch-img{
-  background-image: url('../images/sikyo_background_small.png');
+  background-image: url('../images/sikyo_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
@@ -154,7 +154,7 @@ z-index: -1000;
 
 @media screen and (max-width: 700px) {
 .glitch-img{
-  background-image: url('../images/sikyo_background_small.png');
+  background-image: url('../images/sikyo_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
@@ -164,7 +164,7 @@ z-index: -1000;
 
 @media screen and (max-width: 500px) {
 .glitch-img{
-  background-image: url('../images/sikyo_background_small.png');
+  background-image: url('../images/sikyo_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
