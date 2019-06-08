@@ -45,9 +45,21 @@ body {
   color: black;
   background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
   background-size: 400% 400%;
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 600px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: black;
+  background: #ff0000;
+  background-size: 400% 400%;
+
   position: relative;
 }
 }
