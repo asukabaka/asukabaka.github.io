@@ -623,58 +623,77 @@ form{
 /* PARALLELOGRAM */
 .parallelograms {
   margin: 0 auto;
-  max-width: 1150px;
+  max-width: 100vw;
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "side1 side2 side3" ;
+/*  grid-gap: 30px;*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "side1 side2 side3 side4" ;
+  transition: ease .5s;
+    overflow: hidden;
 }
+
+@media screen and (max-width: 1800px) {
+  .parallelograms {
+    margin: 0 auto;
+  max-width: 100vw;
+  display: grid;
+/*  grid-gap: 15px;*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "side1 side2 side3 side4" ;
+  transition: ease .5s;
+  overflow: hidden;
+}
+}
+
 
 @media screen and (max-width: 900px) {
   .parallelograms {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 100vw;
   max-height: 600px;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
+/*  grid-gap: 15px;*/
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows:  600px;
-  grid-template-areas: "side1 side2 side3" ;
+  grid-template-areas: "side1 side2 side3 side4" ;
   overflow: hidden;
+  transition: ease .5s;
 }
 }
 
 @media screen and (max-width: 600px) {
   .parallelograms {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 100vw;
   max-height: 400px;
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
+/*  grid-gap: 5px;*/
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows:  400px;
-  grid-template-areas: "side1 side2 side3" ;
+  grid-template-areas: "side1 side2 side3 side4" ;
   overflow: hidden;
+  transition: ease .5s;
 }
 }
 
 @media screen and (max-width: 450px) {
   .parallelograms {
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 100vw;
   max-height: 400px;
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
+/*  grid-gap: 5px;*/
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows:  400px;
-  grid-template-areas: "side1 side2 side3" ;
+  grid-template-areas: "side1 side2 side3 side4" ;
   overflow: hidden;
+  transition: ease .5s;
 }
 }
 
 .parallelogram {
   display: block;
-  width: 333px; 
+  width: 100%; 
   height: 850px; 
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
@@ -687,10 +706,100 @@ form{
   transition: ease .5s;
 }
 
+@media screen and (max-width: 1800px) {
+.parallelogram {
+  display: block;
+  width: 100%;  
+  height: 850px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+/*  -moz-transform: transition: ease .5s;*/
+}
+}
+
+@media screen and (max-width: 1600px) {
+.parallelogram {
+  display: block;
+  width: 100%; 
+  height: 850px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+/*  -moz-transform: transition: ease .5s;*/
+}
+}
+
+@media screen and (max-width: 1400px) {
+.parallelogram {
+  display: block;
+  width: 100%; 
+  height: 850px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+/*  -moz-transform: transition: ease .5s;*/
+}
+}
+
+@media screen and (max-width: 1400px) {
+.parallelogram {
+  display: block;
+  width: 100%; 
+  height: 850px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+/*  -moz-transform: transition: ease .5s;*/
+}
+}
+
+@media screen and (max-width: 1200px) {
+.parallelogram {
+  display: block;
+  width: 100%; 
+  height: 850px; 
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease .5s;
+/*  -moz-transform: transition: ease .5s;*/
+}
+}
+
 @media screen and (max-width: 900px) {
 .parallelogram {
   display: block;
-  width: 222px; 
+  width: 100%;  
   height: 600px; 
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
@@ -708,7 +817,7 @@ form{
 @media screen and (max-width: 600px) {
 .parallelogram {
   display: block;
-  width: 150px; 
+  width: 100%; 
   height: 400px; 
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
@@ -726,7 +835,7 @@ form{
 .parallelogram {
   margin-left: -15px;
   display: block;
-  width: 130px; 
+  width: 100%; 
   height: 400px; 
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
@@ -750,6 +859,10 @@ form{
 
 .parallelogram:nth-child(3) {
   grid-area: side3;
+}
+
+.parallelogram:nth-child(4) {
+  grid-area: side4;
 }
 
 .parallelogram img {
@@ -796,24 +909,24 @@ left: -220px;
 }
 
 .frontpage_hifumi_wallpaper{
-left: -210px;
+left: -240px;
 }
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -230px;
+left: -260px;
 }
 }
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -250px;
+left: -280px;
 }
 }
 
 @media screen and (max-width: 800px) {
   .frontpage_hifumi_wallpaper{
-left: -280px;
+left: -300px;
 }
 }
 
