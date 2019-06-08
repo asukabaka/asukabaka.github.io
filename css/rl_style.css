@@ -894,13 +894,13 @@ left: -160px;
 
 @media screen and (max-width: 1000px) {
 .frontpage_hifumi {
-left: -215px;
+left: -235px;
 }
 }
 
 @media screen and (max-width: 800px) {
 .frontpage_hifumi {
-left: -265px;
+left: -285px;
 }
 }
 
@@ -950,19 +950,25 @@ left: -240px;
 
 @media screen and (max-width: 1300px) {
   .frontpage_hifumi_wallpaper{
-left: -260px;
+left: -270px;
 }
 }
 
 @media screen and (max-width: 1100px) {
   .frontpage_hifumi_wallpaper{
-left: -280px;
+left: -300px;
 }
 }
 
 @media screen and (max-width: 800px) {
   .frontpage_hifumi_wallpaper{
-left: -300px;
+left: -350px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .frontpage_hifumi_wallpaper{
+left: -400px;
 }
 }
 
