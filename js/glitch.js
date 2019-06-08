@@ -13,12 +13,12 @@ $( function() {
           // select blend mode type
           blendModeType : 'hue',
           // set min time for glitch 1 elem
-          glitch1TimeMin : 200, 
+          glitch1TimeMin : 300, 
           // set max time for glitch 1 elem
-          glitch1TimeMax : 400,
+          glitch1TimeMax : 500,
           // set min time for glitch 2 elem
-          glitch2TimeMin : 10, 
+          glitch2TimeMin : 100, 
           // set max time for glitch 2 elem
-          glitch2TimeMax : 100, 
+          glitch2TimeMax : 200, 
 		});
 });
