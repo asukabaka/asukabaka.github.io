@@ -112,3 +112,12 @@ z-index: -1000;
   height: 1080px;
   transition: ease 1s;
 }
+
+.sikyo_boxes{
+	z-index: 100;
+  background-image: url('../images/sikyo_boxes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  transition: ease 1s;
+}
