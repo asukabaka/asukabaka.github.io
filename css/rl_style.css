@@ -168,7 +168,7 @@ form{
 
   background: linear-gradient(transparent, black), url("../images/gallery_banner.jpg") 50% no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 600px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,9 +183,26 @@ form{
 
 .hero-section_hannya {
 
-  background: url("../images/hannya_banner.jpg") 50% no-repeat;
+  background: url("../images/hannya_banner_light.jpg") 50% no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 600px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+}
+
+.hero-section_hannya:hover {
+
+  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
+  background-size: cover;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -203,7 +220,6 @@ form{
 
   background: linear-gradient(transparent, black), url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
   background-size: cover;
-  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
