@@ -197,6 +197,7 @@ form{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
+    -moz-transform: transition: ease 1s;
 }
 
 @media screen and (max-width: 1000px) {
@@ -216,6 +217,7 @@ form{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
+      -moz-transform: transition: ease 1s;
 }
 }
 
@@ -234,6 +236,7 @@ form{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
+      -moz-transform: transition: ease 1s;
 }
 
 .hero-section_about1{
