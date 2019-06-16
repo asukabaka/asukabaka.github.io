@@ -221,24 +221,6 @@ form{
 }
 }
 
-.hero-section_hannya:hover {
-
-  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
-      -moz-transform: transition: ease 1s;
-}
-
 .hero-section_about1{
 
   background: linear-gradient(transparent, black), url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
@@ -622,6 +604,40 @@ form{
   background-color: black;
   padding-top: 20px;
   padding-bottom: 30px;
+}
+
+.frontpage_artwork_text{
+  font-family: 'Rajdhani', sans-serif;
+  width:100%;
+  height: inherit;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: ease .5s;
+}
+
+.frontpage_artwork_text:hover {
+  font-family: 'Rajdhani', sans-serif;
+  width:100%;
+  height: inherit;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, black, transparent, transparent);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 1;
+  transition: ease .5s;
 }
 
 /* LIGHTBOX FROM CODEPEN */
