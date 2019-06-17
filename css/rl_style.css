@@ -164,6 +164,10 @@ form{
 
 /*ZURB Hero image */
 
+.hero_padding{
+  padding-top: 30px;
+}
+
 .hero-section {
 
   background: linear-gradient(transparent, black), url("../images/gallery_banner.jpg") 50% no-repeat;
@@ -183,7 +187,7 @@ form{
 
 .hero-section_hannya {
 
-  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
+  background: url("../images/hannya_banner_mix.jpg") 50% no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
@@ -202,7 +206,45 @@ form{
 @media screen and (max-width: 1000px) {
 .hero-section_hannya {
 
-  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
+  background: url("../images/hannya_banner_mix.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+}
+}
+
+.hero-section_cafe {
+
+  background: url("../images/makoto_cafe_banner.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+}
+
+@media screen and (max-width: 1000px) {
+.hero-section_cafe {
+
+  background: url("../images/makoto_cafe_banner.jpg") 50% no-repeat;
   background-size: cover;
   height: 300px;
   text-align: center;
