@@ -264,6 +264,7 @@ form{
 .hero-section_about1{
 
   background: linear-gradient(transparent, black), url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
+    height: 60vh;
   background-size: cover;
   text-align: center;
   display: -webkit-flex;
