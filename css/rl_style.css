@@ -165,7 +165,7 @@ form{
 /*ZURB Hero image */
 
 .hero_padding{
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .hero-section {
@@ -646,14 +646,13 @@ form{
   padding-bottom: 30px;
 }
 
-.frontpage_artwork_text{
+.frontpage_artwork_text_left{
   font-family: 'Rajdhani', sans-serif;
   width:100%;
   height: inherit;
   font-size: 2em;
   color: white;
   text-align: center;
-  background-color: black;
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -663,14 +662,14 @@ form{
   transition: ease .5s;
 }
 
-.frontpage_artwork_text:hover {
+.frontpage_artwork_text_left:hover {
   font-family: 'Rajdhani', sans-serif;
   width:100%;
   height: inherit;
   font-size: 2em;
   color: white;
   text-align: center;
-  background: linear-gradient(135deg, black, transparent, transparent);
+  background: linear-gradient(135deg, black, transparent);
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -680,6 +679,38 @@ form{
   transition: ease .5s;
 }
 
+.frontpage_artwork_text_right{
+  font-family: 'Rajdhani', sans-serif;
+  width:100%;
+  height: inherit;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: ease .5s;
+}
+
+.frontpage_artwork_text_right:hover {
+  font-family: 'Rajdhani', sans-serif;
+  width:100%;
+  height: inherit;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background: linear-gradient(-135deg, black, transparent);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 1;
+  transition: ease .5s;
+}
 /* LIGHTBOX FROM CODEPEN */
 
 .lightbox {
