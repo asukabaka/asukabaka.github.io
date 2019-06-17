@@ -183,7 +183,7 @@ form{
 
 .hero-section_hannya {
 
-  background: url("../images/hannya_banner_light.jpg") 50% no-repeat;
+  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
@@ -197,13 +197,12 @@ form{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
-    -moz-transform: transition: ease 1s;
 }
 
 @media screen and (max-width: 1000px) {
 .hero-section_hannya {
 
-  background: url("../images/hannya_banner_light.jpg") 50% no-repeat;
+  background: url("../images/hannya_banner_dark.jpg") 50% no-repeat;
   background-size: cover;
   height: 300px;
   text-align: center;
@@ -217,7 +216,6 @@ form{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
-      -moz-transform: transition: ease 1s;
 }
 }
 
