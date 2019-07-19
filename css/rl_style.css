@@ -1586,7 +1586,7 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .1;
+  opacity: .2;
 }
 
 .bg-image_makoto_cafe {
@@ -1607,5 +1607,5 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .1;
+  opacity: .2;
 }
