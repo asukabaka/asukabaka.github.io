@@ -753,6 +753,18 @@ form{
   margin-right:auto;
 }
 
+.front_artwork_bottom {
+  text-align:center;
+  display: block;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: black;
+}
+
 .cyberpunk_hifumi_resize {
   max-height: 875px;
 }
@@ -765,6 +777,16 @@ form{
   background-color: black;
   padding-top: 20px;
   padding-bottom: 30px;
+}
+
+.front_artwork_text_bottom{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 100px;
 }
 
 .frontpage_artwork_text_left{
@@ -1544,4 +1566,46 @@ input.messagebox {
 
 p.inquiries_message{
   background-color: black;
+}
+
+.bg-image_mitsuru {
+  /* The image used */
+  background-image: url(../images/mitsuru_small.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 120%;
+  width: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .1;
+}
+
+.bg-image_makoto_cafe {
+  /* The image used */
+  background-image: url(../images/cafe_scene.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 120%;
+  width: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .1;
 }
