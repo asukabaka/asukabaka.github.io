@@ -1609,3 +1609,24 @@ p.inquiries_message{
   z-index: -1000;
   opacity: .2;
 }
+
+.bg-image_jdn {
+  /* The image used */
+  background-image: url(../images/cafe_scene.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 120%;
+  width: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .2;
+}
