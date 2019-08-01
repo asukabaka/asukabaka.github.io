@@ -1357,7 +1357,23 @@ left: -400px;
 }
 }
 
+.frontpage_mona{
+left: -220px;
+}
 
+@media screen and (max-width: 900px) {
+.frontpage_mona {
+left: -420px;
+top: -100px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.frontpage_mona {
+left: -520px;
+top: -275px;
+}
+}
 
 .img__description {
   position: absolute;
