@@ -208,7 +208,7 @@ form{
 
   background: url("../images/secondhand_manga_banner.jpg") 50% no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: 100%;
   height: 300px;
   text-align: center;
   display: -webkit-flex;
