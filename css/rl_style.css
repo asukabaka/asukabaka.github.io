@@ -1512,3 +1512,24 @@ p.inquiries_message{
   z-index: -1000;
   opacity: .1;
 }
+
+.bg-image_mona-chan {
+  /* The image used */
+  background-image: url(../images/mona-chan_small.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .1;
+}
