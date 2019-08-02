@@ -165,7 +165,7 @@ form{
 /*ZURB Hero image */
 
 .hero_padding{
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .hero-section {
@@ -1100,6 +1100,7 @@ left: -400px;
 }
 }
 
+
 .frontpage_mona{
 left: -220px;
 }
@@ -1136,7 +1137,7 @@ top: -275px;
   align-items: flex-end;
 
   /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .75s, visibility .75s;
 }
 }
 
@@ -1158,7 +1159,7 @@ top: -275px;
   align-items: flex-end;
 
   /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .75s, visibility .75s;
 }
 }
 
@@ -1181,7 +1182,7 @@ top: -275px;
   align-items: flex-end;
 
   /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .75s, visibility .75s;
 }
 }
 
@@ -1204,7 +1205,7 @@ top: -275px;
   align-items: flex-end;
 
   /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .75s, visibility .75s;
 }
 }
 
