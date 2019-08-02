@@ -284,65 +284,6 @@ form{
 }
 }
 
-.hero-section_jdn {
-
-  background: url("../images/jdn_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 600px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
-}
-
-@media screen and (max-width: 1400px) {
-.hero-section_jdn {
-
-  background: url("../images/jdn_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
-}
-}
-
-@media screen and (max-width: 1000px) {
-.hero-section_jdn {
-
-  background: url("../images/jdn_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  background-position: 100%;
-  height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
-}
-}
 
 .hero-section_hannya {
 
@@ -549,93 +490,7 @@ form{
   margin-left: 18px;
 }
 
-.marketing-site-content-section {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
 
-.marketing-site-content-section .button.round {
-  border-radius: 5000px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  background-color: #3D3D3D;
-  transition: .5s ease;
-  opacity: 1;
-}
-
-.marketing-site-content-section .button.round:hover {
-  opacity: .6;
-}
-
-.marketing-site-content-section .marketing-site-content-section-img {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
-          align-self: center;
-  -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-}
-
-.marketing-site-content-section .marketing-site-content-section-img img {
-  width: 100%;
-  transition: .5s ease;
-}
-.marketing-site-content-section .marketing-site-content-section-img img:hover {
-  opacity: .7;
-}
-
-@media screen and (min-width: 60em) {
-  .marketing-site-content-section .marketing-site-content-section-img {
-    -webkit-flex: 1 0 50%;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-  }
-}
-
-.marketing-site-content-section .marketing-site-content-section-block {
-  padding: 1rem;
-  -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch;
-  background: #0a0a0a;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media screen and (min-width: 60em) {
-  .marketing-site-content-section .marketing-site-content-section-block {
-    -webkit-flex: 1 0 50%;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-    padding: 2rem;
-  }
-}
-
-.marketing-site-content-section-block-header {
-  font-size: 28px;
-}
-
-.marketing-site-content-section-block-subheader {
-  font-size: 18px;
-}
 
 /*FOOTER by Zurb building blocks*/
 
@@ -701,83 +556,6 @@ form{
 }
 
 
-
-/*CSS GRID PROF HOBBS CODEPEN EXAMPLE 6 */
-
-.cards_container {
-  background: -webkit-linear-gradient(#191919, #191919, black);
-  background: -o-linear-gradient(#191919, #191919, black);
-  background: linear-gradient(#191919, #191919, black);
-  background-color: #191919;
-}
-
-.cards1 {
-  display: grid;
-  grid-gap: 70px;
-  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
-  grid-auto-rows: 350px;
-  margin: 0 auto;
-  padding: 5em;
-  max-width: 1200px;
-  transition: ease .5s;
-}
-
-@media screen and (max-width: 900px) {
-.cards1 {
-  display: grid;
-  grid-gap: 70px;
-  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
-  grid-auto-rows: 350px;
-  margin: 0 auto;
-  padding: 3em;
-  max-width: 1200px;
-  transition: ease .5s; 
-}
-}
-
-@media screen and (max-width: 600px) {
-.cards1 {
-  display: grid;
-  grid-gap: 70px;
-  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
-  grid-auto-rows: 350px;
-  margin: 0 auto;
-  padding: 1em;
-  max-width: 1200px;
-  transition: ease .5s;
-}
-}
-
-.cards1 img {
-  object-fit: cover;
-  width: 100%;
-  height: 350px;
-  opacity: 1;
-  transition: .5s ease;
-}
-
-.cards1 img:hover{
-  opacity: .6;
-}
-
-.card1 {
-  background-color: black;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-}
-
-.card_text{
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.3em;
-  color: white;
-  text-align: center;
-  background-color: black;
-  opacity: 1;
-  transition: ease .5s;
-}
-
-.card_text:hover {
-  opacity: .6
-}
 
 /*GALLERY HERO IMAGE*/
 
@@ -892,41 +670,6 @@ form{
   align-items: flex-end;
   opacity: 1;
   transition: ease .5s;
-}
-/* LIGHTBOX FROM CODEPEN */
-
-.lightbox {
-  /** Default lightbox to hidden */
-  display: none;
-
-  /** Position and style */
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-  overflow: scroll;
-}
-
-.lightbox img {
-  /** Pad the lightbox image */
-  max-width: 100%;
-  margin-top: 2%;
-  overflow: scroll;
-}
-
-
-.lightbox:target {
-  /** Remove default browser outline */
-  outline: none;
-  overflow: scroll;
-
-  /** Unhide lightbox **/
-  display: block;
-  overflow: scroll;
 }
 
 /* PARALLELOGRAM */
@@ -1641,7 +1384,7 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .2;
+  opacity: .1;
 }
 
 .bg-image_makoto_cafe {
@@ -1662,7 +1405,7 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .2;
+  opacity: .1;
 }
 
 .bg-image_jdn {
@@ -1683,7 +1426,7 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .2;
+  opacity: .1;
 }
 
 .bg-image_secondhand_manga {
@@ -1704,5 +1447,47 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .2;
+  opacity: .1;
+}
+
+.bg-image_jdn {
+  /* The image used */
+  background-image: url(../images/jdn_wallpaper_small.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .1;
+}
+
+.bg-image_hannya {
+  /* The image used */
+  background-image: url(../images/hannya_dark_small.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .1;
 }
