@@ -586,6 +586,7 @@ form{
   width: 100%;
   margin-left:auto;
   margin-right:auto;
+  position: relative;
 }
 
 .front_artwork_bottom {
@@ -598,6 +599,7 @@ form{
   margin-left:auto;
   margin-right:auto;
   background-color: black;
+  position: relative;
 }
 
 .cyberpunk_hifumi_resize {
@@ -1572,4 +1574,99 @@ p.inquiries_message{
   position: fixed;
   z-index: -1000;
   opacity: .2;
+}
+
+.image_assets:hover {
+  opacity: 1;
+}
+
+.image_assets{
+  padding: 4px 10px;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  left: calc(50%);
+  transform: translate(-50%,0);
+  bottom: 15px;
+  z-index: 1000;
+  opacity: 0;
+    background-color:rgba(30,37,39,.5);
+   -webkit-transition:opacity .25s;
+ transition:opacity .25s;
+ -webkit-box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+ box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+   -webkit-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.front_artwork:hover .image_assets{
+  padding: 4px 10px;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  left: calc(50%);
+  transform: translate(-50%,0);
+  bottom: 15px;
+  z-index: 1000;
+  opacity: 1;
+  background-color:rgba(30,37,39,.5);
+   -webkit-transition:opacity .25s;
+ transition:opacity .25s;
+ -webkit-box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+ box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+   -webkit-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* comment 
+-------------------------------------------*/
+
+.front_artwork_bottom:hover .image_assets{
+  padding: 4px 10px;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  left: calc(50%);
+  transform: translate(-50%,0);
+  bottom: 15px;
+  z-index: 1000;
+  opacity: 1;
+  background-color:rgba(30,37,39,.5);
+   -webkit-transition:opacity .25s;
+ transition:opacity .25s;
+ -webkit-box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+ box-shadow:1px 1px 5px 0 rgba(0,0,0,.5);
+   -webkit-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* sub */
+
+.buttons{
+  padding: 8px 16px;
+  color: grey;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  text-align: center;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 2px;
+  -webkit-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+.buttons:hover .buttons:focus .buttons:active{
+  color: #389ada ;
 }
