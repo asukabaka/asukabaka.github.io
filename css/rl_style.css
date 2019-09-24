@@ -1585,7 +1585,7 @@ p.inquiries_message{
 }
 
 .image_assets{
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 5px;
   position: absolute;
   overflow: hidden;
@@ -1606,7 +1606,7 @@ p.inquiries_message{
 }
 
 .front_artwork:hover .image_assets{
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 5px;
   position: absolute;
   overflow: hidden;
@@ -1630,7 +1630,7 @@ p.inquiries_message{
 -------------------------------------------*/
 
 .front_artwork_bottom:hover .image_assets{
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 5px;
   position: absolute;
   overflow: hidden;
