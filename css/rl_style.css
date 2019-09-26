@@ -1926,7 +1926,7 @@ p.inquiries_message{
 @media screen and (max-width: 80em) {
 .about_text{
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -1964,7 +1964,7 @@ p.inquiries_message{
 @media screen and (max-width: 80em) {
 .about_text_intro{
   font-family: 'Raleway', sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   color: white;
   text-align: center;
   top: 30%;
