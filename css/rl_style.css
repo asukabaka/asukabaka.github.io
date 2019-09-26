@@ -1806,7 +1806,7 @@ p.inquiries_message{
 
 .tile_x:hover{
   transition: ease 1s;
-  opacity: .5;
+  opacity: .2;
 
 
 }
@@ -1828,7 +1828,7 @@ p.inquiries_message{
 @media screen and (max-width: 80em) {
   .tile_x:hover{
   transition: ease 1s;
-  opacity: .5;
+  opacity: .2;
 }
 }
 
@@ -1861,7 +1861,7 @@ p.inquiries_message{
 
 .tile_x2:hover{
   transition: ease 1s;
-  opacity: .6;
+  opacity: .2;
 }
 
 .tile_x3{
@@ -1879,7 +1879,7 @@ p.inquiries_message{
 
 .tile_x3:hover{
   transition: ease 1s;
-  opacity: .4;
+  opacity: .2;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -1900,7 +1900,7 @@ p.inquiries_message{
 @media screen and (max-width: 39.9375em) {
   .tile_x3:hover{
   transition: ease 1s;
-  opacity: .5;
+  opacity: .2;
 }
 }
 
@@ -1919,7 +1919,7 @@ p.inquiries_message{
 
 .tile_x4:hover{
   transition: ease 1s;
-  opacity: .5;
+  opacity: .2;
 }
 
 .tile_1{
@@ -2003,8 +2003,8 @@ p.inquiries_message{
   font-size: 1.5em;
   color: white;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   opacity: 1;
 }
 
@@ -2014,7 +2014,7 @@ p.inquiries_message{
   font-size: 1.25em;
   color: white;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 0px;
   opacity: 1;
 }
