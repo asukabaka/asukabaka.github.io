@@ -1923,6 +1923,18 @@ p.inquiries_message{
   opacity: 1;
 }
 
+@media screen and (max-width: 80em) {
+.about_text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  opacity: 1;
+}
+}
+
 @media screen and (max-width: 39.9375em) {
 .about_text{
   font-family: 'Raleway', sans-serif;
@@ -1942,6 +1954,21 @@ p.inquiries_message{
   text-align: center;
   top: 30%;
   padding-top: 20px;
+  padding-bottom: 30px;
+  opacity: 1;
+  transform: translateY(-50%);
+  position: relative;
+  margin: 50px;
+}
+
+@media screen and (max-width: 80em) {
+.about_text_intro{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  top: 30%;
+  padding-top: 0px;
   padding-bottom: 30px;
   opacity: 1;
   transform: translateY(-50%);
