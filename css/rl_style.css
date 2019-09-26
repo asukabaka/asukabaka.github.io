@@ -1740,6 +1740,7 @@ p.inquiries_message{
   grid-template-areas: "sidex4 side1 side1"
                        "sidex3 sidex3 side2"
                        "side3 side3 side3"
+                       "sidex sidex sidex"
                         ;
     overflow: hidden;
       background-image: url(../images/mitsuru_small.jpg);
@@ -1814,6 +1815,36 @@ p.inquiries_message{
   position: relative;
   transition: ease 1s;
   opacity: .5;
+
+
+}
+
+@media screen and (max-width: 80em) {
+  .tile_x{
+  grid-area: sidex;
+  /*display: block;*/
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: 0;
+}
+}
+
+@media screen and (max-width: 80em) {
+  .tile_x:hover{
+  grid-area: sidex;
+  /*display: block;*/
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: .5;
+}
 }
 
 @media screen and (max-width: 39.9375em) {
