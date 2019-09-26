@@ -10,12 +10,14 @@ p{
 h1{
   font-family: 'Rajdhani', sans-serif;
   margin: 0 auto;
+  color: white;
+  font-size: 3rem;
 }
 
 h3{
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h5{
@@ -473,6 +475,7 @@ i{
 
   background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
   background-size: cover;
+  background-position: 20%;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -484,6 +487,7 @@ i{
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  transition: ease .5s;
 }
 
 .hero-section .hero-section-text {
@@ -1385,7 +1389,7 @@ top: -275px;
 .inquiries_box {
   color: white;
   text-align: center;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   text-align: center;
   padding-top: 80px;
@@ -2006,3 +2010,44 @@ p.inquiries_message{
   margin: 50px;
 }
 }
+
+
+/*---------------Contact Grid------------------*/
+
+
+.contact_grid{
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 100%;
+/*  max-height: 1000px;*/
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "contact_form contact_social";
+  overflow: hidden;
+}
+
+.contact_form{
+  grid-area: contact_form;
+  /*display: block;*/
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.contact_social{
+  grid-area: contact_social;
+  /*display: block;*/
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+
+/*---------------Contact Grid END------------------*/
