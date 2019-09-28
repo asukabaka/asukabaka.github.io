@@ -1,3 +1,13 @@
+// GOOGLE WEB FUNDEMENTALS BY JEREMY WAGNER
+// https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video
+
+//Ray's notes on this code
+//Lazy loading is when images are only loaded as the user scrolls down the page. This is often seen in websites that infinitely scroll down because it saves unnesscary
+// transfer of data for both the user and the server. In HTML placeholder blurred images which inherently cost less data are instantly loaded in as usual, while more data heavy content
+// are set to load in as the user scrolls down. This code in particular is based on the JS function Event Listener which instructs JS to constantly check to see if the 
+// browser is doing X event.
+
+
 document.addEventListener("DOMContentLoaded", function() {
   let lazyImages = [].slice.call(document.querySelectorAll("img.cyberpunk_hifumi_resize"));
   let active = false;
