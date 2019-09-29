@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //without waiting for stylesheets, images, and subframes to finish loading."-MOZILLA MDN
   let lazyImages = [].slice.call(document.querySelectorAll("img.cyberpunk_hifumi_resize"));
   //This code specifically targets all elements that are img.cyberpunk_hifumi_resize
+  //specifically it sets the "lazyImages" in JS to be whatever class you need to to be in your HTML. I set mine to be img.cyberpunk_hifumi_resize
   let active = false;
 
   const lazyLoad = function() {
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //setTimeout means the script will run every 200milliseconds to see if the user is scrolling or viewport has changed.
         lazyImages.forEach(function(lazyImage) {
           if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
-            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.src = lazyImage.dataset.src; //data-src="" and data-srcset="" in HTML is the final image you want loaded while just plain src="" is the blurred one.
             lazyImage.srcset = lazyImage.dataset.srcset;
             lazyImage.classList.remove("lazy");
 

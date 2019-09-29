@@ -2005,7 +2005,7 @@ p.inquiries_message{
   color: white;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   opacity: 1;
 }
 
@@ -2033,13 +2033,28 @@ p.inquiries_message{
 }
 }
 
+h3.about_text{
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 0px;
+  transform: translateX(20%);
+}
+
+@media screen and (max-width: 39.9375em) {
+h3.about_text{
+  font-size: 1.25em;
+  text-align: left;
+  padding-left: 40px;
+}
+}
+
 .about_text_intro{
   font-family: 'Raleway', sans-serif;
   font-size: 3em;
   color: white;
   text-align: center;
   top: 30%;
-  padding-top: 20px;
   padding-bottom: 30px;
   opacity: 1;
   transform: translateY(-50%);
