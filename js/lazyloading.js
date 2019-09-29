@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       active = true;
 
       setTimeout(function() {
-      //setTimeout means the script will run every 200milliseconds to see if the user is scrolling or viewport has changed.
+      //setTimeout means the script will run every 200milliseconds to see if the user is scrolling or viewport has changed. The value 200 is given below.
         lazyImages.forEach(function(lazyImage) {
           if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
             lazyImage.src = lazyImage.dataset.src; //data-src="" and data-srcset="" in HTML is the final image you want loaded while just plain src="" is the blurred one.
