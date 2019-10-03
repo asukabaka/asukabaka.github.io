@@ -1886,13 +1886,13 @@ p.inquiries_message{
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 1s;
   opacity: 0;
 }
 
 .tile_x3:hover{
   transition: ease 1s;
-  opacity: .2;
+  opacity: .7;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -1905,7 +1905,7 @@ p.inquiries_message{
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 1s;
   opacity: 0;
 }
 }
@@ -1913,7 +1913,7 @@ p.inquiries_message{
 @media screen and (max-width: 39.9375em) {
   .tile_x3:hover{
   transition: ease 1s;
-  opacity: .2;
+  opacity: .7;
 }
 }
 
