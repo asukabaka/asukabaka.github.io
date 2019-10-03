@@ -261,7 +261,7 @@ i{
 
 .hero-section_kirijo {
 
-  background: url("../images/kirijo_banner.jpg") 50% no-repeat;
+  background: url("../images/kirijo_banner.jpg") 55% no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
@@ -669,6 +669,7 @@ i{
   font-size: 2em;
   color: white;
   text-align: center;
+  background: linear-gradient(135deg, black, transparent);
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -702,6 +703,7 @@ i{
   font-size: 2em;
   color: white;
   text-align: center;
+  background: linear-gradient(-135deg, black, transparent);
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -2139,3 +2141,4 @@ h3.about_text{
 
 
 /*---------------Contact Grid END------------------*/
+
