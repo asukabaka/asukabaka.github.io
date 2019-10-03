@@ -1882,7 +1882,7 @@ p.inquiries_message{
   /*display: block;*/
   width: 100%; 
   height: 75px; 
-  background: black;
+  background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -2056,8 +2056,10 @@ h3.about_text{
 @media screen and (max-width: 39.9375em) {
 h3.about_text{
   font-size: 1.25em;
-  text-align: left;
-  padding-left: 40px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 0px;
+  transform: translateX(0%);
 }
 }
 
@@ -2087,6 +2089,7 @@ h3.about_text{
   transform: translateY(-50%);
   position: relative;
   margin: 50px;
+}
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -2142,3 +2145,14 @@ h3.about_text{
 
 /*---------------Contact Grid END------------------*/
 
+.CV{
+  user-select: none;
+  color: white;
+  transition: ease .3s;
+}
+
+.CV:hover{
+  user-select: none;
+  color: #565656;
+  transition: ease .3s;
+}
