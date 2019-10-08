@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             lazyImage.src = lazyImage.dataset.src; //data-src="" and data-srcset="" in HTML is the final image you want loaded while just plain src="" is the blurred one.
             lazyImage.srcset = lazyImage.dataset.srcset;
             lazyImage.classList.remove("lazy");
-
+            //I think this line of code says when a class named Lazy Image goes inside the client's rectangle, set the lazy image to display none?
             lazyImages = lazyImages.filter(function(image) {
               return image !== lazyImage;
             });
