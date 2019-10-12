@@ -1,0 +1,129 @@
+video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.side3 video{
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid{
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 1080px;
+/*  max-height: 1000px;*/
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-areas: "sidex4 side1 side1"
+                       "sidex3 sidex3 side2"
+                       "side3 side3 sidex2"
+                       "sidex sidex sidex";
+    overflow: hidden;
+      background-image: url(../images/mitsuru_small.jpg);
+
+  /* Add the blur effect */
+/*  filter: blur(4px);
+  -webkit-filter: blur(4px);*/
+
+  /* Full height */
+/*  width: 120%;*/
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.tile_x{
+  grid-area: sidex;
+  /*display: block;*/
+  background-color: black;
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+  opacity: 1;
+}
+
+.tile_x2{
+  grid-area: sidex2;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+  opacity: 1;
+}
+
+
+.tile_x3{
+  grid-area: sidex3;
+  /*display: block;*/
+  width: 100%; 
+  height: 75px; 
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: 1;
+}
+
+
+.tile_x4{
+  grid-area: sidex4;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+  opacity: 1;
+}
+
+.tile_1{
+  grid-area: side1;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_2{
+  grid-area: side2;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+  opacity: 1;
+}
+
+.tile_3{
+  grid-area: side3;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
