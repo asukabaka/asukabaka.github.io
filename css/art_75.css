@@ -1,3 +1,7 @@
+body{
+	background-color: black;
+}
+
 video{
 	width: 100%;
 	height: 100%;
@@ -11,17 +15,18 @@ video{
 
 .grid{
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 100%;
   height: 1080px;
 /*  max-height: 1000px;*/
   display: grid;
-  grid-template-columns: repeat(3, 4fr);
-  grid-template-areas: "sidex4 side1 side1"
-                       "sidex3 sidex3 side2"
-                       "side3 side3 sidex2"
-                       "sidex sidex sidex";
+  grid-template-columns: repeat(5, 6);
+  grid-template-areas: "sidex4 side1 side1 side5 side11 side11"
+                       "sidex4 side2 side2 side5 side7 side8"
+                       "side3 side4 side4 side5 side7 side8"
+                       "sidex sidex sidex side6 side9 side9"
+                       "side10 side10 side10 side10 side10 side10";
     overflow: hidden;
-      background-image: url(../images/mitsuru_small.jpg);
+      background-color: black;
 
   /* Add the blur effect */
 /*  filter: blur(4px);
@@ -42,7 +47,7 @@ video{
   /*display: block;*/
   background-color: black;
   width: 100%; 
-  height: 100px; 
+  height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -50,9 +55,8 @@ video{
   opacity: 1;
 }
 
-.tile_x2{
+/*.tile_x2{
   grid-area: sidex2;
-  /*display: block;*/
   width: 100%; 
   height: 100%; 
   background: black;
@@ -61,21 +65,20 @@ video{
   position: relative;
   transition: ease 3s;
   opacity: 1;
-}
+}*/
 
 
-.tile_x3{
+/*.tile_x3{
   grid-area: sidex3;
-  /*display: block;*/
   width: 100%; 
-  height: 75px; 
+  height: 100%; 
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 1s;
   opacity: 1;
-}
+}*/
 
 
 .tile_x4{
@@ -118,6 +121,102 @@ video{
 
 .tile_3{
   grid-area: side3;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_4{
+  grid-area: side4;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_5{
+  grid-area: side5;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_6{
+  grid-area: side6;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_7{
+  grid-area: side7;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_8{
+  grid-area: side8;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_9{
+  grid-area: side9;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_10{
+  grid-area: side10;
+  /*display: block;*/
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 3s;
+}
+
+.tile_11{
+  grid-area: side11;
   /*display: block;*/
   width: 100%; 
   height: 100%; 
