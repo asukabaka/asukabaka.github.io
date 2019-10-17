@@ -1,12 +1,113 @@
-body{
-  background-color: black;
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
 }
 
+@media screen and (max-width: 1500px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1300px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1100px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+/*@media screen and (max-width: 900px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: #ff0000;
+  background-size: 400% 400%;
+
+  position: relative;
+}
+}*/
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+
 .grid_background{
+  padding: 2%;
   margin: 0 auto;
 /*  width: 80vw;*/
-  height: 900px;
-  widows: 900px;
+  height: 850px;
+  widows: 850px;
   max-height: 50vw;
   max-width: 50vw;
   display: grid;
@@ -23,554 +124,793 @@ body{
 .side1{
   grid-area: x1;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
   border-style: solid;
   border-color: white;
 }
 
+.side1:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
+}
+
 .side2{
   grid-area: x2;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side2:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side3{
   grid-area: x3;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side3:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side4{
   grid-area: x4;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side4:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side5{
   grid-area: x5;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side5:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side6{
   grid-area: x6;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side6:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side7{
   grid-area: x7;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side7:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side8{
   grid-area: x8;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side8:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side9{
   grid-area: x9;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side9:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side10{
   grid-area: x10;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side10:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side11{
   grid-area: x11;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side11:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side12{
   grid-area: x12;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side12:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side13{
   grid-area: x13;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side13:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side14{
   grid-area: x14;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side14:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side15{
   grid-area: x15;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side15:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side16{
   grid-area: x16;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side16:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side17{
   grid-area: x17;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side17:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side18{
   grid-area: x18;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side18:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side19{
   grid-area: x19;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side19:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side20{
   grid-area: x20;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side20:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side21{
   grid-area: x21;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
 }
 
-.side22{
-  grid-area: x22;
-  /*display: block;*/
-  background-color: black;
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease 3s;
-  opacity: 1;
-    border-style: solid;
-  border-color: white;
+.side21:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side22{
   grid-area: x22;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
 }
+
+
+.side22:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
+}
+
 
 .side23{
   grid-area: x23;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side23:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side24{
   grid-area: x24;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side24:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side25{
   grid-area: x25;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side25:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side26{
   grid-area: x26;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side26:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side27{
   grid-area: x27;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side27:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side28{
   grid-area: x28;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side28:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side29{
   grid-area: x29;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side29:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side30{
   grid-area: x30;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side30:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side31{
   grid-area: x31;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side31:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side32{
   grid-area: x32;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side32:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side33{
   grid-area: x33;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side33:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side34{
   grid-area: x34;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side34:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }
 
 .side35{
   grid-area: x35;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
 }
 
+.side35:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
+}
+
 .side36{
   grid-area: x36;
   /*display: block;*/
-  background-color: black;
-  width: 100%; 
+/*  background-color: white;
+*/  width: 100%; 
   height: 100%; 
   overflow: hidden;
+  transform: rotate(45deg);
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease 5s;
   opacity: 1;
     border-style: solid;
   border-color: white;
+}
+
+.side36:hover{
+transform: rotate(0deg);
+transition: ease .5s;
+background-color: white;
 }

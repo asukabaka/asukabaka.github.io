@@ -1,0 +1,207 @@
+body{
+  background-color: black;
+}
+
+img{
+/*  height: auto;
+  width: 100%;*/
+  object-fit: cover;
+}
+
+.grid_background{
+  position: absolute;
+/*  padding: 2%;*/
+  margin: 0 auto;
+/*  width: 80vw;*/
+  height: 50vw;
+  width: 100vw;
+ /* max-height: 50%;*/
+  /*max-width: 50vw;*/
+  display: grid;
+  grid-template-columns: repeat(6, 6);
+  grid-template-areas: "x1 x1 x1 x1 x1 x1"
+                       "x1 x1 x1 x1 x1 x1"
+                       "x1 x1 x1 x1 x1 x1"
+                       "x2 x2 x2 x2 x2 x2"
+                       "x2 x2 x2 x2 x2 x2"
+                       "x2 x2 x2 x2 x2 x2"
+                       ;
+}
+
+.side1{
+  grid-area: x1;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.side2{
+  grid-area: x2;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  
+}
+
+.grid_background2{
+  z-index: -1;
+  position: absolute;
+/*  padding: 2%;*/
+  margin: 0 auto;
+/*  width: 80vw;*/
+  height: 50vw;
+  width: 100vw;
+ /* max-height: 50%;*/
+  /*max-width: 50vw;*/
+  display: grid;
+  grid-template-columns: repeat(6, 6);
+  grid-template-areas: "x3 x3 x3 x3 x3 x3"
+                       "x3 x3 x3 x3 x3 x3"
+                       "x3 x3 x3 x3 x3 x3"
+                       "x4 x4 x4 x4 x4 x4"
+                       "x4 x4 x4 x4 x4 x4"
+                       "x4 x4 x4 x4 x4 x4"
+                       ;
+}
+
+.side5{
+  grid-area: x3;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.side6{
+  grid-area: x4;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  
+}
+
+
+.grid_background3{
+  z-index: -3;
+  position: absolute;
+/*  padding: 2%;*/
+  margin: 0 auto;
+/*  width: 80vw;*/
+  height: 50vw;
+  width: 100vw;
+ /* max-height: 50%;*/
+  /*max-width: 50vw;*/
+  display: grid;
+  grid-template-columns: repeat(6, 6);
+  grid-template-areas: "x5 x5 x5 x5 x5 x5"
+                       "x5 x5 x5 x5 x5 x5"
+                       "x5 x5 x5 x5 x5 x5"
+                       "x6 x6 x6 x6 x6 x6"
+                       "x6 x6 x6 x6 x6 x6"
+                       "x6 x6 x6 x6 x6 x6"
+                       ;
+}
+
+.side3{
+  grid-area: x5;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.side4{
+  grid-area: x4;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  
+}
+
+.grid_background4{
+  mix-blend-mode: lighten;
+  opacity: 100%;
+  z-index: -2;
+  position: absolute;
+/*  padding: 2%;*/
+  margin: 0 auto;
+/*  width: 80vw;*/
+  height: 50vw;
+  width: 100vw;
+ /* max-height: 50%;*/
+  /*max-width: 50vw;*/
+  display: grid;
+  grid-template-columns: repeat(6, 6);
+  grid-template-areas: "x7 x7 x7 x7 x7 x7"
+                       "x7 x7 x7 x7 x7 x7"
+                       "x8 x8 x8 x8 x8 x8"
+                       "x8 x8 x8 x8 x8 x8"
+                       "x8 x8 x8 x8 x8 x8"
+                       "x8 x8 x8 x8 x8 x8"
+                       ;
+}
+
+.side7{
+  grid-area: x7;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.side8{
+  grid-area: x8;
+  /*display: block;*/
+
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  
+}
+
+.tree{
+  width: 100%;
+}
+
+.mountain{
+  width: 100%;
+}
