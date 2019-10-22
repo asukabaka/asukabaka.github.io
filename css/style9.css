@@ -134,7 +134,7 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
   grid-area: x1;
   background-color: black;
   width: 100%; 
-  height: .5vw; 
+  height: .5vw; /*The height gradually increases with each grid area to give a sense of depth and distance.*/
   transition: ease .5s;
   opacity: .15
   transform: rotate( 4deg); /*Everything is rotated slightly by 4deg to give the page a lattace like behavior.*/
