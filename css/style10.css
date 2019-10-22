@@ -1,6 +1,11 @@
-
 /*Gradient is code I made from my previous artwork ItsSikyo
 */
+
+/* A gradient tilted 45 degrees,
+   starting blue and finishing red */
+
+/*This tells where the the gradient position starts and where it ends and is linked to CSS animation code above. 
+For example at 0% time the gradient progresses until 100%*/
 
 body {
   width: 100wh;
