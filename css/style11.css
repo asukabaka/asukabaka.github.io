@@ -5,20 +5,23 @@ video{
 
 body{
   background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 img{
   object-fit: cover;
-  width: 100%;
+height: 100%;
 }
 
 .grid_background{
   position: absolute; /*Position absolute is required to have everything overlay on top of each other.*/
   margin: 0 auto;
-  height: 50vw;
+  height: 100%;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(6, 6);
+  grid-template-columns: repeat(6, 6fr);
   grid-template-areas: "x1 x1 x1 x1 x1 x1" /*Basic grid template area. But the difference for this grid is I have made the same grid*/
                        "x1 x1 x1 x1 x1 x1" /*layout and size and put position absolute and arranged elements by the grid areas by*/
                        "x1 x1 x1 x1 x1 x1" /*positioning them in different places in CSS*/
@@ -52,10 +55,10 @@ img{
   z-index: -1;
   position: absolute;
   margin: 0 auto;
-  height: 50vw;
+  height: 100%;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(6, 6);
+  grid-template-columns: repeat(6, 6fr);
   grid-template-areas: "x3 x3 x3 x3 x3 x3"
                        "x3 x3 x3 x3 x3 x3"
                        "x3 x3 x3 x3 x3 x3"
@@ -102,10 +105,10 @@ img{
   z-index: -2;
   position: absolute;
   margin: 0 auto;
-  height: 50vw;
+  height: 100%;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(6, 6);
+  grid-template-columns: repeat(6, 6fr);
   grid-template-areas: "x7 x7 x7 x7 x7 x7"
                        "x7 x7 x7 x7 x7 x7"
                        "x8 x8 x8 x8 x8 x8"
@@ -135,4 +138,8 @@ img{
   overflow: hidden;
   text-align: center;
   position: relative;
+}
+
+.tree{
+  width: 100%;
 }
