@@ -79,6 +79,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
   }
 }
 
+/*This code works because there is a giant gradient and this keyframe animation slowly moves it back and forth to make that gradual change.*/
+
 @-moz-keyframes Gradient {
   0% {
     background-position: 0% 50%
