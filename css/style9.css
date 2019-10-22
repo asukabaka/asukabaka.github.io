@@ -12,7 +12,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background: linear-gradient(-45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -25,7 +25,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background: linear-gradient(-45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -39,7 +39,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background: linear-gradient(-45deg, #ffe6ff, #ffe6ff, #00e9ff, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -53,7 +53,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background: linear-gradient(-45deg, #ffe6ff, #ffe6ff, #00e9ff, #00e9ff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -128,7 +128,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .15;
 /*  border-style: solid;
   border-color: white;*/
@@ -137,7 +137,7 @@ body {
 
 .side1:hover{
   transform: rotate( -4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side2{
@@ -149,7 +149,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .20;
   /*  border-style: solid;
   border-color: white;*/
@@ -158,7 +158,7 @@ body {
 
 .side2:hover{
   transform: rotate( 4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side3{
@@ -170,7 +170,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .25;
   /*  border-style: solid;
   border-color: white;*/
@@ -179,7 +179,7 @@ body {
 
 .side3:hover{
   transform: rotate( -4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side4{
@@ -191,7 +191,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .3;
   /*  border-style: solid;
   border-color: white;*/
@@ -200,7 +200,7 @@ body {
 
 .side4:hover{
   transform: rotate( 4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side5{
@@ -212,7 +212,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .35;
   /*  border-style: solid;
   border-color: white;*/
@@ -221,7 +221,7 @@ body {
 
 .side5:hover{
   transform: rotate( -4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side6{
@@ -233,7 +233,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .4;
   /*  border-style: solid;
   border-color: white;*/
@@ -242,7 +242,7 @@ body {
 
 .side6:hover{
   transform: rotate( 4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side7{
@@ -254,7 +254,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .45;
   /*  border-style: solid;
   border-color: white;*/
@@ -263,7 +263,7 @@ body {
 
 .side7:hover{
   transform: rotate( -4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side8{
@@ -275,7 +275,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .5;
   /*  border-style: solid;
   border-color: white;*/
@@ -284,7 +284,7 @@ body {
 
 .side8:hover{
   transform: rotate( 4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side9{
@@ -296,7 +296,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .55;
   /*  border-style: solid;
   border-color: white;*/
@@ -305,7 +305,7 @@ body {
 
 .side9:hover{
   transform: rotate( -4deg);
-    transition: ease 3s;
+    transition: ease .5s;
 }
 
 .side10{
@@ -317,7 +317,7 @@ body {
   overflow: hidden;
   text-align: center;
   position: relative;
-  transition: ease 3s;
+  transition: ease .5s;
   opacity: .6;
   /*  border-style: solid;
   border-color: white;*/
@@ -327,7 +327,7 @@ body {
 
 .side10:hover{
   transform: rotate( 4deg);
-    transition: ease 3s;
+    transition: ease .5s;
           border-style: solid;
   border-color: white;
   transform: scale(1.5);
