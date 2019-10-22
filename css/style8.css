@@ -1,14 +1,112 @@
-body{
-  background-color: black;
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #3a0000, #00353a, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1300px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 1100px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+}
+}
+
+/*@media screen and (max-width: 900px) {
+body {
+  width: 100wh;
+  height: 100vh;
+  color: white;
+  background: #ff0000;
+  background-size: 400% 400%;
+
+  position: relative;
+}
+}*/
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .grid_background{
   margin: 0 auto;
 /*  width: 80vw;*/
-  height: 900px;
-  widows: 900px;
-  max-height: 50vw;
-  max-width: 50vw;
+  height: 100%;
+  widows: 100%;
+  max-height: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 6fr);
   grid-template-areas: "x1 x1 x1 x1 x1 x1"
@@ -18,169 +116,292 @@ body{
                        "x2 x6 x7 x7 x7 x4"
                        "x2 x3 x3 x3 x3 x3"
                        ;
+  transition: ease 3s;
 }
 
 .side1{
   grid-area: x1;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+  /*border-style: solid;
+  border-color: white;*/
+}
+
+.side1:hover{
+background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-  border-style: solid;
-  border-color: white;
 }
 
 .side2{
   grid-area: x2;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side2:hover{
+background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side3{
   grid-area: x3;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side3:hover{
+background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side4{
   grid-area: x4;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side4:hover{
+background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side5{
   grid-area: x5;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side5:hover{
+background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side6{
   grid-area: x6;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side6:hover{
+background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side7{
   grid-area: x7;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side7:hover{
+background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side8{
   grid-area: x8;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side8:hover{
+background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side9{
   grid-area: x9;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side9:hover{
+background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side10{
   grid-area: x10;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+  background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side10:hover{
+background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
 
 .side11{
   grid-area: x11;
   /*display: block;*/
-  background-color: black;
+  /*background-color: black;*/
+background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 3s;
+  opacity: .4;
+    /*border-style: solid;
+  border-color: white;*/
+}
+
+.side11:hover{
+background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
+  transition: ease 3s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
 }
