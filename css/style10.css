@@ -61,6 +61,11 @@ body {
 }
 }
 
+/*------------------FROM MDN-------------------------
+Since the timing of the animation is defined in the CSS style that configures the animation, 
+keyframes use a <percentage> to indicate the time during the animation sequence at which they take place. 
+0% indicates the first moment of the animation sequence, while 100% indicates the final state of the animation.
+*/
 
 @-webkit-keyframes Gradient {
   0% {
