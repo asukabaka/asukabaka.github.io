@@ -1,3 +1,9 @@
+
+video{
+  width: 100vw;
+  height: 100%;
+}
+
 body{
   background-color: black;
 }
@@ -75,31 +81,6 @@ img{
                        ;
 }
 
-.side5{
-  grid-area: x3;
-  /*display: block;*/
-
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-
-
-}
-
-.side6{
-  grid-area: x4;
-  /*display: block;*/
-
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-
-  
-}
 
 
 .grid_background3{
@@ -108,45 +89,8 @@ img{
 /*  padding: 2%;*/
   margin: 0 auto;
 /*  width: 80vw;*/
-  height: 50vw;
+  height: 100%;
   width: 100vw;
- /* max-height: 50%;*/
-  /*max-width: 50vw;*/
-  display: grid;
-  grid-template-columns: repeat(6, 6);
-  grid-template-areas: "x5 x5 x5 x5 x5 x5"
-                       "x5 x5 x5 x5 x5 x5"
-                       "x5 x5 x5 x5 x5 x5"
-                       "x6 x6 x6 x6 x6 x6"
-                       "x6 x6 x6 x6 x6 x6"
-                       "x6 x6 x6 x6 x6 x6"
-                       ;
-}
-
-.side3{
-  grid-area: x3;
-  /*display: block;*/
-
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-
-
-}
-
-.side4{
-  grid-area: x4;
-  /*display: block;*/
-
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-
-  
 }
 
 .grid_background4{

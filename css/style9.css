@@ -1,3 +1,7 @@
+
+/*Gradient is code I made from my previous artwork ItsSikyo
+*/
+
 body {
   width: 100wh;
   height: 100vh;
@@ -117,7 +121,6 @@ body {
                         "x8 x8 x8 x8 x8 x8"
                        "x9 x9 x9 x9 x9 x9"
                        "x10 x10 x10 x10 x10 x10"
-                       "x11 x11 x11 x11 x11 x11"
                        ;
 }
 
@@ -314,7 +317,7 @@ body {
   grid-area: x10;
   /*display: block;*/
   background-color: black;
-  width: 100%; 
+  width: 100vw; 
   height: 9vw; 
   overflow: hidden;
   text-align: center;
@@ -330,20 +333,7 @@ body {
 .side10:hover{
   transform: rotate( 4deg);
     transition: ease 3s;
-}
-
-.side11{
-  grid-area: x11;
-  /*display: block;*/
-  background-color: black;
-  width: 100vw; 
-  height: 10vw; 
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease 3s;
-  opacity: .65;
-  /*  border-style: solid;
-  border-color: white;*/
-/*  transform: rotate( -4deg);*/
+          border-style: solid;
+  border-color: white;
+  transform: scale(1.5);
 }

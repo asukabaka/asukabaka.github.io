@@ -1,3 +1,8 @@
+
+
+/*Gradient is code I made from my previous artwork ItsSikyo
+*/
+
 body {
   width: 100wh;
   height: 100vh;
@@ -394,8 +399,6 @@ background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff)
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side11:hover{
@@ -404,4 +407,7 @@ background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   transition: ease 3s;
   opacity: 1;
+    border-style: solid;
+  border-color: white;
+  transform: scale(1.5);
 }
