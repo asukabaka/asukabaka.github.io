@@ -8,20 +8,14 @@ body{
 }
 
 img{
-/*  height: auto;
-  width: 100%;*/
   object-fit: cover;
 }
 
 .grid_background{
   position: absolute;
-/*  padding: 2%;*/
   margin: 0 auto;
-/*  width: 80vw;*/
   height: 50vw;
   width: 100vw;
- /* max-height: 50%;*/
-  /*max-width: 50vw;*/
   display: grid;
   grid-template-columns: repeat(6, 6);
   grid-template-areas: "x1 x1 x1 x1 x1 x1"
@@ -35,8 +29,6 @@ img{
 
 .side1{
   grid-area: x1;
-  /*display: block;*/
-
   width: 100%; 
   height: 100%; 
   overflow: hidden;
@@ -48,8 +40,6 @@ img{
 
 .side2{
   grid-area: x2;
-  /*display: block;*/
-
   width: 100%; 
   height: 100%; 
   overflow: hidden;
@@ -62,13 +52,9 @@ img{
 .grid_background2{
   z-index: -1;
   position: absolute;
-/*  padding: 2%;*/
   margin: 0 auto;
-/*  width: 80vw;*/
   height: 50vw;
   width: 100vw;
- /* max-height: 50%;*/
-  /*max-width: 50vw;*/
   display: grid;
   grid-template-columns: repeat(6, 6);
   grid-template-areas: "x3 x3 x3 x3 x3 x3"
@@ -85,9 +71,7 @@ img{
 .grid_background3{
   z-index: -3;
   position: absolute;
-/*  padding: 2%;*/
   margin: 0 auto;
-/*  width: 80vw;*/
   width: 100vw;
   height: 100%;
   overflow: hidden;
@@ -98,13 +82,9 @@ img{
   opacity: 100%;
   z-index: -2;
   position: absolute;
-/*  padding: 2%;*/
   margin: 0 auto;
-/*  width: 80vw;*/
   height: 50vw;
   width: 100vw;
- /* max-height: 50%;*/
-  /*max-width: 50vw;*/
   display: grid;
   grid-template-columns: repeat(6, 6);
   grid-template-areas: "x7 x7 x7 x7 x7 x7"
@@ -118,8 +98,6 @@ img{
 
 .side7{
   grid-area: x7;
-  /*display: block;*/
-
   width: 100%; 
   height: 100%; 
   overflow: hidden;
@@ -131,8 +109,6 @@ img{
 
 .side8{
   grid-area: x8;
-  /*display: block;*/
-
   width: 100%; 
   height: 100%; 
   overflow: hidden;
