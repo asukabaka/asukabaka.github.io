@@ -150,7 +150,6 @@ background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side2{
   grid-area: x2;
-
   background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -173,7 +172,6 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side3{
   grid-area: x3;
-
   background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -196,7 +194,6 @@ background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side4{
   grid-area: x4;
-
   background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -220,7 +217,6 @@ background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff)
 
 .side5{
   grid-area: x5;
-
   background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -243,7 +239,6 @@ background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side6{
   grid-area: x6;
-
   background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -266,7 +261,6 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side7{
   grid-area: x7;
-
   background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -289,7 +283,6 @@ background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side8{
   grid-area: x8;
-
   background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -312,7 +305,6 @@ background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff)
 
 .side9{
   grid-area: x9;
-
   background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -335,7 +327,6 @@ background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side10{
   grid-area: x10;
-
   background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
@@ -358,7 +349,6 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 
 .side11{
   grid-area: x11;
-
 background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
