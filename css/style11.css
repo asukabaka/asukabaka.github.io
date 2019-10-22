@@ -9,6 +9,7 @@ body{
 
 img{
   object-fit: cover;
+  width: 100%;
 }
 
 .grid_background{
@@ -18,9 +19,9 @@ img{
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(6, 6);
-  grid-template-areas: "x1 x1 x1 x1 x1 x1"
-                       "x1 x1 x1 x1 x1 x1"
-                       "x1 x1 x1 x1 x1 x1"
+  grid-template-areas: "x1 x1 x1 x1 x1 x1" /*Basic grid template area. But the difference for this grid is I have made the same grid*/
+                       "x1 x1 x1 x1 x1 x1" /*layout and size and put position absolute and arranged elements by the grid areas by*/
+                       "x1 x1 x1 x1 x1 x1" /*positioning them in different places in CSS*/
                        "x2 x2 x2 x2 x2 x2"
                        "x2 x2 x2 x2 x2 x2"
                        "x2 x2 x2 x2 x2 x2"
@@ -65,7 +66,31 @@ img{
                        "x4 x4 x4 x4 x4 x4"
                        ;
 }
+/*Basic grid template area. But the difference for this grid is I have made the same grid*/
+/*layout and size and put position absolute and arranged elements by the grid areas by*/
+/*positioning them in different places in CSS*/
 
+.side3{
+  grid-area: x3;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.side4{
+  grid-area: x4;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  
+}
 
 
 .grid_background3{
@@ -96,6 +121,10 @@ img{
                        ;
 }
 
+/*Basic grid template area. But the difference for this grid is I have made the same grid*/
+/*layout and size and put position absolute and arranged elements by the grid areas by*/
+/*positioning them in different places in CSS*/
+
 .side7{
   grid-area: x7;
   width: 100%; 
@@ -116,12 +145,4 @@ img{
   position: relative;
 
   
-}
-
-.tree{
-  width: 100%;
-}
-
-.mountain{
-  width: 100%;
 }
