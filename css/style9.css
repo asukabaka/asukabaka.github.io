@@ -99,9 +99,12 @@ body {
   }
 }
 
+/*---------------Gradient Section End ---------------
+*/
+
+
 .grid_background{
   margin: 0 auto;
-/*  width: 80vw;*/
   max-height: 100vw;
   max-width: 100vw;
   display: grid;
@@ -121,7 +124,6 @@ body {
 
 .side1{
   grid-area: x1;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: .5vw; 
@@ -129,9 +131,7 @@ body {
   text-align: center;
   position: relative;
   transition: ease .5s;
-  opacity: .15;
-/*  border-style: solid;
-  border-color: white;*/
+  opacity: .15
   transform: rotate( 4deg);
 }
 
@@ -142,7 +142,6 @@ body {
 
 .side2{
   grid-area: x2;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 1vw; 
@@ -151,8 +150,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .20;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( -4deg);
 }
 
@@ -163,7 +160,6 @@ body {
 
 .side3{
   grid-area: x3;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 2vw; 
@@ -172,8 +168,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .25;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( 4deg);
 }
 
@@ -184,7 +178,6 @@ body {
 
 .side4{
   grid-area: x4;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 3vw; 
@@ -193,8 +186,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .3;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( -4deg);
 }
 
@@ -205,7 +196,6 @@ body {
 
 .side5{
   grid-area: x5;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 4vw; 
@@ -214,8 +204,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .35;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( 4deg);
 }
 
@@ -226,7 +214,6 @@ body {
 
 .side6{
   grid-area: x6;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 5vw; 
@@ -235,8 +222,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .4;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( -4deg);
 }
 
@@ -247,7 +232,6 @@ body {
 
 .side7{
   grid-area: x7;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 6vw; 
@@ -256,8 +240,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .45;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( 4deg);
 }
 
@@ -268,7 +250,6 @@ body {
 
 .side8{
   grid-area: x8;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 7vw; 
@@ -277,8 +258,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .5;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( -4deg);
 }
 
@@ -289,7 +268,6 @@ body {
 
 .side9{
   grid-area: x9;
-  /*display: block;*/
   background-color: black;
   width: 100%; 
   height: 8vw; 
@@ -298,8 +276,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .55;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( 4deg);
 }
 
@@ -310,7 +286,6 @@ body {
 
 .side10{
   grid-area: x10;
-  /*display: block;*/
   background-color: black;
   width: 100vw; 
   height: 9vw; 
@@ -319,8 +294,6 @@ body {
   position: relative;
   transition: ease .5s;
   opacity: .6;
-  /*  border-style: solid;
-  border-color: white;*/
   transform: rotate( -4deg);
 }
 
@@ -328,7 +301,5 @@ body {
 .side10:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-          border-style: solid;
-  border-color: white;
   transform: scale(1.5);
 }

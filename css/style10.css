@@ -98,6 +98,8 @@ body {
   }
 }
 
+/*---------------Gradient Section End ---------------
+*/
 
 
 .grid_background{
@@ -121,9 +123,7 @@ body {
 
 .side1{
   grid-area: x1;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -143,9 +143,7 @@ background-color: white;
 
 .side2{
   grid-area: x2;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -165,9 +163,7 @@ background-color: white;
 
 .side3{
   grid-area: x3;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -187,9 +183,7 @@ background-color: white;
 
 .side4{
   grid-area: x4;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -209,9 +203,7 @@ background-color: white;
 
 .side5{
   grid-area: x5;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -231,9 +223,7 @@ background-color: white;
 
 .side6{
   grid-area: x6;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -253,9 +243,7 @@ background-color: white;
 
 .side7{
   grid-area: x7;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -275,9 +263,7 @@ background-color: white;
 
 .side8{
   grid-area: x8;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -297,9 +283,7 @@ background-color: white;
 
 .side9{
   grid-area: x9;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -319,9 +303,7 @@ background-color: white;
 
 .side10{
   grid-area: x10;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -341,9 +323,7 @@ background-color: white;
 
 .side11{
   grid-area: x11;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -363,9 +343,7 @@ background-color: white;
 
 .side12{
   grid-area: x12;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -385,9 +363,7 @@ background-color: white;
 
 .side13{
   grid-area: x13;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -407,9 +383,7 @@ background-color: white;
 
 .side14{
   grid-area: x14;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -429,9 +403,7 @@ background-color: white;
 
 .side15{
   grid-area: x15;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -451,9 +423,7 @@ background-color: white;
 
 .side16{
   grid-area: x16;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -473,9 +443,7 @@ background-color: white;
 
 .side17{
   grid-area: x17;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -495,9 +463,7 @@ background-color: white;
 
 .side18{
   grid-area: x18;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -517,9 +483,7 @@ background-color: white;
 
 .side19{
   grid-area: x19;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -539,9 +503,7 @@ background-color: white;
 
 .side20{
   grid-area: x20;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -561,9 +523,7 @@ background-color: white;
 
 .side21{
   grid-area: x21;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -583,9 +543,7 @@ background-color: white;
 
 .side22{
   grid-area: x22;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -607,9 +565,7 @@ background-color: white;
 
 .side23{
   grid-area: x23;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -629,9 +585,7 @@ background-color: white;
 
 .side24{
   grid-area: x24;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -651,9 +605,7 @@ background-color: white;
 
 .side25{
   grid-area: x25;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -673,9 +625,7 @@ background-color: white;
 
 .side26{
   grid-area: x26;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -695,9 +645,7 @@ background-color: white;
 
 .side27{
   grid-area: x27;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -717,9 +665,7 @@ background-color: white;
 
 .side28{
   grid-area: x28;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -739,9 +685,7 @@ background-color: white;
 
 .side29{
   grid-area: x29;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -761,9 +705,7 @@ background-color: white;
 
 .side30{
   grid-area: x30;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -783,9 +725,7 @@ background-color: white;
 
 .side31{
   grid-area: x31;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -805,9 +745,7 @@ background-color: white;
 
 .side32{
   grid-area: x32;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -827,9 +765,7 @@ background-color: white;
 
 .side33{
   grid-area: x33;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -849,9 +785,7 @@ background-color: white;
 
 .side34{
   grid-area: x34;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -871,9 +805,7 @@ background-color: white;
 
 .side35{
   grid-area: x35;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
@@ -893,9 +825,7 @@ background-color: white;
 
 .side36{
   grid-area: x36;
-  /*display: block;*/
-/*  background-color: white;
-*/  width: 100%; 
+  width: 100%; 
   height: 100%; 
   overflow: hidden;
   transform: rotate(45deg);
