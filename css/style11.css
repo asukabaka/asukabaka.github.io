@@ -13,7 +13,7 @@ img{
 }
 
 .grid_background{
-  position: absolute;
+  position: absolute; /*Position absolute is required to have everything overlay on top of each other.*/
   margin: 0 auto;
   height: 50vw;
   width: 100vw;
@@ -32,11 +32,9 @@ img{
   grid-area: x1;
   width: 100%; 
   height: 100%; 
-  overflow: hidden;
+  overflow: hidden; /*Overflow hidden keeps everything inside their elements and keeps everything nice and tidy.*/
   text-align: center;
   position: relative;
-
-
 }
 
 .side2{
@@ -77,8 +75,6 @@ img{
   overflow: hidden;
   text-align: center;
   position: relative;
-
-
 }
 
 .side4{
@@ -88,8 +84,6 @@ img{
   overflow: hidden;
   text-align: center;
   position: relative;
-
-  
 }
 
 
@@ -132,8 +126,6 @@ img{
   overflow: hidden;
   text-align: center;
   position: relative;
-
-
 }
 
 .side8{
@@ -143,6 +135,4 @@ img{
   overflow: hidden;
   text-align: center;
   position: relative;
-
-  
 }
