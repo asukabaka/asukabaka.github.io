@@ -112,11 +112,10 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .grid_background{
   padding: 2%;
   margin: 0 auto;
-/*  width: 80vw;*/
-  height: 850px;
-  widows: 850px;
-  max-height: 50vw;
-  max-width: 50vw;
+  width: 90%;
+  height: 90%;
+  max-height: 850px;
+  max-width: 850px;
   display: grid;
   grid-template-columns: repeat(6, 6fr);
   grid-template-areas: "x1 x2 x3 x4 x5 x6"
@@ -127,6 +126,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
                        "x31 x32 x33 x34 x35 x36"
                        ;
 }
+
+/*There are ALOT of template areas....... Sorry.....*/
 
 .side1{
   grid-area: x1;
