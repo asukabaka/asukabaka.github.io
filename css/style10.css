@@ -61,17 +61,6 @@ body {
 }
 }
 
-/*@media screen and (max-width: 900px) {
-body {
-  width: 100wh;
-  height: 100vh;
-  color: white;
-  background: #ff0000;
-  background-size: 400% 400%;
-
-  position: relative;
-}
-}*/
 
 @-webkit-keyframes Gradient {
   0% {

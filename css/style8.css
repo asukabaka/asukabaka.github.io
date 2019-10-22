@@ -63,19 +63,6 @@ body {
 }
 }
 
-/*@media screen and (max-width: 900px) {
-body {
-  width: 100wh;
-  height: 100vh;
-  color: white;
-  background: #ff0000;
-  background-size: 400% 400%;
-
-  position: relative;
-}
-}*/
-
-
 
 @-webkit-keyframes Gradient {
   0% {
@@ -122,7 +109,7 @@ body {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 6fr);
-  grid-template-areas: "x1 x1 x1 x1 x1 x1"
+  grid-template-areas: "x1 x1 x1 x1 x1 x1" /*I made shapes out of the template areas to make the weird spiral shape*/
                        "x2 x5 x5 x5 x5 x4"
                        "x2 x6 x9 x9 x8 x4"
                        "x2 x6 x10 x11 x8 x4"
@@ -134,8 +121,6 @@ body {
 
 .side1{
   grid-area: x1;
-  /*display: block;*/
-  /*background-color: black;*/
   background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -145,9 +130,7 @@ body {
   text-align: center;
   position: relative;
   transition: ease 3s;
-  opacity: .4;
-  /*border-style: solid;
-  border-color: white;*/
+  opacity: .4; /*I added a bit of opacity so the pulsing background gradient could show through a bit.*/
 }
 
 .side1:hover{
@@ -160,8 +143,7 @@ background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side2{
   grid-area: x2;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -172,8 +154,6 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side2:hover{
@@ -186,8 +166,7 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side3{
   grid-area: x3;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -198,8 +177,6 @@ background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side3:hover{
@@ -212,8 +189,7 @@ background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side4{
   grid-area: x4;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -225,8 +201,6 @@ background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff)
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side4:hover{
@@ -239,8 +213,7 @@ background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff)
 
 .side5{
   grid-area: x5;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -251,8 +224,6 @@ background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side5:hover{
@@ -265,8 +236,7 @@ background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side6{
   grid-area: x6;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -277,8 +247,6 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side6:hover{
@@ -291,8 +259,7 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side7{
   grid-area: x7;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -303,8 +270,6 @@ background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side7:hover{
@@ -317,8 +282,7 @@ background: linear-gradient(to bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side8{
   grid-area: x8;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -329,8 +293,6 @@ background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff)
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side8:hover{
@@ -343,8 +305,7 @@ background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff)
 
 .side9{
   grid-area: x9;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -355,8 +316,6 @@ background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side9:hover{
@@ -369,8 +328,7 @@ background: linear-gradient(to top right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side10{
   grid-area: x10;
-  /*display: block;*/
-  /*background-color: black;*/
+
   background: -webkit-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
@@ -381,8 +339,6 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
   position: relative;
   transition: ease 3s;
   opacity: .4;
-    /*border-style: solid;
-  border-color: white;*/
 }
 
 .side10:hover{
@@ -395,8 +351,7 @@ background: linear-gradient(to top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 
 .side11{
   grid-area: x11;
-  /*display: block;*/
-  /*background-color: black;*/
+
 background: -webkit-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: -o-linear-gradient(top left, #ff0000, #ff0000, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #ff0000, #ff0000, #00e9ff, #00e9ff);
