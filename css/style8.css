@@ -13,7 +13,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #00394d, #00394d,  #339966,  #339966);
+  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -26,7 +26,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #00394d, #00394d,  #339966,  #339966);
+  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -40,7 +40,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #00394d, #00394d,  #339966,  #339966);
+  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -54,7 +54,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #00394d, #00394d,  #339966,  #339966);
+  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
