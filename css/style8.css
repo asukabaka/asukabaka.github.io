@@ -336,7 +336,5 @@ background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
-    border-style: solid;
-  border-color: white;
   transform: scale(1.5);
 }

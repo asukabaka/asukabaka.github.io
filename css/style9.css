@@ -143,7 +143,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side1:hover{
   transform: rotate( -4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
+    opacity: .8;
 }
 
 .side2{
@@ -159,7 +160,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side2:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(-45deg, #00353a, #00e9ff, #ffe6ff, #ffe6ff);
+    opacity: .8;
 }
 
 .side3{
@@ -175,7 +177,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side3:hover{
   transform: rotate( -4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
+    opacity: .8;
 }
 
 .side4{
@@ -191,7 +194,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side4:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(-45deg, #00353a, #00e9ff, #ffe6ff, #ffe6ff);
+    opacity: .8;
 }
 
 .side5{
@@ -207,7 +211,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side5:hover{
   transform: rotate( -4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
+    opacity: .8;
 }
 
 .side6{
@@ -223,7 +228,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side6:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(-45deg, #00353a, #00e9ff, #ffe6ff, #ffe6ff);
+    opacity: .8;
 }
 
 .side7{
@@ -239,7 +245,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side7:hover{
   transform: rotate( -4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
+    opacity: .8;
 }
 
 .side8{
@@ -255,7 +262,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side8:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(-45deg, #00353a, #00e9ff, #ffe6ff, #ffe6ff);
+    opacity: .8;
 }
 
 .side9{
@@ -271,7 +279,8 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side9:hover{
   transform: rotate( -4deg);
     transition: ease .5s;
-    background-color: white;
+    background: linear-gradient(45deg, #ffe6ff, #ffe6ff, #00353a, #00e9ff);
+    opacity: .8;
 }
 
 .side10{
@@ -288,7 +297,7 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 .side10:hover{
   transform: rotate( 4deg);
     transition: ease .5s;
-  transform: scale(1.5);
-  background-color: white;
-  transform: rotate( 4deg);
+  transform: scale(1.8);
+  background: linear-gradient(-45deg, #00353a, #00e9ff, #ffe6ff, #ffe6ff);
+  opacity: .8;
 }
