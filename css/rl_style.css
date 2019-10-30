@@ -185,23 +185,6 @@ i{
   padding-top: 60px;
 }
 
-.hero-section {
-
-  background: linear-gradient(transparent, black), url("../images/gallery_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 600px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .hero-section_yorha {
 
   background: url("../images/yorha_banner.jpg") 50% no-repeat;
@@ -218,6 +201,12 @@ i{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
+}
+
+@media screen and (max-width: 1400px) {
+.hero-section_yorha {
+  height: 300px;
+}
 }
 
 .hero-section_secondhand_manga {
@@ -240,22 +229,8 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_secondhand_manga {
-
-  background: url("../images/secondhand_manga_banner.jpg") 50% no-repeat;
-  background-size: cover;
   background-position: 80%;
   height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
 }
 }
 
@@ -279,49 +254,20 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_kirijo {
-
-  background: url("../images/kirijo_banner.jpg") 50% no-repeat;
-  background-size: cover;
   background-position: 40%;
   height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
 }
 }
 
 @media screen and (max-width: 800px) {
 .hero-section_kirijo {
-
-  background: url("../images/kirijo_banner.jpg") 50% no-repeat;
-  background-size: cover;
   background-position: 80%;
   height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
 }
 }
 
 
 .hero-section_hannya {
-
   background: url("../images/hannya_banner_mix.jpg") 50% no-repeat;
   background-size: cover;
   height: 600px;
@@ -340,21 +286,7 @@ i{
 
 @media screen and (max-width: 1000px) {
 .hero-section_hannya {
-
-  background: url("../images/hannya_banner_mix.jpg") 50% no-repeat;
-  background-size: cover;
   height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
 }
 }
 
@@ -378,92 +310,11 @@ i{
 
 @media screen and (max-width: 1000px) {
 .hero-section_cafe {
-
-  background: url("../images/makoto_cafe_banner.jpg") 50% no-repeat;
-  background-size: cover;
   height: 300px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease 1s;
 }
 }
 
-.hero-section_about1{
 
-  background: linear-gradient(transparent, black), url("../images/calvin_and_hobbes.jpg") 50% no-repeat;
-    height: 60vh;
-  background-size: cover;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero-section_about2{
-
-  background: url("../images/workspace.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-
-.hero-section_about3{
-
-  background: url("../images/westolh.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 90vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero-section_about4{
-
-  background: url("../images/bike.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
 .hero-section_about5{
 
@@ -483,60 +334,6 @@ i{
           justify-content: center;
 }
 
-.hero-section_about6{
-
-  background: linear-gradient(transparent, black), url("../images/hifumi_wallpaper_banner.jpg") 50% no-repeat;
-  background-size: cover;
-  background-position: 20%;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  transition: ease .5s;
-}
-
-.hero-section .hero-section-text {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
-
-.hero-section_art74 .hero-section-text {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
-
-.hero-section_about1 .hero-section-text_about1 {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
-
-.hero-section_about2 .hero-section-text_about2 {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
-
-.hero-section_about3 .hero-section-text_about3 {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
-
-.hero-section_about4 .hero-section-text_about4 {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-  margin-left: 18px;
-}
 
 .hero-section_about5 .hero-section-text_about5 {
   color: #fefefe;
@@ -555,10 +352,6 @@ i{
   font-size: 1.5em;
 }
 
-.marketing-site-footer .column-block {
-  margin-bottom: 30px;
-}
-
 .marketing-site-footer > .row {
   margin-bottom: 1rem;
 }
@@ -574,10 +367,6 @@ i{
   padding: 1rem 0;
 }
 
-.marketing-site-footer-bottom p,
-.marketing-site-footer-bottom .menu {
-  margin-bottom: 0;
-}
 
 .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
   -webkit-justify-content: center;
@@ -680,20 +469,7 @@ i{
 }
 
 .frontpage_artwork_text_left:hover {
-  font-family: 'Rajdhani', sans-serif;
-  width:100%;
-  height: inherit;
-  font-size: 2em;
-  color: white;
-  text-align: center;
-  background: linear-gradient(135deg, black, transparent);
-  padding-top: 20px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   opacity: 1;
-  transition: ease .5s;
 }
 
 .frontpage_artwork_text_right{
@@ -714,20 +490,7 @@ i{
 }
 
 .frontpage_artwork_text_right:hover {
-  font-family: 'Rajdhani', sans-serif;
-  width:100%;
-  height: inherit;
-  font-size: 2em;
-  color: white;
-  text-align: center;
-  background: linear-gradient(-135deg, black, transparent);
-  padding-top: 20px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   opacity: 1;
-  transition: ease .5s;
 }
 
 /* PARALLELOGRAM */
@@ -741,6 +504,21 @@ i{
     overflow: hidden;
 }
 
+
+@media screen and (max-width: 900px) {
+  .parallelograms {
+  max-height: 600px;
+  grid-template-rows:  600px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .parallelograms {
+  max-height: 400px;
+  grid-template-rows:  400px;
+}
+}
+
 .parallelograms_row2 {
   margin: 0 auto;
   max-width: 100vw;
@@ -751,58 +529,10 @@ i{
     overflow: hidden;
 }
 
-@media screen and (max-width: 1800px) {
-  .parallelograms {
-    margin: 0 auto;
-  max-width: 100vw;
-  display: grid;
-/*  grid-gap: 15px;*/
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "side1 side2 side3 side4" ;
-  overflow: hidden;
-}
-}
-
-
 @media screen and (max-width: 900px) {
-  .parallelograms {
-  margin: 0 auto;
-  max-width: 100vw;
+  .parallelograms_row2 {
   max-height: 600px;
-  display: grid;
-/*  grid-gap: 15px;*/
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows:  600px;
-  grid-template-areas: "side1 side2 side3 side4" ;
-  overflow: hidden;
-}
-}
-
-@media screen and (max-width: 600px) {
-  .parallelograms {
-  margin: 0 auto;
-  max-width: 100vw;
-  max-height: 400px;
-  display: grid;
-/*  grid-gap: 5px;*/
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows:  400px;
-  grid-template-areas: "side1 side2 side3 side4" ;
-  overflow: hidden;
-}
-}
-
-@media screen and (max-width: 450px) {
-  .parallelograms {
-  margin: 0 auto;
-  max-width: 100vw;
-  max-height: 400px;
-  display: grid;
-/*  grid-gap: 5px;*/
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows:  400px;
-  grid-template-areas: "side1 side2 side3 side4" ;
-  overflow: hidden;
 }
 }
 
@@ -851,6 +581,12 @@ i{
   transition: ease .5s;
 }
 
+@media screen and (max-width: 900px) {
+.parallelogram_row2 {
+  height: 600px;
+}
+}
+
 .parallelogram {
   display: block;
   width: 100%; 
@@ -866,146 +602,23 @@ i{
   transition: ease .5s;
 }
 
-@media screen and (max-width: 1800px) {
-.parallelogram {
-  display: block;
-  width: 100%;  
-  height: 850px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
-}
-}
-
-@media screen and (max-width: 1600px) {
-.parallelogram {
-  display: block;
-  width: 100%; 
-  height: 850px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
-}
-}
-
-@media screen and (max-width: 1400px) {
-.parallelogram {
-  display: block;
-  width: 100%; 
-  height: 850px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
-}
-}
-
-@media screen and (max-width: 1400px) {
-.parallelogram {
-  display: block;
-  width: 100%; 
-  height: 850px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
-}
-}
-
-@media screen and (max-width: 1200px) {
-.parallelogram {
-  display: block;
-  width: 100%; 
-  height: 850px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
-}
-}
 
 @media screen and (max-width: 900px) {
 .parallelogram {
-  display: block;
-  width: 100%;  
-  height: 600px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-/*  -moz-transform: transition: ease .5s;*/
+  height: 600px;
 }
 }
 
 @media screen and (max-width: 600px) {
 .parallelogram {
-  display: block;
-  width: 100%; 
   height: 400px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
 }
 }
 
 @media screen and (max-width: 450px) {
 .parallelogram {
   margin-left: -15px;
-  display: block;
-  width: 100%; 
   height: 400px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
 }
 }
 
@@ -1199,27 +812,6 @@ top: -275px;
 }
 }
 
-.img__description_2 {
-  position: absolute;
-  top: 850px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  height: 850px;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  /* transition effect. not necessary */
-  transition: opacity .75s, visibility .75s;
-}
-}
 
 @media screen and (max-width: 900px) {
   .img__description {
@@ -1276,17 +868,33 @@ top: -275px;
 
 @media screen and (max-width: 900px) {
 .parallelogram:hover .img__description {
-  visibility: visible;
-  opacity: 1;
   height: 600px;
 }
 }
 
 @media screen and (max-width: 600px) {
 .parallelogram:hover .img__description {
-  visibility: visible;
-  opacity: 1;
   height: 400px;
+}
+}
+
+.img__description_2 {
+  position: absolute;
+  top: 850px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  height: 850px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: opacity .75s, visibility .75s;
 }
 }
 
@@ -1316,16 +924,9 @@ top: -275px;
 }
 @media screen and (max-width: 400px) {
   .SFD_logo_tall {
-  display: block;
   width: 351px;
   height: 160px;
-  background: url(../images/SFD_logo_tall.svg);
-  background-size: 351px 160px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5rem ;
-  opacity: 1;
-  transition: ease .5s;    
+  background-size: 351px 160px; 
 }
 }
 
