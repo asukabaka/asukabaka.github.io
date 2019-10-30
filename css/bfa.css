@@ -10,6 +10,12 @@ body {
   position: relative;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%
@@ -69,8 +75,8 @@ h2{
   margin: 0 auto;
   width: 90%;
   height: 90%;
-  max-height: 850px;
-  max-width: 850px;
+  max-height: 650px;
+  max-width: 650px;
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-template-areas: "x1 x2 x3"
@@ -263,9 +269,9 @@ background-color: white;
 
 
 .nav{
-  padding: 3%;
+  padding-top: 4%;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 2);
   grid-template-areas: "nav1 nav2"
@@ -298,10 +304,172 @@ background-color: white;
 .nav3{
   grid-area: nav3;
   width: 100%; 
-  height: 300px; 
+  height: 150px; 
   overflow: hidden;
   text-align: center;
   position: relative;
   transition: ease 5s;
+  opacity: 1;
+}
+
+
+
+.grid_gallery{
+  margin: 0 auto;
+/*  width: 80vw;*/
+  height: 100%;
+  widows: 100%;
+  max-height: 900px;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(6, 6fr);
+  grid-template-areas: "z3 z3 z1 z1 z2 z2" /*I made shapes out of the template areas to make the weird spiral shape*/
+                       "z3 z3 z1 z1 z2 z2"
+                       "z3 z3 z4 z4 z4 z4"
+                       "z5 z5 z6 z7 z7 z8"
+                       "z5 z5 z6 z7 z7 z8"
+                       "z10 z10 z9 z9 z9 z8"
+                       ;
+  transition: ease 3s;
+  overflow: hidden;
+}
+
+.gallery1{
+  grid-area: z1;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4; /*I added a bit of opacity so the pulsing background gradient could show through a bit.*/
+}
+
+.gallery1:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery2{
+  grid-area: z2;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery2:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery3{
+  grid-area: z3;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery3:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery4{
+  grid-area: z4;
+  transition: ease 3s;
+  overflow: hidden;
+  width: 100%; 
+  height: 100%; 
+  opacity: .4;
+}
+
+.gallery4:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery5{
+  grid-area: z5;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery5:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery6{
+  grid-area: z6;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery6:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery7{
+  grid-area: z7;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery7:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery8{
+  grid-area: z8;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery8:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery9{
+  grid-area: z9;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery9:hover{
+  transition: ease .5s;
+  opacity: 1;
+}
+
+.gallery10{
+  grid-area: z10;
+  width: 100%; 
+  height: 100%; 
+  transition: ease 3s;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.gallery10:hover{
+  transition: ease .5s;
   opacity: 1;
 }
