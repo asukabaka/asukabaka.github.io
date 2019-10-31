@@ -1,12 +1,12 @@
 body {
-  width: 100wh;
+  width: 100vw;
   height: 100vh;
   color: white;
   background: linear-gradient(-45deg, #ffcc80, #ffcc80, #00353a, #00e9ff);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
+  -webkit-animation: Gradient 80s ease infinite;
+  -moz-animation: Gradient 80s ease infinite;
+  animation: Gradient 80s ease infinite;
   position: relative;
 }
 
@@ -51,6 +51,19 @@ img{
   100% {
     background-position: 0% 50%
   }
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+p.hover_description{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
 }
 
 
@@ -99,6 +112,8 @@ h2{
   border-style: solid;
   border-color: white;
 }
+
+
 
 .side1:hover{
 transform: rotate(0deg);
@@ -273,7 +288,7 @@ background-color: white;
   margin: 0 auto;
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(3, 2);
+  grid-template-columns: repeat(2, 2);
   grid-template-areas: "nav1 nav2"
                        "nav3 nav3"
                        ;
@@ -316,22 +331,18 @@ background-color: white;
 
 .grid_gallery{
   margin: 0 auto;
-/*  width: 80vw;*/
+  max-width: 1000px;
   height: 100%;
-  widows: 100%;
-  max-height: 900px;
-  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(6, 6fr);
-  grid-template-areas: "z3 z3 z1 z1 z2 z2" /*I made shapes out of the template areas to make the weird spiral shape*/
-                       "z3 z3 z1 z1 z2 z2"
-                       "z3 z3 z4 z4 z4 z4"
+  grid-template-areas: "z1 z1 z2 z2 z3 z3"
+                       "z1 z1 z2 z2 z3 z3"
+                       "z1 z1 z4 z4 z4 z4"
                        "z5 z5 z6 z7 z7 z8"
                        "z5 z5 z6 z7 z7 z8"
                        "z10 z10 z9 z9 z9 z8"
                        ;
   transition: ease 3s;
-  overflow: hidden;
 }
 
 .gallery1{
@@ -339,8 +350,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4; /*I added a bit of opacity so the pulsing background gradient could show through a bit.*/
+  opacity: .8;
 }
 
 .gallery1:hover{
@@ -353,8 +363,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery2:hover{
@@ -367,8 +376,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery3:hover{
@@ -379,10 +387,9 @@ background-color: white;
 .gallery4{
   grid-area: z4;
   transition: ease 3s;
-  overflow: hidden;
   width: 100%; 
   height: 100%; 
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery4:hover{
@@ -395,8 +402,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery5:hover{
@@ -409,8 +415,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery6:hover{
@@ -423,8 +428,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery7:hover{
@@ -437,8 +441,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery8:hover{
@@ -451,8 +454,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery9:hover{
@@ -465,8 +467,7 @@ background-color: white;
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
-  overflow: hidden;
-  opacity: .4;
+  opacity: .8;
 }
 
 .gallery10:hover{

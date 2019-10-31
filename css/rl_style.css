@@ -896,7 +896,6 @@ top: -275px;
   align-items: flex-end;
   transition: opacity .75s, visibility .75s;
 }
-}
 
 .parallelogram:hover .img__description_2 {
   visibility: visible;
