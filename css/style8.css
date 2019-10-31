@@ -13,7 +13,7 @@ body {
   width: 100wh;
   height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
+  background: linear-gradient(-45deg, #0099cc, black,  grey,  #b3ecff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
@@ -21,47 +21,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1500px) {
-body {
-  width: 100wh;
-  height: 100vh;
-  color: white;
-  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
-  position: relative;
-}
-}
-
-@media screen and (max-width: 1300px) {
-body {
-  width: 100wh;
-  height: 100vh;
-  color: white;
-  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
-  position: relative;
-}
-}
-
-@media screen and (max-width: 1100px) {
-body {
-  width: 100wh;
-  height: 100vh;
-  color: white;
-  background: linear-gradient(-45deg, black, #0099cc,  #b3ecff,  grey);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
-  position: relative;
-}
-}
 
 /*------------------FROM MDN-------------------------
 Since the timing of the animation is defined in the CSS style that configures the animation, 
@@ -130,9 +89,9 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 
 .side1{
   grid-area: x1;
-  background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-  background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-  background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+  background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+  background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -140,18 +99,18 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
 }
 
 .side1:hover{
-background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side2{
   grid-area: x2;
-  background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -159,18 +118,18 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side2:hover{
-background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side3{
   grid-area: x3;
-  background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -178,18 +137,18 @@ background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side3:hover{
-background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side4{
   grid-area: x4;
-  background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease 3s;
   width: 100%; 
   height: 100%; 
@@ -198,18 +157,18 @@ background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff)
 }
 
 .side4:hover{
-background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side5{
   grid-area: x5;
-  background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -217,18 +176,18 @@ background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side5:hover{
-background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side6{
   grid-area: x6;
-  background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -236,18 +195,18 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side6:hover{
-background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side7{
   grid-area: x7;
-  background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -255,18 +214,18 @@ background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side7:hover{
-background: -webkit-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side8{
   grid-area: x8;
-  background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -274,18 +233,18 @@ background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff)
 }
 
 .side8:hover{
-background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side9{
   grid-area: x9;
-  background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -293,18 +252,18 @@ background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side9:hover{
-background: -webkit-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side10{
   grid-area: x10;
-  background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+  background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -312,18 +271,18 @@ background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
 }
 
 .side10:hover{
-background: -webkit-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
 }
 
 .side11{
   grid-area: x11;
-background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   width: 100%; 
   height: 100%; 
   transition: ease 3s;
@@ -331,9 +290,9 @@ background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff)
 }
 
 .side11:hover{
-background: -webkit-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: -o-linear-gradient(top left, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
-background: linear-gradient(to bottom right, #b3ffe0, #b3ffe0, #00e9ff, #00e9ff);
+background: -webkit-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: -o-linear-gradient(top left, #ffd699, #ffd699, #00e9ff, #00e9ff);
+background: linear-gradient(to bottom right, #ffd699, #ffd699, #00e9ff, #00e9ff);
   transition: ease .5s;
   opacity: 1;
   transform: scale(1.5);
