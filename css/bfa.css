@@ -5,9 +5,9 @@ body {
   color: white;
   background: linear-gradient(-45deg, #ffcc80, black, #00384d, black);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 80s ease infinite;
-  -moz-animation: Gradient 80s ease infinite;
-  animation: Gradient 80s ease infinite;
+  -webkit-animation: Gradient 60s ease infinite;
+  -moz-animation: Gradient 60s ease infinite;
+  animation: Gradient 60s ease infinite;
   position: relative;
 }
 
@@ -399,6 +399,7 @@ background-color: white;
 .gallery1:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery2{
@@ -412,6 +413,7 @@ background-color: white;
 .gallery2:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery3{
@@ -425,6 +427,7 @@ background-color: white;
 .gallery3:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery4{
@@ -438,6 +441,7 @@ background-color: white;
 .gallery4:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery5{
@@ -451,6 +455,7 @@ background-color: white;
 .gallery5:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery6{
@@ -464,6 +469,7 @@ background-color: white;
 .gallery6:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery7{
@@ -477,6 +483,7 @@ background-color: white;
 .gallery7:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery8{
@@ -490,6 +497,7 @@ background-color: white;
 .gallery8:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery9{
@@ -503,6 +511,7 @@ background-color: white;
 .gallery9:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .gallery10{
@@ -516,6 +525,7 @@ background-color: white;
 .gallery10:hover{
   transition: ease .5s;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .bg-boba_menuboard {
