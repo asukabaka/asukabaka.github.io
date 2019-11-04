@@ -116,7 +116,20 @@ h3{
   padding-top: 5%;
   text-align:center;
   display: block;
-  width: 60%;
+  width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
+
+.artwork_tall{
+  padding-top: 5%;
+  text-align:center;
+  display: block;
+  width: 30%;
   height: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -528,23 +541,24 @@ background-color: white;
   transform: scale(1.1);
 }
 
-.bg-boba_menuboard {
-  /* The image used */
-  background-image: url(../images/bfa/tea_menu.jpg);
-
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
-  /* Full height */
+.img_description{
+  position: absolute;
+  top: -50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
   height: 100%;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: opacity .75s, visibility .75s;
+  font-size: 3rem;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
-  opacity: .3;
+.gallery1:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
 }
