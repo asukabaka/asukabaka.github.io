@@ -92,6 +92,12 @@ h2{
   padding: 30px;
 }
 
+@media screen and (max-width: 39.9375em) {
+  h2{
+    font-size: 1rem;
+  }
+}
+
 h3{
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
@@ -349,6 +355,7 @@ background-color: white;
   grid-template-areas: "nav1 nav2 nav3"
                        ;
 }
+
 
 .nav1{
   grid-area: nav1;
