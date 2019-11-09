@@ -3,7 +3,7 @@ body {
   width: 100vw;
   max-width: 1800px;
   color: white;
-  background: linear-gradient(-45deg, #ffcc80, black, #00384d, black);
+  background: linear-gradient(-45deg, #ffcc80, black, black, #00384d, black);
   background-size: 400% 400%;
   -webkit-animation: Gradient 60s ease infinite;
   -moz-animation: Gradient 60s ease infinite;
@@ -89,7 +89,8 @@ h2{
   color: white;
   font-size: 2rem;
   font-weight: lighter;
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 80em) {
@@ -108,6 +109,7 @@ h3{
 }
 
 .banner{
+  padding-top: 5%;
   text-align:center;
   display: block;
   width: 70%;
