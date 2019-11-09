@@ -570,3 +570,13 @@ background-color: white;
   opacity: 1;
   height: 100%;
 }
+
+.button{
+  opacity: .75;
+  transition: ease 1s;
+}
+
+.button:hover{
+  opacity: 1;
+  transition: ease 1s;
+}
