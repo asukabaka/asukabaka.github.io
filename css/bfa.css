@@ -79,7 +79,7 @@ h1{
   color: white;
   font-size: 3rem;
   font-weight: lighter;
-  padding-top: 8%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -92,7 +92,7 @@ h2{
   padding: 30px;
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 80em) {
   h2{
     font-size: 1rem;
   }
