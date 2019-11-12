@@ -536,6 +536,13 @@ i{
 }
 }
 
+@media screen and (max-width: 600px) {
+  .parallelograms_row2 {
+  max-height: 400px;
+  grid-template-rows:  400px;
+}
+}
+
 .parallelogram_gradient {
   display: block;
   width: 100%; 
@@ -584,7 +591,13 @@ i{
 @media screen and (max-width: 900px) {
 .parallelogram_row2 {
   height: 600px;
+  }
 }
+
+@media screen and (max-width: 600px) {
+.parallelogram_row2{
+  height: 400px;
+  }
 }
 
 .parallelogram {
