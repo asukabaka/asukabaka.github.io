@@ -3,7 +3,7 @@ body {
   width: 100vw;
   max-width: 1800px;
   color: white;
-  background: linear-gradient(-45deg, #ffcc80, black, black, black, #00384d, black);
+  background: linear-gradient(-45deg, black, #ffcc80, black, black, black, #00384d, black);
   background-size: 400% 400%;
   -webkit-animation: Gradient 60s ease infinite;
   -moz-animation: Gradient 60s ease infinite;
@@ -135,7 +135,7 @@ h3{
 }
 
 .artwork_tall{
-  padding-top: 5%;
+  padding-top: 3%;
   text-align:center;
   display: block;
   width: 30%;
@@ -349,7 +349,7 @@ background-color: white;
 
 .nav{
   padding-top: 3%;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
   margin: 0 auto;
   width: 70%;
   display: grid;
