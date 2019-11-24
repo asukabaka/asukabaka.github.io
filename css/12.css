@@ -6,7 +6,7 @@ body {
   height: 100%;
   width: 100vw;
   color: white;
-  background: linear-gradient(-45deg, black, black, #ffffff, black, black);
+  background: linear-gradient(-45deg, black, black, grey, black, black);
   background-size: 400% 400%;
   -webkit-animation: Gradient 60s ease infinite;
   -moz-animation: Gradient 60s ease infinite;
