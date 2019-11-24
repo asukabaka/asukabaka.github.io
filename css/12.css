@@ -57,7 +57,7 @@ section:nth-of-type(1) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1750px;
+  height: 1650px;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ section:nth-of-type(1) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 850px;
+  height: 950px;
   text-align: center;
 }
 }
@@ -102,18 +102,24 @@ height: auto;
 
 @media screen and (max-width: 80em) {
   img.parallax-move{
-max-width: 80em;
+max-width: 85em;
 height: auto;
 }
 }
 
 @media screen and (max-width: 60em) {
   img.parallax-move{
-max-width: 60em;
+max-width: 65em;
 height: auto;
 }
 }
 
+@media screen and (max-width: 80em) {
+.parallax-img-container{
+left: -25%;
+width: 300%;
+}
+}
 /* ---- particles.js container ---- */
 
 #particles-js{
