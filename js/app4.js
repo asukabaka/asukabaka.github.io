@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 10,
         "density": {
           "enable": true,
           "value_area": 800
@@ -26,7 +26,7 @@ particlesJS('particles-js',
         "value": "#FFFFFF"
       },
       "shape": {
-        "type": "image",
+        "type": "circle",
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -35,16 +35,16 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "../images/petal_small.png",
+          "src": "img/github.svg",
           "width": 100,
           "height": 100
         }
       },
       "opacity": {
         "value": 0.5,
-        "random": false,
+        "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
@@ -54,8 +54,8 @@ particlesJS('particles-js',
         "value": 5,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 40,
+          "enable": true,
+          "speed": 10,
           "size_min": 0.1,
           "sync": false
         }

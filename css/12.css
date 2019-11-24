@@ -8,9 +8,9 @@ body {
   color: white;
   background: linear-gradient(-45deg, black, black, #ffffff, black, black);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
+  -webkit-animation: Gradient 35s ease infinite;
+  -moz-animation: Gradient 35s ease infinite;
+  animation: Gradient 35s ease infinite;
   position: relative;
   overflow-x: hidden;
 }
@@ -57,9 +57,32 @@ section:nth-of-type(1) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1950px;
+  height: 1750px;
   text-align: center;
 }
+
+@media screen and (max-width: 80em) {
+section:nth-of-type(1) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1250px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 60em) {
+section:nth-of-type(1) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 850px;
+  text-align: center;
+}
+}
+
 article {
   padding: 0 0;
   margin: 0;
@@ -70,6 +93,25 @@ canvas{
   display: block;
   vertical-align: bottom;
   width: 100%;
+}
+
+img.parallax-move{
+max-width: none;
+height: auto;
+}
+
+@media screen and (max-width: 80em) {
+  img.parallax-move{
+max-width: 80em;
+height: auto;
+}
+}
+
+@media screen and (max-width: 60em) {
+  img.parallax-move{
+max-width: 60em;
+height: auto;
+}
 }
 
 /* ---- particles.js container ---- */
