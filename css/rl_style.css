@@ -80,7 +80,7 @@ i{
 
 @media screen and (max-width: 39.9375em) {
   .topbar-responsive .menu a {
-    padding: 0.875rem 0;
+    padding: 0.45rem 0;
   }
 }
 
@@ -1209,6 +1209,27 @@ p.inquiries_message{
 .bg-image_yorha {
   /* The image used */
   background-image: url(../images/cyberpunk_yorha_lineup_2_small.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .3;
+}
+
+.bg-image_umbrella {
+  /* The image used */
+  background-image: url(../images/umbrella_background.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
