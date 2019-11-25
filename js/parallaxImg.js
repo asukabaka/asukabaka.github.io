@@ -24,7 +24,7 @@ function parallaxImgScroll(settings) {
   var default_settings = {
     initialOpacity : 0, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
     opacitySpeed : 0.02, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
-    pageLoader: false // boolean type
+    pageLoader: true // boolean type
   }
   var parallaxSettings = $.extend({}, default_settings, settings);
 
@@ -54,7 +54,7 @@ function parallaxImgScroll(settings) {
         left: '0px',
         width: '100%',
         height: '100%',
-        background: '#000000',
+        background: '#333',
       })
       $(".parallaxImg-loading-page").prepend("<div class='parallaxImg-loading-text'>Loading Page</div>")
       $(".parallaxImg-loading-text").css({
@@ -62,7 +62,6 @@ function parallaxImgScroll(settings) {
         'margin-left': 'auto',
         'margin-right': 'auto',
         'text-align': 'center',
-        'font-color': '#FFFFFF',
         'padding-top': loadingMaringTop + 'px'
       })
 
