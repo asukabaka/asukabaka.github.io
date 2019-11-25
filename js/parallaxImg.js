@@ -54,7 +54,7 @@ function parallaxImgScroll(settings) {
         left: '0px',
         width: '100%',
         height: '100%',
-        background: '#333',
+        background: '#000000',
       })
       $(".parallaxImg-loading-page").prepend("<div class='parallaxImg-loading-text'>Loading Page</div>")
       $(".parallaxImg-loading-text").css({
@@ -62,6 +62,7 @@ function parallaxImgScroll(settings) {
         'margin-left': 'auto',
         'margin-right': 'auto',
         'text-align': 'center',
+        'font-color': '#FFFFFF',
         'padding-top': loadingMaringTop + 'px'
       })
 

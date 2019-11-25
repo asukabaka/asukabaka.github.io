@@ -114,12 +114,6 @@ height: auto;
 }
 }
 
-@media screen and (max-width: 80em) {
-.parallax-img-container{
-left: -25%;
-width: 300%;
-}
-}
 /* ---- particles.js container ---- */
 
 #particles-js{
