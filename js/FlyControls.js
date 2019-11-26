@@ -2,7 +2,12 @@
  * @author James Baicoianu / http://www.baicoianu.com/
  */
 
-THREE.FlyControls = function ( object, domElement ) {
+import {
+	Quaternion,
+	Vector3
+} from "../../../build/three.module.js";
+
+var FlyControls = function ( object, domElement ) {
 
 	if ( domElement === undefined ) {
 
@@ -28,13 +33,13 @@ THREE.FlyControls = function ( object, domElement ) {
 
 	// internals
 
-	this.tmpQuaternion = new THREE.Quaternion();
+	this.tmpQuaternion = new Quaternion();
 
 	this.mouseStatus = 0;
 
 	this.moveState = { up: 0, down: 0, left: 0, right: 0, forward: 0, back: 0, pitchUp: 0, pitchDown: 0, yawLeft: 0, yawRight: 0, rollLeft: 0, rollRight: 0 };
-	this.moveVector = new THREE.Vector3( 0, 0, 0 );
-	this.rotationVector = new THREE.Vector3( 0, 0, 0 );
+	this.moveVector = new Vector3( 0, 0, 0 );
+	this.rotationVector = new Vector3( 0, 0, 0 );
 
 	this.keydown = function ( event ) {
 
@@ -288,3 +293,5 @@ THREE.FlyControls = function ( object, domElement ) {
 	this.updateRotationVector();
 
 };
+
+export { FlyControls };
