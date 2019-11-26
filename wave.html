@@ -43,6 +43,10 @@
 
 			import Stats from './js/stats.module.js';
 
+			import { FlyControls } from './jsm/controls/FlyControls.js';
+
+			var controls;
+
 			var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
 
 			var container, stats;
@@ -130,6 +134,14 @@
 				//
 
 				window.addEventListener( 'resize', onWindowResize, false );
+
+				controls = new FlyControls( camera, renderer.domElement );
+				controls.movementSpeed = 2500;
+				controls.domElement = container;
+				controls.rollSpeed = Math.PI / 6;
+				controls.autoForward = false;
+				controls.dragToLook = false;
+
 
 			}
 
