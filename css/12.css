@@ -4,28 +4,34 @@ section:nth-of-type(1) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1650px;
+  height: 1500px;
   text-align: center;
 }
 
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 1600px) {
 section:nth-of-type(1) {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 1250px;
   text-align: center;
 }
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 1300px) {
 section:nth-of-type(1) {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 950px;
+  height: 1000px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 1000px) {
+section:nth-of-type(1) {
+  height: 750px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 700px) {
+section:nth-of-type(1) {
+  height: 500px;
   text-align: center;
 }
 }
@@ -43,21 +49,31 @@ canvas{
 }
 
 img.parallax-move{
-max-width: none;
+max-width: 1920px;
 height: auto;
 }
 
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 90vh) {
   img.parallax-move{
-max-width: 85em;
-height: auto;
+max-width: 1800px;
 }
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 80vh) {
   img.parallax-move{
-max-width: 65em;
-height: auto;
+max-width: 1600px;
+}
+}
+
+@media screen and (max-width: 70vh) {
+  img.parallax-move{
+max-width: 1400px;
+}
+}
+
+@media screen and (max-width: 60vh) {
+  img.parallax-move{
+max-width: 1200px;
 }
 }
 

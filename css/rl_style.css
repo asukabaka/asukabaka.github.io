@@ -1221,7 +1221,7 @@ p.inquiries_message{
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: fixed;
   z-index: -1000;
   opacity: .3;
