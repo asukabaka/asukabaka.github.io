@@ -1232,9 +1232,9 @@ p.inquiries_message{
   background-image: url(../images/umbrella_background.jpg);
 
   /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
+/*  filter: blur(2px);
+  -webkit-filter: blur(2px);
+*/
   /* Full height */
   height: 100%;
   width: 100%;
@@ -1245,7 +1245,7 @@ p.inquiries_message{
   background-size: cover;
   position: fixed;
   z-index: -1000;
-  opacity: .3;
+  opacity: .5;
 }
 
 .image_assets:hover {

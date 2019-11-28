@@ -10,12 +10,19 @@ section:nth-of-type(1) {
 
 @media screen and (max-width: 1600px) {
 section:nth-of-type(1) {
-  height: 1250px;
+  height: 1300px;
   text-align: center;
 }
 }
 
 @media screen and (max-width: 1300px) {
+section:nth-of-type(1) {
+  height: 1200px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 1200px) {
 section:nth-of-type(1) {
   height: 1000px;
   text-align: center;
@@ -24,14 +31,7 @@ section:nth-of-type(1) {
 
 @media screen and (max-width: 1000px) {
 section:nth-of-type(1) {
-  height: 750px;
-  text-align: center;
-}
-}
-
-@media screen and (max-width: 700px) {
-section:nth-of-type(1) {
-  height: 500px;
+  height: 650px;
   text-align: center;
 }
 }
@@ -53,27 +53,33 @@ max-width: 1920px;
 height: auto;
 }
 
-@media screen and (max-width: 90vh) {
+@media screen and (max-width: 1800px) {
   img.parallax-move{
 max-width: 1800px;
 }
 }
 
-@media screen and (max-width: 80vh) {
+@media screen and (max-width: 1600px) {
   img.parallax-move{
-max-width: 1600px;
+max-width: 1700px;
 }
 }
 
-@media screen and (max-width: 70vh) {
+@media screen and (max-width: 1400px) {
   img.parallax-move{
-max-width: 1400px;
+max-width: 1500px;
 }
 }
 
-@media screen and (max-width: 60vh) {
+@media screen and (max-width: 1200px) {
   img.parallax-move{
-max-width: 1200px;
+max-width: 1300px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  img.parallax-move{
+max-width: 1100px;
 }
 }
 
