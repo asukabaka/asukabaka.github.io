@@ -1236,8 +1236,8 @@ p.inquiries_message{
   -webkit-filter: blur(2px);
 */
   /* Full height */
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   /* Center and scale the image nicely */
   background-position: center;
