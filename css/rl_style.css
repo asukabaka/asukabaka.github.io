@@ -1243,9 +1243,10 @@ p.inquiries_message{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   z-index: -1000;
   opacity: .5;
+  overflow: hidden;
 }
 
 .image_assets:hover {
