@@ -182,7 +182,11 @@ i{
 /*ZURB Hero image */
 
 .hero_padding{
-  padding-top: 60px;
+  padding-top: 40px;
+}
+
+.hero_padding_bottom{
+  padding-bottom: 40px;
 }
 
 .hero-section_yorha {
@@ -211,9 +215,9 @@ i{
 
 .hero-section_umbrella {
 
-  background: url("../images/umbrella_banner.jpg") 50% no-repeat;
+  background: url("../images/umbrella_banner_2.jpg") 50% no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 1000px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -229,7 +233,13 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_umbrella {
-  height: 300px;
+  height: 600px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+.hero-section_umbrella {
+  height: 400px;
 }
 }
 
