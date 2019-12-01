@@ -174,9 +174,20 @@ function parallaxImgScroll(settings) {
       var widthOfContainer = $(this).width();
       //RL* "Description: Get the current computed height for the first element in the set of matched elements." -jQuery
       var heightOfContainer = $(this).height();
+      //RL* .children is "Description: Get the children of each element in the set of matched elements, optionally filtered by a selector."
+      //RL* make a variable setOfElements is equal to parallax-img-container's children.
+      //RL*... To be honest i have no idea what my explaination of the string below even means... Like how is it even used?
       var setOfElements = $(this).children();
+      //RL* The string below is a for loop... i = 0 and if i is less than setOfElements.length then add 1 to i...
+      //RL* What is the for loop for? My guess is var setOfElements gets the number of classes in parallax-img-container and then the for loop
+      //RL* computes how many there are? So if I have 6 images in the container than it will apply the followed statements 6 times?
       for (i = 0; i < setOfElements.length ; i++) {
+        //RL* create a variable named classApplied which is equal to the value of setOfElements if it has the attribut 'class'?
+        //RL* In order for the parallax to work, the HTML images we use have to have 'class' parallax-move.
         var classApplied = $(setOfElements[i]).attr('class');
+        //RL* the following code is if classApplied does not equal parallax-move then give the elements the following CSS. 
+        //RL* I'm assuming this is to prevent any conflicts?
+        //RL* When you open up the element inspector in chrome any elements in the parallax container without parallax move have the following CSS applied.
         if (classApplied != "parallax-move") {
           $(setOfElements[i]).css({
             "z-index": 100,
@@ -187,10 +198,17 @@ function parallaxImgScroll(settings) {
         else {
 
           // if the element has a Speed declared
+          //RL* .hasData ="Description: Determine whether an element has any jQuery data associated with it" -jQuery
           if ($(setOfElements[i]).hasData('ps-speed')) {
+            //scrollSpeed is equal to what the scroll speed which was stated in the HTML.
             scrollSpeed = $(setOfElements[i]).data('ps-speed');
           }
+          //otherwise, the Javascript string below will give it a random scroll speed.
           else {
+            //RL* "The Math.floor() function returns the largest integer less than or equal to a given number." - MDN
+            //RL* I think the math floor is a way to round the number?
+            //RL* "he Math.random() function returns a floating-point, pseudo-random number in the range 0–1 (inclusive of 0, but not 1)"
+            //RL* that makes sense because if math random gives a floating point then floor with round it to a whole number.
             var ranNumSpeed = Math.floor((Math.random() * 100) + 1);
             if(ranNumSpeed < 10) {
               var scrollSpeed = "0.0" + ranNumSpeed;
@@ -200,15 +218,19 @@ function parallaxImgScroll(settings) {
             }
           }
 
-          //if the element has a vertical position declared
+          //RL* if the element has a vertical position declared
+          //RL* this checks to see if ps-vertical-position is declared in the CSS. If it is then it will use that data for the scrolling.
           if ($(setOfElements[i]).hasData('ps-vertical-position')) {
+            //RL* TopPosition is the same value as what we stated in the HTML.
             TopPosition = $(setOfElements[i]).data('ps-vertical-position');
           }
           else {
+            //RL* This just makes another random variable to use as TopPosition the same way we made from speed. With Math floor and random.
             var TopPosition = Math.floor(Math.random() * (heightOfContainer - (heightOfContainer/4)) + 1);
           }
 
           //if the element has an horizontal position declared
+          //RL* The code down here is for the hoziontal position.
           if ($(setOfElements[i]).hasData('ps-horizontal-position')) {
             var leftPosition = $(setOfElements[i]).data('ps-horizontal-position');
             var rightPosition = undefined;
@@ -222,6 +244,7 @@ function parallaxImgScroll(settings) {
           }
 
           //if the element has a z-index declared
+          //RL*This code here is for the z-index
           if ($(setOfElements[i]).hasData('ps-z-index')) {
             var zPosition = $(setOfElements[i]).data('ps-z-index');
           }
@@ -229,6 +252,9 @@ function parallaxImgScroll(settings) {
             var zPosition = Math.floor(Math.random() * 10 + 1);
           }
 
+          //RL* We made an array at the beginning of this system called parallaxElementsArray
+          //RL* the .push according to W3Schools is "The push() method adds new items to the end of an array, and returns the new length."
+          //RL* so we are adding new variables to the parallaxElementsArray
           parallaxElementsArray.push({
             "element" : $(setOfElements[i]),
             "scrollSpeed" : scrollSpeed,
@@ -240,8 +266,15 @@ function parallaxImgScroll(settings) {
           });
 
           /* Apply initial position */
+          //RL* console.log is "The Console method log() outputs a message to the web console. 
+          //RL*The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects." -MDN
+          //RL* Im not entirely sure why it even needs to be printed? I dont see it anywhere on the webpage...
+          //RL* One thing I noticed is when inputing values in HTML depending on whether you use negatives or positive the parallax system will initially place
+          //RL* the content on either the left position in CSS or the right position via CSS. That hasn't been addressed yet so maybe its something to do with it here?
+          //RL* The if uses left in the CSS and the else uses right which makes me believe it to be so.
           console.log(leftPosition, rightPosition)
           if (leftPosition) {
+            //RL* this applies the values into the CSS
             $(setOfElements[i]).css({
               "bottom": TopPosition,
               "left": leftPosition,
@@ -258,6 +291,7 @@ function parallaxImgScroll(settings) {
       }
     });
 
+    
     $(".parallax-img-container").css({
       position: "relative",
       overflow: "hidden"
