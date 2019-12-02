@@ -291,7 +291,8 @@ function parallaxImgScroll(settings) {
       }
     });
 
-    
+    //RL* This sets the css into the .parallax-img-container.
+    //RL* This will make sure nothing overflows so it makes sense.
     $(".parallax-img-container").css({
       position: "relative",
       overflow: "hidden"
@@ -302,22 +303,44 @@ function parallaxImgScroll(settings) {
   /* Move the images while scrolling the page */
   function parallaxImgScroll() {
 
+    //RL* .scrollTop -"The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically." -MDN
+    //RL* scrolled is basically targetting the window and seeing how much scrolling has taken place.
     scrolled = $(window).scrollTop();
 
+    //RL* again, a for loop which I'm not entirely sure what the use is for.
     for (i = 0; i < parallaxElementsArray.length; i++) {
 
+      //RL* I think this line states that alpha is the opacity of the items in the parallaxElementsArray we made in the beginning of the JS.
       alpha = parallaxElementsArray[i].opacity;
 
       /* Calculate the distance between the element and the top of the document */
+      //RL* .offset - "Description: Get the current coordinates of the first element in the set of matched elements, relative to the document." -jQuery
+      //RL* variable distanceFromTop is basically getting data from the items in the array and getting the coordinates.
       var distanceFromTop = $(parallaxElementsArray[i].element).offset().top;
+      //RL* Same thing with the string above. .height is "Description: Get the current computed height for the first element in the set of matched elements."
+      //RL* so this variable basically is how tall each element is in pixels.
       var elementHeight = $(parallaxElementsArray[i].element).height();
 
+      //RL* isVisible - this basically selects if anything is visible.
+      //RL* The string here is asking if any of the elements are visible and asks what the distance/offset and element height is.
       if (isVisible(distanceFromTop, elementHeight)) {
 
         /* if scrolling down */
         if (lastestScrolled < scrolled) {
           /* unless parallaxSettings.opacitySpeed = 1, make the element appear progressively */
+          //RL* The following is from Cynthia Sanchee (author of this code) herself ---------------------
+          //RL* Is the speed in which the element will become opaque as the user scrolls down your page. Can have a decimal value from 0.01 to 1, 
+          //RL*where 0.01 means it will veryyyy slowly appear on screen, and 1 means it will become opaque as soon as the user touches the scroll of the mouse ;). 
+          //RL*ATTENTION: 0 is also a valid value, but it means the elements WONT become visible...ever. 
+          //RL* -----------------------------------------------------------------------------------------
+          //RL* The way the author describes this system is that as you scroll, the alpha or opacity of the content you put in will appear as you scroll.
+          //RL* This is a bit confusing for me personally because the way the content appears when we view the system in action on the browser just seems like
+          //RL* things scrolling up and down. For one the elements you cant see seem to have css stating its fully visible but being hidden because the
+          //RL* the vertical offset has it wayyy down the div which has its overflow hidden so you cant see it. So its masked in a sense.
+          //RL* and as you scroll it just travels across your browser.
+          //RL* But she wrote the code and it works really well so maybe I'm just missing a big part of the picture here.
           if (parallaxSettings.initialOpacity != 1) {
+            //RL* Alpha is how opaque something is. so Alpha here is 
             alpha = alpha + parallaxSettings.opacitySpeed;
             if (alpha > 1) {
               alpha = 1;
