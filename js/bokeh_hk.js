@@ -19,7 +19,7 @@ var ParticleEngine = (function() {
 		this.compositeStyle = "lighter";
 
 		this.particleSettings = [{id:"small", num:1, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
-								{id:"medium", num:5, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ff00ff", fill:true}, 
+								{id:"medium", num:2, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
 								{id:"large", num:20, fromX:0, toX:this.totalWidth, ballwidth:40,  alphamax:0.2, areaHeight:.2, color:"#ffe6f2", fill:true}];
 		this.particleArray = [];
 		this.lights = [{ellipseWidth:300, ellipseHeight:100, alpha:0.1, offsetX:0, offsetY:400, color:"#ffe6f2"}, 
