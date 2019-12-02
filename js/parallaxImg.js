@@ -100,13 +100,14 @@ function parallaxImgScroll(settings) {
         left: '0px',
         width: '100%',
         height: '100%',
-        background: '#333',
+        background: '#000000',
       })
       //RL* String below adds another div inside the previous one. This one will have the text Loading page.
       $(".parallaxImg-loading-page").prepend("<div class='parallaxImg-loading-text'>Loading Page</div>")
       //RL* string below adds the css to the div we just made above.
       $(".parallaxImg-loading-text").css({
         width: '300px',
+        color: '#FFFFFF',
         'margin-left': 'auto',
         'margin-right': 'auto',
         'text-align': 'center',
