@@ -5,6 +5,9 @@
 //RL* This is the particle system by Louis Hoebregt.
 //RL* It specializes in making Bokeh lights with no interactivity. While this can be a drawback, I found it much easier to digest than the much more
 //RL* feature rich but extremely complicated particle system by Vincent Garreau.
+//RL* Despite the simplicity, further examination of this particle system reveals that it relies on other Javascript libraries like EaselJS to create a specialized canvas
+//RL* and TweenJS for the fancy bokeh light movements.
+//RL* I was hoping to find his github again to see if there was any extra documentation but it seems hes replaced it with a new bokeh light engine made entirely out of CSS.
 
 //RL* A variable named ParticleEngine is made that has a function.
 var ParticleEngine = (function() {
@@ -35,12 +38,30 @@ var ParticleEngine = (function() {
 		//RL* In other words I think Louis uses this to make it simpler to write and understand?
 		var _ParticleEngine = this;
 
+		//RL* Again, Dot Notation is being used 
+		//RL* "Property accessors provide access to an object's properties by using the dot notation or the bracket notation." -MDN
+		//RL* function particleEngine accessing the properties of canvas_id
 		this.canvas_id = canvas_id;
+		//RL* createjs.Stage draws on EaselJS to create
+		//RL* "This example creates a stage, adds a child to it, then uses {{#crossLink "Ticker"}}{{/crossLink}} to update the child
+	 	//RL* and redraw the stage..."
+	 	//RL* To be honest EaselJS has extremely thourough documentation but it seems really abstract and hard to understand for a layman.
+	 	//RL* Reading further down the documentation though it seems a benefit of using EaselJS is that it lets you have multiple "stages" like our bokeh light stage
+	 	//RL* on a single canvas. "The canvas the stage will render to. Multiple stages can share a single canvas" (Line 7926 on easeljs.js)
 		this.stage = new createjs.Stage(canvas_id);
+		//RL* "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string."- MDN
+		//RL* This is totally new... It seems hes basically declaring a bunch of different variables are equal to each other.
+		//RL* Not sure why but none of the properties, parameters, or names here link to any other JS library used by this particle system.
+		//RL* One thing that I do find super cool about this bokeh light system is compared to Vincent's, this one when resized, will bounce the lights all around the
+		//RL* canvas, as opposed to Vincents which will just crop the resized parts out. Maybe this is why the canvas size is so heavily coded and referenced.
 		this.totalWidth = this.canvasWidth = document.getElementById(canvas_id).width = document.getElementById(canvas_id).offsetWidth;
 		this.totalHeight = this.canvasHeight = document.getElementById(canvas_id).height = document.getElementById(canvas_id).offsetHeight;
+		//RL* google searches of compositeStyle and "lighter" reveal nothing.
 		this.compositeStyle = "lighter";
 
+		//RL* Louis makes an array here called particleSettings.
+		//RL* you can change a variety of things here like color and size and population of the particles
+		//RL* num refers to population, area height is how much traveling the lights do, fromX is how much side to side travel the lights do.
 		this.particleSettings = [{id:"small", num:1, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
 								{id:"medium", num:2, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
 								{id:"large", num:20, fromX:0, toX:this.totalWidth, ballwidth:40,  alphamax:0.2, areaHeight:.5, color:"#ffe6f2", fill:true}];
