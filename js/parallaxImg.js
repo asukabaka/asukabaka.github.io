@@ -14,6 +14,10 @@ and personal use =D
 */
 
 //reset the scroll to 0 (top of page)
+//RL* This parallax engine has extensive use of jQuery
+//RL* "jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. 
+//RL* It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites."
+//RL* - Wikipedia
 //RL* In Javascript the $ symbol is used to target that specific element. In this case $(window) is targeting according to Mozilla MDN
 //RL* "A global variable, window, representing the window in which the script is running, is exposed to JavaScript code."
 //RL* The "." after (window) is called Dot Notation. MDN "A global variable, window, representing the window in which the script is running, is exposed to JavaScript code."

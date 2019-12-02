@@ -1,15 +1,38 @@
 ////////////////////////// PARTICLE ENGINE ////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 
+
+//RL* This is the particle system by Louis Hoebregt.
+//RL* It specializes in making Bokeh lights with no interactivity. While this can be a drawback, I found it much easier to digest than the much more
+//RL* feature rich but extremely complicated particle system by Vincent Garreau.
+
+//RL* A variable named ParticleEngine is made that has a function.
 var ParticleEngine = (function() {
+	//RL* "Strict mode makes several changes to normal JavaScript semantics"
+	//RL* "Eliminates some JavaScript silent errors by changing them to throw errors.
+	//RL* Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: 
+	//RL* strict mode code can sometimes be made to run faster than identical code that's not strict mode.
+	//RL* Prohibits some syntax likely to be defined in future versions of ECMAScript" -MDN
+	//RL* From my research on the internet, Strict mode basically makes the Javascript much more sensitive to errors which make the code easier to detect,
+	//RL* and debug for better compatability and performance.
 	'use strict';
 
+	//RL* Another function called ParticleEngine with parameter canvas_id is made and specifically targets the canvas? There is no documentation referring to canvas_id
+	//RL* I'm assuming this is true because in the html the code works by declaring a canvas with an id named projector.
+	//RL* The bottom of the code under the Run sectior there is a states ParticleEngine has parameter of projector.
 	function ParticleEngine(canvas_id) {
 		// enforces new
+		//RL* not entirely sure what this code here does... googling args returns stuff about rest parameters which really seem to make sense of what im seeing here.
+		//RL* the solo ! is a logical operater which states if something is not true. So if the instance of Particle Engine is not true, get new arguments??
 		if (!(this instanceof ParticleEngine)) {
 			return new ParticleEngine(args);
 		}
 		
+		//RL* variable _ParticleEngine is declared as this.
+		//RL* "What is “this” keyword in JavaScript. this keyword refers to an object, that object which is executing the current bit of javascript code. 
+		//RL* In other words, every javascript function while executing has a reference to its current execution context, called this. 
+		//RL* Execution context means here is how the function is called." - Codeburst
+		//RL* In other words I think Louis uses this to make it simpler to write and understand?
 		var _ParticleEngine = this;
 
 		this.canvas_id = canvas_id;
