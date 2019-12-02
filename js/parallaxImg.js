@@ -339,8 +339,11 @@ function parallaxImgScroll(settings) {
           //RL* the vertical offset has it wayyy down the div which has its overflow hidden so you cant see it. So its masked in a sense.
           //RL* and as you scroll it just travels across your browser.
           //RL* But she wrote the code and it works really well so maybe I'm just missing a big part of the picture here.
+
+          //RL* This checks to see if the initially set opacity is less than 1. != means if it does NOT equal.
           if (parallaxSettings.initialOpacity != 1) {
-            //RL* Alpha is how opaque something is. so Alpha here is 
+            //RL* Alpha is how opaque something is. so Alpha here is is being added with "alpha = parallaxElementsArray[i].opacity;" from line 314.
+            //RL* If the alpha is greater than 1 than it basically gets set back to 1. That kind of makes sense because something cant be more opaque than 1 anyways.
             alpha = alpha + parallaxSettings.opacitySpeed;
             if (alpha > 1) {
               alpha = 1;
@@ -349,6 +352,7 @@ function parallaxImgScroll(settings) {
             alpha = parallaxSettings.initialOpacity;
           }
           //save the scrolling for this element
+          //RL* Scrolling down has you adding the amount you scrolled while scrolling up has you subtracting the amount you scrolled instead.
           parallaxElementsArray[i].privateScrolled = parallaxElementsArray[i].privateScrolled + (scrolled - lastestScrolled);
         }
         else if (scrolled == 0) {
@@ -367,11 +371,20 @@ function parallaxImgScroll(settings) {
             alpha = parallaxSettings.initialOpacity;
           }
           //save the scrolling for this element
+          //RL* Scrolling down has you adding the amount you scrolled while scrolling up has you subtracting the amount you scrolled instead.
           parallaxElementsArray[i].privateScrolled = parallaxElementsArray[i].privateScrolled - (lastestScrolled - scrolled);
         }
 
         $(parallaxElementsArray[i].element).css({
           "opacity" : alpha,
+          //RL* I think this is the piece of code that kind of fits the pieces all together. The CSS being injected here is basically the amount you scrolled
+          //RL* being added with the 'px' at the end turns the data that the javascript collected into an actual value.
+          //RL* If you open up the element inspector, as you scroll down the page you can see the bottom:value in the inline CSS dynamically change as you scroll
+          //RL* up or down. For example, one of the cherry blossoms had its vertical offset declared as -900px. It has bottom:-976px as inline CSS at the top of the screen.
+          //RL* The extra 76px is the height of the cherry blossom PNG.
+          //RL* as you scroll down the JS changes it dynamically from -976 to -500 -400 etc etc.... which pushes the cherry blossom up and down.
+          //RL* If we have this what is even the point in having all that code for opacity?... Questions still remain I guess.
+          //RL* In the element inspector even content not visible have their opacity at 1 so its not like the opacity is being dynamically changed as well.
           'bottom': (parallaxElementsArray[i].verticalPagePosition + (parallaxElementsArray[i].privateScrolled * parallaxElementsArray[i].scrollSpeed)) + 'px'
           });
 
@@ -382,12 +395,20 @@ function parallaxImgScroll(settings) {
     lastestScrolled = scrolled;
 
     /* check if the element is visible on screen */
+    //RL* isVisible - this basically selects if anything is visible.
+    //RL* The string below is a function that selects everything visible on the browser and retrieves the data of the distance and height of the divs
+    //RL* inside the parallax container.
     function isVisible(distance, height) {
       //if it went up and off the screen
+      //RL* again scrolled is how much you scrolled down. So if you scrolled down 1000px and the distance the div and the height of the div travelled
+      //RL* is more than the amount you scrolled than it would be off screen.
+      //RL* .scrollTop -"The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically." -MDN
+      //RL* scrolled is basically targetting the window and seeing how much scrolling has taken place.
       if ([distance + height] < scrolled) {
         return false;
       }
-      //if if didnt appear from belog yet
+      //if if didnt appear from below yet
+      //RL* If the amount you scrolled plus the window height is still less than displacement of the div than it hasnt appeared yet.
       else if ([scrolled + $(window).height()] < distance) {
         return false;
       }
@@ -401,6 +422,20 @@ function parallaxImgScroll(settings) {
 }
 
 /* check if a data attribute exists */
+//RL* The $.fn is an alias for jQuery.prototype which allows you to extend jQuery with your own functions. 
+//RL* "Description: Get the value of an attribute for the first element in the set of matched elements." - jQuery
+//RL* "Description: Determine whether an element has any jQuery data associated with it." -jQuery
+//RL* This code checks to see if the elements inside the parallax container has data. If not it is returned undefined.
 $.fn.hasData = function(attrName) {
+  //RL* The typeof operator returns a string indicating the type of the unevaluated operand. - MDN
   return (typeof $(this).data(attrName) != 'undefined');
 };
+
+
+//RL* TLDR: Cynthia Sanchee's parallax system works by first creating an array to store data that will be collected by this javascript. (Line 57)
+//RL* The next step in her code is she binds the scroll event of the window to a javascript function that will dynamically change CSS values opacity: and bottom:. (Line160)
+//RL* Starting from (Line 258) Sanchee begins to push CSS via the .css jQuery API to set the initial position of the content we put in through HTML.
+//RL* (Line 304) Sanchee creates a function that among other things uses Javascript to check how far from the top of the webpages the viewer has scrolled.
+//RL* This named function parallaxImgScroll uses the variables from 319 and 322 which use the .height and .offset jQuery API's to collect the distance the elements in the HTML have moved.
+//RL* (Line 388) Turns a variety of scrolling inputs to the 'bottom' CSS style by adding +px at the end to the numbers being collected.
+//RL* The event listener of scroll being bound to the function of parallaxImgScroll pushes the elements declared in the HTML up and down the container via CSS.
