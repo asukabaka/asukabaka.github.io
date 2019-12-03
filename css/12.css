@@ -147,3 +147,18 @@ max-width: 1100px;
 .large{
   transform: scale(1.5);
 }
+
+ .glitch-img {
+ background-image: url('../images/welcome.png');
+   position: fixed; 
+   width : 100%;
+   height: auto;
+/*   background-position:center;  */
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   -webkit-background-size:cover;
+   background-size:cover;
+   background-repeat: no-repeat;
+   opacity : 1;
+   width: 100vw;
+ } 
