@@ -6,7 +6,7 @@
 //RL* It specializes in making Bokeh lights with no interactivity. While this can be a drawback, I found it much easier to digest than the much more
 //RL* feature rich but extremely complicated particle system by Vincent Garreau.
 //RL* Despite the simplicity, further examination of this particle system reveals that it relies on other Javascript libraries like EaselJS to create a specialized canvas
-//RL* and TweenJS for the fancy bokeh light movements.
+//RL* and TweenMax for the fancy bokeh light movements.
 //RL* EaselJS describes itself as "A JavaScript library that makes working with the HTML5 Canvas element easy. 
 //RL* Useful for creating games, generative art, and other highly graphical experiences." - EaselJS website
 //RL* I was hoping to find his github again to see if there was any extra documentation but it seems hes replaced it with a new bokeh light engine made entirely out of CSS.
@@ -67,7 +67,7 @@ var ParticleEngine = (function() {
 		//RL* Louis makes an array here called particleSettings.
 		//RL* you can change a variety of things here like color and size and population of the particles
 		//RL* num refers to population, area height is how much traveling the lights do, fromX is how much side to side travel the lights do.
-		this.particleSettings = [{id:"small", num:1, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
+		this.particleSettings = [{id:"small", num:0, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
 								{id:"medium", num:2, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
 								{id:"large", num:20, fromX:0, toX:this.totalWidth, ballwidth:40,  alphamax:0.2, areaHeight:.5, color:"#ffe6f2", fill:true}];
 		//RL* A second array is made. This is array is used further down the script in function draw particles which actually makes the particles.
@@ -93,6 +93,8 @@ var ParticleEngine = (function() {
 			var blurFilter;
 			//RL* A for loop is made. It says if i is less than len, it will incriment.
 			//RL* Honestly I have no idea how this works...
+			//RL* the .length property usually means how long a string is. But running the code in the browser shows that the lights have varied lifespans.
+			//RL* so "len" cant be a static number. Maybe the fact that "len" does not have a hard value declared anywhere mean its random?
 			for (var i = 0, len = _ParticleEngine.lights.length; i < len; i++) {		
 				//RL* create.js again refersto easeljs library to create these shapes.
 				//RL* The variable light declared above is having its properties accessed below. And the properties are getting its values from the array above.
@@ -153,10 +155,11 @@ var ParticleEngine = (function() {
 			//RL* "The length property returns the length of a string (number of characters)." - W3Schools but what does it have to do with our particle system?
 			for (var i = 0, len = _ParticleEngine.particleSettings.length; i < len; i++) {
 				var ball = _ParticleEngine.particleSettings[i];
-
+				//RL* Variable circle is made. A for loop using the numbers we declared above will make s increment until it is greater.
 				var circle;
 				for (var s = 0; s < ball.num; s++ )
 				{
+					//RL* Again, EaselJS library in action with different functions pulling data from the array we made upstairs.
 					circle = new createjs.Shape();
 					if(ball.fill){
 						circle.graphics.beginFill(ball.color).drawCircle(0, 0, ball.ballwidth);
@@ -190,6 +193,9 @@ var ParticleEngine = (function() {
 			}	
 		}
 
+		//RL* particleEngine propterty apply sttings is basically function with parameters (circle, positionX, totalWidth, areaHeight)
+		//RL* These are the settings to tell how fast and how far up and down the bokeh lights can move. 
+		//RL* by weighted range they limit how low and how high the balls can move.
 		this.applySettings = function(circle, positionX, totalWidth, areaHeight)
 		{
 			circle.speed = range(1, 3);
@@ -197,37 +203,56 @@ var ParticleEngine = (function() {
 			circle.initX = weightedRange(positionX, totalWidth, 1, [positionX+ ((totalWidth-positionX))/4, positionX+ ((totalWidth-positionX)) * 3/4], 0.6);
 		}
 
+		//RL* function animateBall is made with parameter (ball). The parameter refers to variable ball being declared in line 157.
+		//RL* While the chunk of code up there was to actually make the bokeh lights, this chunk here actually animates it via TweenMax.
 		function animateBall(ball)
 		{
 			var scale = range(0.3, 1);
 			var xpos = range(ball.initX - ball.distance, ball.initX + ball.distance);
 			var ypos = range(ball.initY - ball.distance, ball.initY + ball.distance);
 			var speed = ball.speed;
+			//RL* TweenMax.to is "[static] Static method for creating a TweenMax instance that animates to the specified destination values (from the current values)." - TweenMax documentation
+			//RL* Syntax - "TweenMax.to( target:Object, duration:Number, vars:Object )"
+			//RL* Target object (or array of objects) whose properties should be affected. Duration in seconds (or frames). 
+			//RL* An object defining the end value for each property that should be tweened as well as any special properties likeonComplete, ease, etc.
 			TweenMax.to(ball, speed, {scaleX:scale, scaleY:scale, x:xpos, y:ypos, onComplete:animateBall, onCompleteParams:[ball], ease:Cubic.easeInOut});	
 			TweenMax.to(ball, speed/2, {alpha:range(0.1, ball.alphaMax), onComplete:fadeout, onCompleteParams:[ball, speed]});	
 		}	
 
+		//RL* This function is to animate the bokeh lights fading in and out by the same methods as above. 
 		function fadeout(ball, speed)
 		{
 			ball.speed = range(2, 10);
 			TweenMax.to(ball, speed/2, {alpha:0 });
 		}
 
+		//RL* the two lines below run both functions that were made above.
 		drawBgLight();
 		drawParticles();
 	}
 
+	//RL* Not sure what .prototype is but googling it gave a MDN stating,
+	//RL* avaScript is often described as a prototype-based language 
+	//RL* — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+	//RL* I guess that makes sense but im not sure what the function of that is here. 
 	ParticleEngine.prototype.render = function()
 	{
 		this.stage.update();
 	}
 
+	//RL*Particle Engine uses prototype as well here.
+	//RL* Obviously this code is used to make the canvas resizable and scaleable.
+	//RL* While I don't understand how this works - it is very easy to see it in action. Everytime the canvas is resized, the bokeh lights all adjust and bounce around.
+	//RL* particle.js does not have his same effect.
 	ParticleEngine.prototype.resize = function()
 	{
+		//RL* again a bunch of values we declared at the beginning of the code is being used. These values make the javascript response because the values are all
+		//RL* tied to a bunch of document.getElementByID which is accessing the size through the .width and .height.
 		this.totalWidth = this.canvasWidth = document.getElementById(this.canvas_id).width = document.getElementById(this.canvas_id).offsetWidth;
 		this.totalHeight = this.canvasHeight = document.getElementById(this.canvas_id).height = document.getElementById(this.canvas_id).offsetHeight;
 		this.render();
 
+		//
 		for (var i= 0, length = this.particleArray.length; i < length; i++)
 		{
 			this.applySettings(this.particleArray[i], 0, this.totalWidth, this.particleArray[i].areaHeight);
@@ -248,6 +273,9 @@ var ParticleEngine = (function() {
 ////////////////////////UTILS//////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 
+
+//RL* This code is used to change the behavior of the movement of the lights.
+//RL* For example, on lines 202 and 203 they values being put into the movement of the lights are parameters of function weightedRange.
 function range(min, max)
 {
 	return min + (max - min) * Math.random();
@@ -288,17 +316,31 @@ function weightedRange(to, from, decimalPlaces, weightedRange, weightStrength)
 ///////////////// RUN CODE //////////////////////////
 //////////////////////////////////////////////////////
 
+//RL* A new function is made that ties the particle system here to the canvas id "projector"
 var particles
 (function(){
 	particles = new ParticleEngine('projector');
 	createjs.Ticker.addEventListener("tick", updateCanvas);
+	//RL* An event window is added  to constantly check to see if the window is changed and the Javascript will respond.
 	window.addEventListener('resize', resizeCanvas, false);
 
 	function updateCanvas(){
+		//RL* There is no .prototype for these versions of the function but these are the same lines of code as the ones above.
+		//RL* I'm assuming as the canvas updates the particles keep rendering.
 		particles.render();
 	}
 
 	function resizeCanvas(){
+		//RL* Again, no .prototype here but im guessing as the canvas resizes the particles execute the resize code made above.
 		particles.resize();
 	}
 }());
+
+//RL* TLDR - Louis Hoebregt has created a compelling and dynamic particle system that not only has dynamic and fluid animation, but also responsive interactivity.
+//RL* The Bokeh particle system first relies heavily of the EaselJS and TweenMax libraries. (examples Line 54 and 141)
+//RL* An Array is created for the user to input different values so change the behaviors of the bokeh lights (Line 70)
+//RL* Two functions are made to create both the glowing/pulshing background gradient and bokeh lights via EaselJS (Line 88 and 151)
+//RL* Two functions are created to animate the particles via TweenMax. Because the gradient animation is simple it is inside the light function itself. (line 151)
+//RL* The particle animation is much more dynamic and reacts to canvas resizing and is in a separate function. (line 208)
+//RL* A function is made that has event listeners checking for the resizing of the canvas is made. This alerts the code to reanimate the bokeh lights on resize (Line247)
+//RL* The particle engine function as a whole made in the beginning of the Javascript code is made and tied to the 'projector' canvas ID.
