@@ -131,14 +131,26 @@ var ParticleEngine = (function() {
 				_ParticleEngine.lights[i].elem = light;
 			}
 
+			//RL* TweenMax library is used here to animate the movement of the bokeh lights.
+			//RL* .fromTo is "Static method for creating a TweenMax instance that allows you to define both the starting and ending values " - GreenSock Doc
+			//RL* This is the syntax given on Green sock "TweenMax.fromTo([element1, element2], 1, {x:0}, {x:100});"
+			//RL* Beginning values are declared. Towards the tail end of the string some variables declared above like ParticleEngine.TotalWidth etc are used as the end of the tween.
+			//RL* fromTo will animate back and forthe between the two.
 			TweenMax.fromTo(_ParticleEngine.lights[0].elem, 10, {scaleX:1.5, x:_ParticleEngine.lights[0].elem.initX, y:_ParticleEngine.lights[0].elem.initY},{yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleX:2, scaleY:0.7});
 			TweenMax.fromTo(_ParticleEngine.lights[1].elem, 12, { x:_ParticleEngine.lights[1].elem.initX, y:_ParticleEngine.lights[1].elem.initY},{delay:5, yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleY:2, scaleX:2, y:_ParticleEngine.totalHeight/2-50, x:_ParticleEngine.totalWidth/2+100});
 			TweenMax.fromTo(_ParticleEngine.lights[2].elem, 8, { x:_ParticleEngine.lights[2].elem.initX, y:_ParticleEngine.lights[2].elem.initY},{delay:2, yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleY:1.5, scaleX:1.5, y:_ParticleEngine.totalHeight/2, x:_ParticleEngine.totalWidth/2-200});
 		}
 		
+		//RL* Im not entirely sure why this variable is declared twice.
 		var blurFilter;
+
+		//RL* function draw particles is made.
+		//RL* This function draws both the bokeh lights and the small tiny circles as well. 
 		function drawParticles(){
 
+			//RL* Another for loop is made. Same way as previously. I think this is a for loop to keep the for loop running? I can't seem to find any documentation about this
+			//RL* on Easel JS. I feel like I'm missing a pretty big part of this picture. There is no variable for legnth being declared either.
+			//RL* "The length property returns the length of a string (number of characters)." - W3Schools but what does it have to do with our particle system?
 			for (var i = 0, len = _ParticleEngine.particleSettings.length; i < len; i++) {
 				var ball = _ParticleEngine.particleSettings[i];
 
@@ -156,6 +168,7 @@ var ParticleEngine = (function() {
 						circle.graphics.beginStroke(ball.color).setStrokeStyle(1).drawCircle(0, 0, ball.ballwidth);
 					}
 					
+					//RL* Data is being used from the array above where we declared all the settings.
 					circle.alpha = range(0, 0.1);
 					circle.alphaMax = ball.alphamax;
 					circle.distance = ball.ballwidth * 2;
