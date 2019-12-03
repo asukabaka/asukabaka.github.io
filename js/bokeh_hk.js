@@ -7,6 +7,8 @@
 //RL* feature rich but extremely complicated particle system by Vincent Garreau.
 //RL* Despite the simplicity, further examination of this particle system reveals that it relies on other Javascript libraries like EaselJS to create a specialized canvas
 //RL* and TweenJS for the fancy bokeh light movements.
+//RL* EaselJS describes itself as "A JavaScript library that makes working with the HTML5 Canvas element easy. 
+//RL* Useful for creating games, generative art, and other highly graphical experiences." - EaselJS website
 //RL* I was hoping to find his github again to see if there was any extra documentation but it seems hes replaced it with a new bokeh light engine made entirely out of CSS.
 
 //RL* A variable named ParticleEngine is made that has a function.
@@ -48,6 +50,7 @@ var ParticleEngine = (function() {
 	 	//RL* To be honest EaselJS has extremely thourough documentation but it seems really abstract and hard to understand for a layman.
 	 	//RL* Reading further down the documentation though it seems a benefit of using EaselJS is that it lets you have multiple "stages" like our bokeh light stage
 	 	//RL* on a single canvas. "The canvas the stage will render to. Multiple stages can share a single canvas" (Line 7926 on easeljs.js)
+	 	//RL* "A stage is the root level Container for a display list. Each time its tick method is called, it will render its display list to its target canvas." - EaselJS
 		this.stage = new createjs.Stage(canvas_id);
 		//RL* "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string."- MDN
 		//RL* This is totally new... It seems hes basically declaring a bunch of different variables are equal to each other.
@@ -57,6 +60,8 @@ var ParticleEngine = (function() {
 		this.totalWidth = this.canvasWidth = document.getElementById(canvas_id).width = document.getElementById(canvas_id).offsetWidth;
 		this.totalHeight = this.canvasHeight = document.getElementById(canvas_id).height = document.getElementById(canvas_id).offsetHeight;
 		//RL* google searches of compositeStyle and "lighter" reveal nothing.
+		//RL* Correction - under MDN documentation for CompositeOperation 
+		//RL* "lighter  Where both shapes overlap the color is determined by adding color values." -MDN
 		this.compositeStyle = "lighter";
 
 		//RL* Louis makes an array here called particleSettings.
@@ -65,34 +70,62 @@ var ParticleEngine = (function() {
 		this.particleSettings = [{id:"small", num:1, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
 								{id:"medium", num:2, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
 								{id:"large", num:20, fromX:0, toX:this.totalWidth, ballwidth:40,  alphamax:0.2, areaHeight:.5, color:"#ffe6f2", fill:true}];
+		//RL* A second array is made. This is array is used further down the script in function draw particles which actually makes the particles.
+		//RL* It is also in use for when the canvas resizes.
 		this.particleArray = [];
+		//RL* Values for the soft gradient lights in that float in the background.
 		this.lights = [{ellipseWidth:300, ellipseHeight:100, alpha:0.1, offsetX:0, offsetY:400, color:"#ffe6f2"}, 
 						{ellipseWidth:250, ellipseHeight:250, alpha:0.1, offsetX:-50, offsetY:400, color:"#ffe6f2"}, 
 						{ellipseWidth:100, ellipseHeight:80, alpha:0.1, offsetX:80, offsetY:400, color:"#ff66ff"}];
 
+		//RL* "type is a String identifying which of the compositing or blending mode operations to use."-MDN
+		//RL* compositeOperation is an API in Javascript that allows for different types of blending modes.
+		//RL* This is string here basically statles that the stage compositeOperation is the same as _ParticleEngine's
 		this.stage.compositeOperation = _ParticleEngine.compositeStyle;
 
 
+		//RL* This is the function that draws the background light.
 		function drawBgLight()
 		{
+			//RL* Variables are made. I'm assuming light is the bokeh lights, bounds is the travel animation and blurfilter is what the name suggests.
 			var light;
 			var bounds;
 			var blurFilter;
-			for (var i = 0, len = _ParticleEngine.lights.length; i < len; i++) {				
+			//RL* A for loop is made. It says if i is less than len, it will incriment.
+			//RL* Honestly I have no idea how this works...
+			for (var i = 0, len = _ParticleEngine.lights.length; i < len; i++) {		
+				//RL* create.js again refersto easeljs library to create these shapes.
+				//RL* The variable light declared above is having its properties accessed below. And the properties are getting its values from the array above.
+				//RL* It seems that anything with [i] is pretty much data from the array above where we declared all our settings.
+				//RL* Maybe the reason why these shapes have all these special functions is because the shapes being made from the easeljs library have all these functions coded in?
+				//RL* "A Shape allows you to display vector art in the display list. It composites a Graphics instance which exposes all of the vector drawing methods. 
+				//RL* The Graphics instance can be shared between multiple Shape instances to display the same vector graphics with different positions or transforms."-EaselJS
 				light = new createjs.Shape();
+				//RL* This code takes the data from the array to input data for the function.
+				//RL* the _ParticleEngine was "this" and the array was "this.lights"
 				light.graphics.beginFill(_ParticleEngine.lights[i].color).drawEllipse(0, 0, _ParticleEngine.lights[i].ellipseWidth, _ParticleEngine.lights[i].ellipseHeight);
 				light.regX = _ParticleEngine.lights[i].ellipseWidth/2;
 				light.regY = _ParticleEngine.lights[i].ellipseHeight/2; 
 				light.y = light.initY = _ParticleEngine.totalHeight/2 + _ParticleEngine.lights[i].offsetY;
 				light.x = light.initX =_ParticleEngine.totalWidth/2 + _ParticleEngine.lights[i].offsetX;
 
+				//RL* another new createjs shape is made. This time, the BlurFilter property is accessed.
+				//RL* "Applies a box blur to DisplayObjects in context 2D and a Gaussian blur in webgl. Note that this filter is fairly intensive, particularly if the quality is set higher than 1." - EaselJS
 				blurFilter = new createjs.BlurFilter(_ParticleEngine.lights[i].ellipseWidth, _ParticleEngine.lights[i].ellipseHeight, 1);
+				//RL* The getBounds property is described by easeljs as being used to account for the expanded boundry that occurs when the blur filter is applied.
 				bounds = blurFilter.getBounds();
+				//RL* An array is made for blurFilter.
 				light.filters = [blurFilter];
+				//RL* cache is described in EaselJS as "A cached object will not visually update until explicitly told to do so with a call to update, much like a Stage. 
+				//RL* If a cache is being updated every frame it is likely not improving rendering performance. Cache are best used when updates will be sparse." - EaselJS
 				light.cache(bounds.x-_ParticleEngine.lights[i].ellipseWidth/2, bounds.y-_ParticleEngine.lights[i].ellipseHeight/2, bounds.width*2, bounds.height*2);
 				light.alpha = _ParticleEngine.lights[i].alpha;
 
+				//RL* composite operation screen is another layering effect just like "lighter"
 				light.compositeOperation = "screen";
+				//RL* the .addChildAt property is described in EaselJS (Line 7365)
+				//RL* "Adds a child to the display list at the specified index, bumping children at equal or greater indexes up one, and
+				//RL* setting its parent to this Container." - EaselJS
 				_ParticleEngine.stage.addChildAt(light, 0);
 
 				_ParticleEngine.lights[i].elem = light;
