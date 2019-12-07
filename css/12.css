@@ -66,6 +66,15 @@ video{
   height:100%;
 } 
 
+a.grey{
+  color: white;
+  transition: ease 1s;
+}
+
+a.grey:hover{
+  color: grey
+}
+
 img.parallax-move{
 max-width: 1920px;
 height: auto;
