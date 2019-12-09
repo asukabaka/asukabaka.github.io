@@ -67,9 +67,9 @@ var ParticleEngine = (function() {
 		//RL* Louis makes an array here called particleSettings.
 		//RL* you can change a variety of things here like color and size and population of the particles
 		//RL* num refers to population, area height is how much traveling the lights do, fromX is how much side to side travel the lights do.
-		this.particleSettings = [{id:"small", num:0, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
-								{id:"medium", num:5, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
-								{id:"large", num:20, fromX:0, toX:this.totalWidth, ballwidth:60,  alphamax:0.2, areaHeight:.5, color:"#ffe6f2", fill:true}];
+		this.particleSettings = [{id:"small", num:5, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:false}, 
+								{id:"medium", num:10, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
+								{id:"large", num:25, fromX:0, toX:this.totalWidth, ballwidth:60,  alphamax:0.4, areaHeight:.5, color:"#ffe6f2", fill:true}];
 		//RL* A second array is made. This is array is used further down the script in function draw particles which actually makes the particles.
 		//RL* It is also in use for when the canvas resizes.
 		this.particleArray = [];

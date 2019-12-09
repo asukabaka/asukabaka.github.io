@@ -45,7 +45,11 @@ video{
   z-index: 100;
   mix-blend-mode: lighten;
   transform: rotate(180deg);
-  opacity: .3;
+  opacity: .15;
+}
+
+.rain{
+  mix-blend-mode: screen;
 }
 
 .scene{
