@@ -41,6 +41,13 @@ video{
   mix-blend-mode: lighten;
 }
 
+.flare_small{
+  z-index: 100;
+  mix-blend-mode: lighten;
+  transform: rotate(180deg);
+  opacity: .3;
+}
+
 .scene{
   overflow: hidden;
 }
