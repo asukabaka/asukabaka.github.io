@@ -12,9 +12,39 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<script src="js/parallaxImg.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).on("ready", function() {
+      var parallaxSettings = {
+        initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
+        opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
+        pageLoader: true
+      };
+
+      parallaxImgScroll(parallaxSettings);
+    });
+</script>
 
 </head>
 <body>
+
+<video class="vidbackground" muted autoplay loop>
+	<source src="videos/umbrella_background.mp4" type="video/mp4">
+</video>
+
+<video class="vidwelcome" muted autoplay loop>
+	<source src="videos/welcome.mp4" type="video/mp4">
+</video>
+
+<video class="flare" muted autoplay loop style="z-index: 1000;">
+	<source src="videos/lense_flare.mp4" type="video/mp4">
+</video>
+
+<canvas id="projector"></canvas>
+
+<script src='js/easeljs.js'></script>
+<script src='js/TweenMax.js'></script>
+<script  src="js/bokeh_hk.js"></script>
 
 	<div id="container" class="container">
 		<div id="scene" class="scene">
@@ -81,6 +111,7 @@
 
 		</div>
 	</div>
+
 
 
 	<!-- Scripts -->
