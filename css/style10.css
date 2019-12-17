@@ -121,6 +121,213 @@ h1 {
   margin: 0 auto;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+p.hover_description{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 80em) {
+  h2{
+    font-size: 1rem;
+  }
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 30px;
+}
+
+.banner{
+  padding-top: 3%;
+  text-align:center;
+  display: block;
+  width: 70%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
+
+.artwork{
+  padding-top: 3%;
+  text-align:center;
+  display: block;
+  width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
+
+.artwork_tall{
+  padding-top: 3%;
+  text-align:center;
+  display: block;
+  width: 30%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
+
+.nav{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "nav1 nav2 nav3 nav4"
+                       ;
+}
+
+
+.nav1{
+  grid-area: nav1;
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: .75;
+}
+
+.nav1:hover{
+  opacity: 1;
+}
+
+.nav2{
+  grid-area: nav2;
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: .75;
+}
+
+.nav2:hover{
+  opacity: 1;
+}
+
+.nav3{
+  grid-area: nav3;
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: .75;
+}
+
+.nav3:hover{
+  opacity: 1;
+}
+
+.nav4{
+  grid-area: nav3;
+  width: 100%; 
+  height: 100px; 
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+  opacity: .75;
+}
+
+.nav4:hover{
+  opacity: 1;
+}
+
 /*---------------Gradient Section End ---------------
 */
 
