@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/style10.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+
+<!-- <script type="js/jquery.js"></script>
+<script type="js/audio.js"></script> -->
+<body>
+	<audio id="beep-two" preload="auto">
+				<source src="audio/beep.mp3"></source>
+				<source src="audio/beep.ogg"></source>
+				Your browser isn't invited for super fun time.
+			</audio>
+	<div class="grid_background">
+		<a class="side1"></a>
+		<a class="side2"></a>
+		<a class="side3"></a>
+		<a class="side4"></a>
+		<a class="side5"></a>
+		<a class="side6"></a>
+		<a class="side7"></a>
+		<a class="side8"></a>
+		<a class="side9"></a>
+		<a class="side10"></a>
+		<a class="side11"></a>
+		<a class="side12"></a>
+		<a class="side13"></a>
+		<a class="side14"></a>
+		<a class="side15"></a>
+		<a class="side16"></a>
+		<a class="side17"></a>
+		<a class="side18"></a>
+		<a class="side19"></a>
+		<a class="side20"></a>
+		<a class="side21"></a>
+		<a class="side22"></a>
+		<a class="side23"></a>
+		<a class="side24"></a>
+		<a class="side25"></a>
+		<a class="side26"></a>
+		<a class="side27"></a>
+		<a class="side28"></a>
+		<a class="side29"></a>
+		<a class="side30"></a>
+		<a class="side31"></a>
+		<a class="side32"></a>
+		<a class="side33"></a>
+		<a class="side34"></a>
+		<a class="side35"></a>
+		<a class="side36"></a>
+	</div>
+
+	<script>$(".grid_background a")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");</script>
+
+
+</body>
