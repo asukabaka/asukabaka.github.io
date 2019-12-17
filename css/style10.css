@@ -105,6 +105,22 @@ keyframes use a <percentage> to indicate the time during the animation sequence 
   }
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 3rem;
+}
+
+.vimeo{
+  text-align: center;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /*---------------Gradient Section End ---------------
 */
 
