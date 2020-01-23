@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/rl_style.css">
-  <link rel="stylesheet" type="text/css" href="css/12.css">
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/parallaxImg.js" type="text/javascript"></script>
-  <!-- <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,47 +24,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 8000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-  <script type="text/javascript">
-    $(document).on("ready", function() {
-      var parallaxSettings = {
-        initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
-        opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
-        pageLoader: true
-      };
-
-      parallaxImgScroll(parallaxSettings);
-    });
-</script>
 </head>
-
-<body>
-<div class="bg-image_umbrella"></div>
 
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
@@ -86,149 +43,131 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
+<body>
 
-<!-- <div id="particles-js"></div> -->
+<div class="wrap">
+<audio autoplay loop controls style="position: absolute; z-index: 1001; opacity: .4;">
+	<source src="audio/ambient.mp3" type="audio/mpeg">
+</audio>
+
+<video class="vidbackground" muted autoplay loop>
+	<source src="videos/umbrella_background.mp4" type="video/mp4">
+</video>
+
+<video class="rain" muted autoplay loop style="z-index: -1;">
+	<source src="videos/raindrops.mp4" type="video/mp4">
+</video>
+
+<video class="vidwelcome" muted autoplay loop style="z-index: -1000;">
+	<source src="videos/welcome.mp4" type="video/mp4">
+</video>
+
+<video class="flare" muted autoplay loop style="z-index: -1;">
+	<source src="videos/lense_flare.mp4" type="video/mp4">
+</video>
+
+<video class="flare_small" muted autoplay loop style="z-index: -1;">
+	<source src="videos/lense_flare.mp4" type="video/mp4">
+</video>
+
+<video class="rain" muted autoplay loop style="z-index: -1;">
+	<source src="videos/rain.mp4" type="video/mp4">
+</video>
+
 
 <canvas id="projector"></canvas>
 
 <script src='js/easeljs.js'></script>
 <script src='js/TweenMax.js'></script>
-<script  src="js/bokeh_hk.js"></script>
+<script  src="js/bokeh_hk_simple.js"></script>
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+
+			<div data-depth="0.05">
+				<img class="background" src="images/smoke_can_back.png">
+			</div>
+
+			<div data-depth="0.05">
+				<img class="background" src="images/smoke_back.png">
+			</div>
+
+			<div data-depth="0.20">
+				<img src="images/red_flare.png">
+			</div>
+
+			<div data-depth="0.10" style="opacity: .4;">
+				<img src="images/sikyo_boxes.png">
+			</div>
+
+			<div data-depth="0.70" style="opacity: .7;">
+				<img src="images/sikyo_boxes.png">
+			</div>
+
+			<div data-depth="0.30" style="opacity: .5;">
+				<img src="images/pink_box.png">
+			</div>
+
+			<div data-depth="0.50" style="opacity: .6;">
+				<img src="images/pink_box.png">
+			</div>
+
+			<div data-depth="0.20" style="opacity: .7;">
+				<img src="images/SFD_pink.png">
+			</div>
+
+			<div data-depth="0.25">
+				<img src="images/lines.png" style="opacity: .6;">
+			</div>
+
+			<div class="large" data-depth="0.30">
+				<img src="images/hannya.png" style="opacity: .7;">
+			</div>
+
+			<div data-depth="0.15" style="width: 130%; height: auto;">
+				<img class="girl" src="images/para_umbrella_girl.png">
+			</div>
+
+			<div data-depth="0.20">
+				<img src="images/pink_flare.png">
+			</div>
+
+			<div data-depth="0.20">
+				<img src="images/smoke.png">
+			</div>
+
+			<div data-depth="0.30">
+				<img src="images/petals_mid.png">
+			</div>
+
+			<div data-depth="0.50" style="opacity: .7;">
+				<img src="images/hk_logo.png">
+			</div>
+
+			<div data-depth="0.80">
+				<img src="images/red_flare.png">
+			</div>
+
+			<div data-depth="1.00">
+				<img class="left" src="images/petals.png">
+			</div>
+
+		</div>
+	</div>
 
 
 
-<div class="main" id="section2">
-<a class="main_top" href="#section1">Click for Parallax Scroll
-  </a>
+	<!-- Scripts -->
+	<script src="js/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
 </div>
-<section>
-<article class="parallax-img-container">
-	<img src="images/red_flare.png" style="position: absolute; transform: scale(1.5); top: 20%; opacity: .5;">
-	<img src="images/hk_background.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1.5" data-ps-vertical-position="-400" data-ps-horizontal-position="1" />
-	<img src="images/petals_mid.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="700" data-ps-horizontal-position="220" />
-	<img src="images/petals_back.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".5" data-ps-vertical-position="800" data-ps-horizontal-position="10" />
-	<img src="images/smoke_back.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".8" data-ps-vertical-position="-200" data-ps-horizontal-position="1" />
-	<img src="images/smoke_back.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1.5" data-ps-vertical-position="-400" data-ps-horizontal-position="1" />
-	<img src="images/umbrella_girl.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".6" data-ps-vertical-position="-1100" data-ps-horizontal-position="-200" />
-	<img src="images/petals_mid.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="2" data-ps-vertical-position="-900" data-ps-horizontal-position="-220" />
-	<img src="images/smoke.png" style="transform: scale(5);" class="parallax-move" data-ps-z-index="1" data-ps-speed="3" data-ps-vertical-position="-1000" data-ps-horizontal-position="-220" />
-  <img src="images/petals.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".5" data-ps-vertical-position="1000" data-ps-horizontal-position="-220" />
-  <img src="images/smoke.png" style="transform: scale(2);" class="parallax-move"  data-ps-z-index="1" data-ps-speed="1.2" data-ps-vertical-position="-500" data-ps-horizontal-position="-200" />
-  <img src="images/smoke.png" style="transform: scale(5);" class="parallax-move"  data-ps-z-index="1" data-ps-speed="5" data-ps-vertical-position="-1000" data-ps-horizontal-position="200" />
-  <img src="images/petals_mid.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".5" data-ps-vertical-position="1" data-ps-horizontal-position="220" />
-  <img src="images/petals.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".5" data-ps-vertical-position="100" data-ps-horizontal-position="0" />
-  <img src="images/red_flare.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="2" data-ps-vertical-position="100" data-ps-horizontal-position="-120" />
-  <img src="images/petal_small.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="300" data-ps-horizontal-position="220" />
-  <img src="images/pink_flare.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="-300" data-ps-horizontal-position="-220" />
-  <img src="images/black_cover.png" class="parallax-move" data-ps-z-index="1" data-ps-speed=".8" data-ps-vertical-position="-2000" data-ps-horizontal-position="-1" />
-</article>
-</section>
-
-
-
-<div class="front_artwork_text">
-  <div class="main" id="section1">
-  <a class="grey" href="#section2">Return to top of page.</a>
-</div>
-<h5>Javascript vertical parallax scrolling effect by Cynthia Sanchee.</h5>
-</div>
-
-<!-- <script src="js/particles.js"></script>
-<script src="js/app4.js"></script> -->
-
-<div class="front_artwork_bottom" style="padding: 3%;">
-    <!-- <img class="cyberpunk_hifumi_resize" src="images/welcome.png" data-src="images/welcome.png" data-srcset="images/welcome.png" alt="woman motorcycle anime futuristic"></img> -->
-    <video autoplay loop muted>
-      <source src="videos/welcome.mp4" type="video/mp4">
-    </video>
-</div>
-
-
-
-<!-- ------------------------------------------PARALLAX MOUSEOVER START ------------------------------------- -->
-<div id="container" class="container">
-    <div id="scene" class="scene">
-
-      <div data-depth="0.05">
-        <img class="background" src="images/smoke_can_back.png">
-      </div>
-
-      <div data-depth="0.05">
-        <img class="background" src="images/smoke_back.png">
-      </div>
-
-      <div data-depth="0.20">
-        <img src="images/red_flare.png">
-      </div>
-
-      <div data-depth="0.10">
-        <img src="images/sikyo_boxes.png">
-      </div>
-
-      <div data-depth="0.30">
-        <img src="images/pink_box.png">
-      </div>
-
-      <div data-depth="0.25">
-        <img src="images/lines.png">
-      </div>
-
-      <div data-depth="0.20">
-        <img src="images/SFD_pink.png">
-      </div>
-
-      <div class="large" data-depth="0.40">
-        <img src="images/hannya.png">
-      </div>
-
-      <div data-depth="0.30">
-        <img src="images/petals_mid.png">
-      </div>
-
-      <div data-depth="0.15">
-        <img class="girl" src="images/para_umbrella_girl.png">
-      </div>
-
-      <div data-depth="0.20">
-        <img class="flare" src="images/pink_flare.png">
-      </div>
-
-      <div data-depth="0.20">
-        <img src="images/smoke.png">
-      </div>
-
-      <div data-depth="0.50">
-        <img src="images/hk_logo.png">
-      </div>
-
-      <div data-depth="0.80">
-        <img class="left" src="images/red_flare.png">
-      </div>
-
-      <div data-depth="1.00">
-        <img class="left" src="images/petals.png">
-      </div>
-
-    </div>
-
-
-  <!-- Scripts -->
-  <script src="js/parallax.js"></script>
-  <script>
-
-  // Pretty simple huh?
-  var scene = document.getElementById('scene');
-  var parallax = new Parallax(scene);
-
-  </script>
-</div>
-<!-- ------------------------------------------PARALLAX MOUSEOVER END ------------------------------------- -->
-
-<div class="front_artwork_text">
-  <h5>Javascript mouseover parallax hover effect by Matthew Wagner.</h5>
-  <a href="simple.html"><h5>--Fullscreen version with video and sound.--</h5></a>
-</div>
-
 <div class="front_artwork_text_bottom">
   <h1>Welcome to the City of Expired Tear Gas</h1>
   <h5>Inspiration from recent political turmoil in Hong Kong. Cyberpunk aesthetic meant to futureproof and empower protesters by styling them in powerful equipment and bold fashions. Exploration of contrast with greyscale/pink, traditional/high-tech, flesh/prosthetics, curves/harsh mechanical shapes.<br>(Raymond Lam, Photoshop, Javascript, 2018)</h5>
