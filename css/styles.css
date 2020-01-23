@@ -54,7 +54,7 @@ video{
   z-index: 100;
   mix-blend-mode: lighten;
   transform: rotate(180deg);
-  opacity: .15;
+  opacity: .2;
 }
 
 .rain{
@@ -87,7 +87,7 @@ video{
 }
 
 .flare{
-  opacity: .4;
+  opacity: .5;
 }
 
 .left{
