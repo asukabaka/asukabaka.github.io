@@ -69,7 +69,7 @@ var ParticleEngine = (function() {
 		//RL* num refers to population, area height is how much traveling the lights do, fromX is how much side to side travel the lights do.
 		this.particleSettings = [{id:"small", num:5, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.4, areaHeight:.5, color:"#ffe6f2", fill:false}, 
 								{id:"medium", num:15, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
-								{id:"large", num:30, fromX:0, toX:this.totalWidth, ballwidth:60,  alphamax:0.6, areaHeight:.5, color:"#ffe6f2", fill:true}];
+								{id:"large", num:30, fromX:0, toX:this.totalWidth, ballwidth:70,  alphamax:0.6, areaHeight:.5, color:" #bac2ff ", fill:true}];
 		//RL* A second array is made. This is array is used further down the script in function draw particles which actually makes the particles.
 		//RL* It is also in use for when the canvas resizes.
 		this.particleArray = [];
