@@ -342,7 +342,7 @@ i{
 
 .hero-section_cafe {
 
-  background: url("../images/makoto_cafe_banner.jpg") 50% no-repeat;
+  background: linear-gradient(transparent, black), url("../images/makoto_cafe_banner.jpg") 50% no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
