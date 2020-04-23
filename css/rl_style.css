@@ -1309,6 +1309,27 @@ p.inquiries_message{
   opacity: .3;
 }
 
+.bg-image_kenshin {
+  /* The image used */
+  background-image: url(../images/kenshin_banner.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  z-index: -1000;
+  opacity: .3;
+}
+
 .bg-image_umbrella {
   /* The image used */
   background-image: url(../images/umbrella_background.jpg);
