@@ -1,0 +1,91 @@
+body{
+  background-color: white;
+  padding: 0;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: black;
+  font-size: 1rem;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 35px;
+  padding-right: 3.5%;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */     
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 0 auto;
+  color: black;
+  font-size: .5rem;
+  letter-spacing: 35px;
+  padding-right: 3.5%;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */     
+}
+
+.top_nav_bar_grid{
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 150px;
+  display: grid;
+  grid-gap: 30px;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "about gallery logo merchendise instagram ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about .gallery .merchandise .instagram{
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+/*  overflow: hidden;*/
+  text-align: center;
+  position: relative;
+  transition: ease 1s;
+}
+
+.sumire{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.name{
+  max-width: 100%;
+  padding-top: 35px;
+}
