@@ -380,6 +380,7 @@ i{
   background: url("../images/protest_fashion_text2.jpg") 55% no-repeat;
   background-size: cover;
   height: 250px;
+  transition: ease 1s;
 }
 
 @media screen and (max-width: 1000px) {
