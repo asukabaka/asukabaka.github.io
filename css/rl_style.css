@@ -240,7 +240,7 @@ i{
 
   background: url("../images/foxhound_banner.jpg") 55% no-repeat;
   background-size: cover;
-  height: 750px;
+  height: 900px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,7 +257,7 @@ i{
 @media screen and (max-width: 1400px) {
 .hero-section_foxhound {
   background-position: 40%;
-  height: 500px;
+  height: 550px;
 }
 }
 
@@ -505,6 +505,28 @@ i{
   background-color: black;
   padding-top: 30px;
   padding-bottom: 110px;
+}
+
+.frontpage_artwork_text_top{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width:100%;
+  height: inherit;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  background: linear-gradient(transparent, transparent, transparent,black);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: ease .5s;
+}
+
+.frontpage_artwork_text_top:hover {
+  opacity: 1;
 }
 
 .frontpage_artwork_text_left{
