@@ -9,7 +9,7 @@ a{
 p{
   font-family: 'Lato', sans-serif;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1em;
   letter-spacing: 7px;
 }
@@ -1584,8 +1584,8 @@ p.inquiries_message{
 }
 
 .about_text{
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
+ font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 1.25em;
   color: white;
   text-align: center;
@@ -1597,7 +1597,7 @@ p.inquiries_message{
 @media screen and (max-width: 80em) {
 .about_text{
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1em;
   color: white;
   text-align: center;
@@ -1610,7 +1610,7 @@ p.inquiries_message{
 @media screen and (max-width: 39.9375em) {
 .about_text{
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1em;
   color: white;
   text-align: center;
@@ -1640,7 +1640,7 @@ h3.about_text{
 
 .about_text_intro{
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3em;
   letter-spacing: 7px;
   color: white;
@@ -1656,7 +1656,7 @@ h3.about_text{
 @media screen and (max-width: 80em) {
 .about_text_intro{
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2.5em;
   color: white;
   text-align: center;
@@ -1673,7 +1673,7 @@ h3.about_text{
 @media screen and (max-width: 39.9375em) {
 .about_text_intro{
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2em;
   color: white;
   text-align: center;
