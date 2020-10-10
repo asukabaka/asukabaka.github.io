@@ -20,21 +20,9 @@ h1{
   font-weight: 300;
   margin: 0 auto;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 7px;
   text-shadow: 2px 2px 2px #000000;
-}
-
-@media screen and (max-width: 80em) {
-h1{
-  font-size: 1rem;
-}
-}
-
-@media screen and (max-width: 40em) {
-h1{
-  font-size: .75rem;
-}
 }
 
 h3{
@@ -494,6 +482,8 @@ i{
 
 .video {
   max-height: 875px;
+  width: 100%;
+  height: auto;
 }
 .front_artwork_text{
   font-family: 'Lato', sans-serif;
@@ -577,38 +567,13 @@ i{
 @media screen and (max-width: 900px) {
   .parallelograms {
   background-color: white;
-  max-height: 600px;
+  max-height: 450px;
   grid-template-rows:  600px;
 }
 }
 
 @media screen and (max-width: 600px) {
   .parallelograms {
-  max-height: 400px;
-  grid-template-rows:  400px;
-}
-}
-
-.parallelograms_row2 {
-  background-color: white;
-  margin: 0 auto;
-  max-width: 100vw;
-  display: grid;
-/*  grid-gap: 30px;*/
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "side1 side2" ;
-    overflow: hidden;
-}
-
-@media screen and (max-width: 900px) {
-  .parallelograms_row2 {
-  max-height: 600px;
-  grid-template-rows:  600px;
-}
-}
-
-@media screen and (max-width: 600px) {
-  .parallelograms_row2 {
   max-height: 400px;
   grid-template-rows:  400px;
 }
@@ -644,37 +609,10 @@ i{
   transition: ease .5s;
 }
 
-.parallelogram_row2 {
-  display: block;
-  width: 100%; 
-  height: 640px; 
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  transform: skew(-20deg);
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  transition: ease .5s;
-}
-
-@media screen and (max-width: 900px) {
-.parallelogram_row2 {
-  height: 600px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-.parallelogram_row2{
-  height: 400px;
-  }
-}
-
 .parallelogram {
   display: block;
   width: 100%; 
-  height: 850px; 
+  height: 450px; 
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
@@ -689,7 +627,7 @@ i{
 
 @media screen and (max-width: 900px) {
 .parallelogram {
-  height: 600px;
+  height: 450px;
 }
 }
 
@@ -730,20 +668,6 @@ opacity: 1;
 transition: ease .5s;
 z-index: -1;
 }
-
-.parallelogram_row2 img {
-  display: block;
--webkit-transform: skew(20deg);
--moz-transform: skew(20deg);
--o-transform: skew(20deg);
-transform: skew(20deg);
-max-width: 2000px;
-position: absolute;
-opacity: 1;
-transition: ease .5s;
-z-index: -1;
-}
-
 
 .parallelogram img:hover {
 opacity: 1;
@@ -879,13 +803,14 @@ top: -275px;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(transparent, transparent, transparent, transparent,black);
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  height: 850px;
+  height: 450px;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  font-weight: 300;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -908,7 +833,7 @@ top: -275px;
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  height: 600px;
+  height: 450px;
   font-family: 'Lato', sans-serif;
   text-align: center;
   font-size: 1.5rem;
@@ -948,13 +873,13 @@ top: -275px;
 .parallelogram:hover .img__description {
   visibility: visible;
   opacity: 1;
-  height: 850px;
+  height: 450px;
 }
 
 
 @media screen and (max-width: 900px) {
 .parallelogram:hover .img__description {
-  height: 600px;
+  height: 450px;
 }
 }
 
@@ -962,32 +887,6 @@ top: -275px;
 .parallelogram:hover .img__description {
   height: 400px;
 }
-}
-
-.img__description_2 {
-  position: absolute;
-  top: 850px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  height: 850px;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: opacity .75s, visibility .75s;
-}
-
-.parallelogram:hover .img__description_2 {
-  visibility: visible;
-  opacity: 1;
-  height: 850px;
 }
 
 
@@ -1106,9 +1005,9 @@ p.inquiries_message{
   background-color: black;
 }
 
-.bg-image_mitsuru {
+.bg-image_lifeanddeath {
   /* The image used */
-  background-image: url(../images/mitsuru_small.jpg);
+  background-image: url(../images/raymond_lam_lifeanddeath_vi.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
@@ -1127,9 +1026,9 @@ p.inquiries_message{
   opacity: .3;
 }
 
-.bg-image_makoto_cafe {
+.bg-image_wakefromdeath {
   /* The image used */
-  background-image: url(../images/cafe_scene.jpg);
+  background-image: url(../images/raymond-lam_osiris_landscape-wide.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
@@ -1169,9 +1068,9 @@ p.inquiries_message{
   opacity: .3;
 }
 
-.bg-image_secondhand_manga {
+.bg-image_dragon {
   /* The image used */
-  background-image: url(../images/secondhand_manga_small.jpg);
+  background-image: url(../images/raymond_lam_ahmya_rain_tall_web.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
@@ -1190,9 +1089,9 @@ p.inquiries_message{
   opacity: .3;
 }
 
-.bg-image_hannya {
+.bg-image_motoko {
   /* The image used */
-  background-image: url(../images/hannya_dark_small.jpg);
+  background-image: url(../images/raymond-lam_motoko_landscape-tall.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
@@ -1211,9 +1110,9 @@ p.inquiries_message{
   opacity: .3;
 }
 
-.bg-image_pt {
+.bg-image_protest1 {
   /* The image used */
-  background-image: url(../images/akira_kasumi_small.jpg);
+  background-image: url(../images/raymond_lam-protest-lineup2_small.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
