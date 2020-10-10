@@ -17,7 +17,7 @@ p{
 h1{
   font-family: 'Lato', sans-serif;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   margin: 0 auto;
   color: white;
   font-size: 1.5rem;
@@ -476,7 +476,6 @@ i{
 }
 
 .front_artwork_bottom {
-  padding-top: 20px;
   text-align:center;
   display: block;
   height: auto;
@@ -493,6 +492,9 @@ i{
   max-height: 875px;
 }
 
+.video {
+  max-height: 875px;
+}
 .front_artwork_text{
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -512,7 +514,7 @@ i{
   text-align: center;
   background-color: black;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 
 .frontpage_artwork_text_left{
