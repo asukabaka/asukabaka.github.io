@@ -269,7 +269,8 @@ i{
 }
 
 .video_banner {
-  height: 100vh;
+  height: 900px;
+  width: 100vw;
   height: auto;
     text-align: center;
   display: -webkit-flex;
