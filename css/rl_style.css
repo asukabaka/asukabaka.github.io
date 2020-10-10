@@ -376,27 +376,6 @@ i{
 }
 }
 
-.hero-section_protest:hover {
-  background: url("../images/protest_fashion_text2.jpg") 55% no-repeat;
-  background-size: cover;
-  height: 250px;
-  transition: ease 1s;
-}
-
-@media screen and (max-width: 1000px) {
-.hero-section_protest:hover {
-  background: url("../images/protest_fashion_text2_small.jpg") 55% no-repeat;
-  height: 175px;
-}
-}
-
-@media screen and (max-width: 750px) {
-.hero-section_protest:hover {
-  background: url("../images/protest_fashion_text2_smallest.jpg") 55% no-repeat;
-  height: 141px;
-}
-}
-
 .hero-section_misa {
 
   background: linear-gradient(transparent, black), url("../images/misa_banner.jpg") 50% no-repeat;
