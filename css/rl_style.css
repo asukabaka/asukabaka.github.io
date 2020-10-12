@@ -996,6 +996,12 @@ h1.inquiries_message{
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 60em) {
+h1.inquiries_message{
+font-size: 1rem;
+}
+}
+
 .bg-image_lifeanddeath {
   /* The image used */
   background-image: url(../images/raymond_lam_lifeanddeath_vi.jpg);
