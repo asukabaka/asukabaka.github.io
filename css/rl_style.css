@@ -1178,7 +1178,7 @@ p.inquiries_message{
 
 .bg-image_umbrella {
   /* The image used */
-  background-image: url(../images/umbrella_background.jpg);
+  background-image: url(../images/robot_small.png);
 
   /* Add the blur effect */
 /*  filter: blur(2px);
