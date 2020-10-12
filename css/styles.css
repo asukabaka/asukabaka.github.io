@@ -1,18 +1,11 @@
 body {
   max-height: 100vh;
-  background-image: url('../images/para_background.jpg');
+  background-image: url('../images/major_background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
   margin: 0;
 }
-
-/*img {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}*/
 
 video{
   position: absolute;
@@ -59,6 +52,7 @@ video{
 
 .rain{
   mix-blend-mode: screen;
+  filter: saturate(0);
 }
 
 .scene{
@@ -81,8 +75,8 @@ video{
 }
 
 .girl{
-  transform: translateY(-8%);
-  width: 130%;
+  transform: translateX(-8%);
+  width: 150%;
   height: auto;
 }
 

@@ -67,16 +67,16 @@ var ParticleEngine = (function() {
 		//RL* Louis makes an array here called particleSettings.
 		//RL* you can change a variety of things here like color and size and population of the particles
 		//RL* num refers to population, area height is how much traveling the lights do, fromX is how much side to side travel the lights do.
-		this.particleSettings = [{id:"small", num:5, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.4, areaHeight:.5, color:"#ffe6f2", fill:false}, 
-								{id:"medium", num:15, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#ffe6f2", fill:true}, 
-								{id:"large", num:30, fromX:0, toX:this.totalWidth, ballwidth:70,  alphamax:0.7, areaHeight:.5, color:" #bac2ff ", fill:true}];
+		this.particleSettings = [{id:"small", num:0, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.4, areaHeight:.5, color:"#FFFFFF", fill:false}, 
+								{id:"medium", num:0, fromX:0, toX:this.totalWidth,  ballwidth:14, alphamax:0.5, areaHeight:.5, color:"#FFFFFF", fill:true}, 
+								{id:"large", num:0, fromX:0, toX:this.totalWidth, ballwidth:70,  alphamax:0.7, areaHeight:.5, color:" #FFFFFF ", fill:true}];
 		//RL* A second array is made. This is array is used further down the script in function draw particles which actually makes the particles.
 		//RL* It is also in use for when the canvas resizes.
 		this.particleArray = [];
 		//RL* Values for the soft gradient lights in that float in the background.
-		this.lights = [{ellipseWidth:300, ellipseHeight:100, alpha:0.6, offsetX:0, offsetY:400, color:"#bac2ff"}, 
-						{ellipseWidth:250, ellipseHeight:250, alpha:0.3, offsetX:-50, offsetY:400, color:"#ffe6f2"}, 
-						{ellipseWidth:100, ellipseHeight:80, alpha:0.4, offsetX:80, offsetY:400, color:"#bac2ff"}];
+		this.lights = [{ellipseWidth:300, ellipseHeight:100, alpha:0.6, offsetX:0, offsetY:400, color:"#FFFFFF"}, 
+						{ellipseWidth:250, ellipseHeight:250, alpha:0.3, offsetX:-50, offsetY:400, color:"#FFFFFF"}, 
+						{ellipseWidth:100, ellipseHeight:80, alpha:0.4, offsetX:80, offsetY:400, color:"#FFFFFF"}];
 
 		//RL* "type is a String identifying which of the compositing or blending mode operations to use."-MDN
 		//RL* compositeOperation is an API in Javascript that allows for different types of blending modes.
