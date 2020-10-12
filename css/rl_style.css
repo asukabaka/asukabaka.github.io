@@ -396,7 +396,7 @@ i{
 
 .hero-section_protest {
 
-  background: url("../images/protest_fashion_text.jpg") 55% no-repeat;
+  background: url("../images/protest_fashion_text.jpg") 50% no-repeat;
   background-size: cover;
   height: 250px;
   text-align: center;
@@ -414,21 +414,21 @@ i{
 
 @media screen and (max-width: 1000px) {
 .hero-section_protest {
-  background: url("../images/protest_fashion_text_small.jpg") 55% no-repeat;
+  background: url("../images/protest_fashion_text_small.jpg") 50% no-repeat;
   height: 175px;
 }
 }
 
 @media screen and (max-width: 750px) {
 .hero-section_protest {
-  background: url("../images/protest_fashion_text_smallest.jpg") 55% no-repeat;
+  background: url("../images/protest_fashion_text_smallest.jpg") 50% no-repeat;
   height: 141px;
 }
 }
 
 .hero-section_misa {
 
-  background: linear-gradient(transparent, black), url("../images/misa_banner.jpg") 50% no-repeat;
+  background: linear-gradient(transparent, black), url("../images/jdn_banner.jpg") 50% no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
