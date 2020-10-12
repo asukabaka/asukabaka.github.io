@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/rl_style.css">
+    <link rel="stylesheet" href="css/style5.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -24,9 +25,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-
-<body>
-<div class="bg-image_motoko"></div>
 
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
@@ -45,12 +43,19 @@
   </div>
 </nav>
 
-  <div class="front_artwork">
-   <img class="cyberpunk_hifumi_resize" src="images/raymond-lam_motoko_landscape-tall.jpg" data-src="images/raymond-lam_motoko_landscape-tall.jpg" data-srcset="images/raymond-lam_motoko_landscape-tall.jpg" alt="man motorcycle anime futuristic neon tokyo"></img>
-    <div class="image_assets">
-          <a href="images/raymond-lam_motoko_landscape-tall.jpg" class="buttons" target="_blank"><i class="material-icons">crop_free</i></a>
-      </div>
+<body>
+<div class="makoto_particles">
+    <div class="makoto">
+      <div class="logos"></div>
+    </div>
   </div>
+   <canvas id="projector">
+    
+   </canvas>
+  <script src='js/easeljs.js'></script>
+<script src='js/TweenMax.js'></script>
+<script  src="js/bokeh.js"></script>
+
 
 <div class="front_artwork_text_bottom">
   <h1>"IF THE DOLLS COULD SPEAK, NO DOUBT THEY WOULD SCREAM."</h1>
@@ -65,6 +70,17 @@
   </div>
 <div class="front_artwork_text_bottom">
   <h5>Cinematic Subtitle Presentation</h5>
+</div>
+
+ <div class="front_artwork_bottom">
+    <img class="cyberpunk_hifumi_resize" src="images/raymond-lam_motoko_landscape-tall_blur.jpg" data-src="images/raymond-lam_motoko_landscape-tall.jpg" data-srcset="images/raymond-lam_motoko_landscape-tall.jpg" alt="man motorcycle anime futuristic neon tokyo"></img>
+    <div class="image_assets">
+          <a href="images/raymond-lam_motoko_landscape-tall.jpg" class="buttons"><i class="material-icons">crop_free</i></a>
+      </div>
+  </div>
+
+<div class="front_artwork_text_bottom">
+  <h5>Wide Presentation</h5>
 </div>
 
  <div class="front_artwork_bottom">
@@ -120,6 +136,7 @@
 
 </footer>
 <script  src="js/lazyloading.js"></script>
+
 </body>
 
 </html>
