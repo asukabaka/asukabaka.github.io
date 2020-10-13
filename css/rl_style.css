@@ -976,6 +976,7 @@ left: -400px;
   padding-top: 80px;
   padding-bottom: 80px;
   margin: auto;
+  height: 400px;
 }
 
 input.requiredinfo {
