@@ -1317,7 +1317,7 @@ font-size: 1rem;
   height: 100%;
 /*  max-height: 1000px;*/
   display: grid;
-  grid-gap: 30px;
+  /*grid-gap: 30px;*/
   grid-template-columns: repeat(3, 4fr);
   grid-template-areas: "sidex4 side1 side1"
                        "sidex3 sidex3 side2"
@@ -1325,7 +1325,8 @@ font-size: 1rem;
                        "sidex sidex sidex"
                         ;
     overflow: hidden;
-      background-image: url(../images/hino_small.jpg);
+      /*background-image: url(../images/hino_small.jpg);*/
+      background-color: white;
 
   /* Add the blur effect */
 /*  filter: blur(4px);
@@ -1347,7 +1348,7 @@ font-size: 1rem;
   height: 100%;
 /*  max-height: 1000px;*/
   display: grid;
-  grid-gap: 10px;
+  /*grid-gap: 10px;*/
   grid-template-columns: repeat(3, 4fr);
   grid-template-areas: "sidex4 side1 side1"
                        "sidex3 sidex3 side2"
@@ -1355,7 +1356,8 @@ font-size: 1rem;
                        "sidex sidex sidex"
                         ;
     overflow: hidden;
-      background-image: url(../images/hino_small.jpg);
+   /*   background-image: url(../images/hino_small.jpg);*/
+  background-color: white;
 
   /* Add the blur effect */
 /*  filter: blur(4px);
@@ -1386,7 +1388,7 @@ font-size: 1rem;
                        "side3"
                         ;
     overflow: hidden;
-      background-image: url(../images/hino_small.jpg);
+      /*background-image: url(../images/hino_small.jpg);*/
 
   /* Add the blur effect */
 /*  filter: blur(4px);
