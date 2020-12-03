@@ -320,7 +320,7 @@ i{
 
   background: url("../images/ghostintheshell_banner.jpg") 55% no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 900px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -337,7 +337,7 @@ i{
 @media screen and (max-width: 1400px) {
 .hero-section_ghostintheshell {
   background-position: 40%;
-  height: 300px;
+  height: 750px;
 }
 }
 
