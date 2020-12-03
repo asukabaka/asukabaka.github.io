@@ -344,9 +344,9 @@ i{
 
 .hero-section_lifeanddeath {
 
-  background: url("../images/lifeanddeath_banner.jpg") 55% no-repeat;
+  background: url("../images/extracurricular_banner.jpg") 55% no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 950px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -363,7 +363,7 @@ i{
 @media screen and (max-width: 1400px) {
 .hero-section_lifeanddeath {
   background-position: 40%;
-  height: 400px;
+  height: 750px;
 }
 }
 
