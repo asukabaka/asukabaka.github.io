@@ -60,7 +60,7 @@ body{
 
 .logos{
 	z-index: 100;
-  	background-image: url('../images/major_text_front.png');
+  	background-image: url('../images/sikyo_boxes.png');
   	background-repeat: no-repeat;
   	background-size: cover;
   	height: 1080px;
@@ -68,7 +68,7 @@ body{
 }
 @media screen and (max-width: 1500px) {
 .logos{
-  background-image: url('../images/major_text_front.png');
+  background-image: url('../images/sikyo_boxes.png');
   background-repeat: no-repeat;
   background-size: cover;
 /*  background-position: -200px;*/
@@ -79,7 +79,7 @@ body{
 
 @media screen and (max-width: 1300px) {
 .logos{
-  background-image: url('../images/major_text_front.png');
+  background-image: url('../images/sikyo_boxes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -75px;
@@ -90,7 +90,7 @@ body{
 
 @media screen and (max-width: 1100px) {
 .logos{
-  background-image: url('../images/major_text_front.png');
+  background-image: url('../images/sikyo_boxes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -125px;
@@ -101,7 +101,7 @@ body{
 
 @media screen and (max-width: 900px) {
 .logos{
-  background-image: url('../images/major_text_front.png');
+  background-image: url('../images/sikyo_boxes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -175px;
@@ -112,7 +112,7 @@ body{
 
 @media screen and (max-width: 700px) {
 .logos{
-  background-image: url('../images/major_text_front.png');
+  background-image: url('../images/sikyo_boxes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -225px;
@@ -125,7 +125,7 @@ body{
 /*-----------------MAKOTO--------------------*/
 .makoto{
 	z-index: 100;
-  	background-image: url('../images/major.png');
+  	background-image: url('../images/mask.png');
   	background-repeat: no-repeat;
   	background-size: cover;
   	height: 1080px;
@@ -133,7 +133,7 @@ body{
 }
 @media screen and (max-width: 1500px) {
 .makoto{
-  background-image: url('../images/major.png');
+  background-image: url('../images/mask.png');
   background-repeat: no-repeat;
   background-size: cover;
 /*  background-position: -200px;*/
@@ -144,7 +144,7 @@ body{
 
 @media screen and (max-width: 1300px) {
 .makoto{
-  background-image: url('../images/major.png');
+  background-image: url('../images/mask.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -75px;
@@ -155,7 +155,7 @@ body{
 
 @media screen and (max-width: 1100px) {
 .makoto{
-  background-image: url('../images/major.png');
+  background-image: url('../images/mask.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -125px;
@@ -166,7 +166,7 @@ body{
 
 @media screen and (max-width: 600px) {
 .makoto{
-  background-image: url('../images/major.png');
+  background-image: url('../images/mask.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -300px;
@@ -179,7 +179,7 @@ body{
 
 .makoto_particles{
 	z-index: 100;
-  	background-image: url('../images/major_background_text.png');
+  	background-image: url('../images/box.png');
   	background-repeat: no-repeat;
   	background-size: cover;
   	height: 1080px;
@@ -187,7 +187,7 @@ body{
 }
 @media screen and (max-width: 1500px) {
 .makoto_particles{
-  background-image: url('../images/major_background_text.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
   background-size: cover;
 /*  background-position: -200px;*/
@@ -198,7 +198,7 @@ body{
 
 @media screen and (max-width: 1300px) {
 .makoto_particles{
-  background-image: url('../images/major_background_text.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -75px;
@@ -209,7 +209,7 @@ body{
 
 @media screen and (max-width: 1100px) {
 .makoto_particles{
-  background-image: url('../images/major_background_text.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -125px;
@@ -220,7 +220,7 @@ body{
 
 @media screen and (max-width: 900px) {
 .makoto_particles{
-  background-image: url('../images/major_background_text.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -175px;
@@ -231,7 +231,7 @@ body{
 
 @media screen and (max-width: 700px) {
 .makoto_particles{
-  background-image: url('../images/major_background_text.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -225px;
