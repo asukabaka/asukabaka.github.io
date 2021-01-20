@@ -271,6 +271,32 @@ i{
   transition: ease 1s;
 }
 
+.hero-section_foxhound2 {
+
+  background: url("../images/foxhound_banner.jpg") 55% no-repeat;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero-section_foxhound2:hover {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+
 @media screen and (max-width: 1400px) {
 .hero-section_foxhound {
   background-position: 40%;
@@ -300,6 +326,9 @@ i{
       -ms-flex-pack: center;
           justify-content: center;
   transition: ease 1s;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 1400px) {
