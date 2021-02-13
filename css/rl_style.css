@@ -365,7 +365,57 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_ghostintheshell {
-  background-position: 40%;
+  background-position: 50%;
+  height: 750px;
+}
+}
+
+.hero-section_removebeforeflight {
+
+  background: url("../images/removebeforeflight_banner.jpg") 55% no-repeat;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+}
+
+@media screen and (max-width: 1400px) {
+.hero-section_removebeforeflight {
+  background-position: 50%;
+  height: 750px;
+}
+}
+
+.hero-section_bydesign {
+
+  background: url("../images/bydesign_banner.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: ease 1s;
+}
+
+@media screen and (max-width: 1400px) {
+.hero-section_bydesign {
+  background-position: 50%;
   height: 750px;
 }
 }
@@ -391,7 +441,7 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_lifeanddeath {
-  background-position: 40%;
+  background-position: 50%;
   height: 750px;
 }
 }
@@ -416,7 +466,7 @@ i{
 
 @media screen and (max-width: 1400px) {
 .hero-section_dragon {
-  background-position: 40%;
+  background-position: 50%;
   height: 500px;
 }
 }
@@ -1034,6 +1084,27 @@ font-size: 1rem;
 .bg-image_lifeanddeath {
   /* The image used */
   background-image: url(../images/raymond_lam_lifeanddeath_vi.jpg);
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 120%;
+  width: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1000;
+  opacity: .3;
+}
+
+.bg-remove_before_flight {
+  /* The image used */
+  background-image: url(../images/raymond-lam_remove-before-flight_lineup.jpg);
 
   /* Add the blur effect */
   filter: blur(4px);
