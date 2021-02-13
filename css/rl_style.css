@@ -395,6 +395,27 @@ i{
 }
 }
 
+@media screen and (max-width: 1000px) {
+.hero-section_removebeforeflight {
+  background-position: 50%;
+  height: 600px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.hero-section_removebeforeflight {
+  background-position: 50%;
+  height: 400px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.hero-section_removebeforeflight {
+  background-position: 50%;
+  height: 250px;
+}
+}
+
 .hero-section_bydesign {
 
   background: url("../images/bydesign_banner.jpg") 50% no-repeat;
@@ -420,6 +441,20 @@ i{
 }
 }
 
+
+@media screen and (max-width: 1000px) {
+.hero-section_bydesign {
+  background-position: 50%;
+  height: 600px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.hero-section_bydesign {
+  background-position: 50%;
+  height: 400px;
+}
+}
 
 .hero-section_lifeanddeath {
 
