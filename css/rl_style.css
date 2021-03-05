@@ -838,6 +838,43 @@ i{
   transition: ease .5s;
 }
 
+@media screen and (max-width: 1400px) {
+  .parallelogram2 {
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  -o-transform: skew(-15deg);
+  transform: skew(-15deg);
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .parallelogram2 {
+  -webkit-transform: skew(-10deg);
+  -moz-transform: skew(-10deg);
+  -o-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .parallelogram2 {
+  -webkit-transform: skew(-5deg);
+  -moz-transform: skew(-5deg);
+  -o-transform: skew(-5deg);
+  transform: skew(-5deg);
+}
+}
+
+@media screen and (max-width: 800px) {
+  .parallelogram2 {
+  -webkit-transform: skew(0deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  transform: skew(0deg);
+}
+}
+
+
 .parallelogram:nth-child(1) {
   grid-area: side1;
 }
@@ -875,6 +912,43 @@ opacity: 1;
 transition: ease .5s;
 z-index: -1;
 }
+
+@media screen and (max-width: 1400px) {
+.parallelogram2 img{
+-webkit-transform: skew(15deg);
+-moz-transform: skew(15deg);
+-o-transform: skew(15deg);
+transform: skew(15deg);
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .parallelogram2 img{
+  -webkit-transform: skew(10deg);
+  -moz-transform: skew(10deg);
+  -o-transform: skew(10deg);
+  transform: skew(10deg);
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .parallelogram2 img{
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+  transform: skew(5deg);
+}
+}
+
+@media screen and (max-width: 800px) {
+  .parallelogram2 img{
+  -webkit-transform: skew(0deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  transform: skew(0deg);
+}
+}
+
 
 .parallelogram img:hover {
 opacity: 1;
@@ -982,6 +1056,195 @@ left: -350px;
 @media screen and (max-width: 600px) {
   .frontpage_hifumi_wallpaper{
 left: -400px;
+}
+}
+
+.frontpage_mercury {
+left: -350px;
+}
+
+@media screen and (max-width: 1600px) {
+  .frontpage_mercury{
+left: -400px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .frontpage_mercury{
+left: -450px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .frontpage_mercury{
+left: -500px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_mercury{
+left: -550px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .frontpage_mercury{
+left: -575px;
+}
+}
+
+.frontpage_mars {
+left: -270px;
+}
+
+@media screen and (max-width: 1600px) {
+  .frontpage_mars{
+left: -300px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .frontpage_mars{
+left: -400px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .frontpage_mars{
+left: -450px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_mars{
+left: -500px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .frontpage_mars{
+left: -550px;
+}
+}
+
+.frontpage_moon {
+left: -300px;
+}
+
+@media screen and (max-width: 1600px) {
+  .frontpage_moon{
+left: -350px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .frontpage_moon{
+left: -400px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .frontpage_moon{
+left: -475px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_moon{
+left: -525px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .frontpage_moon{
+left: -550px;
+}
+}
+
+.frontpage_venus {
+left: -300px;
+}
+
+@media screen and (max-width: 1600px) {
+  .frontpage_venus{
+left: -325px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .frontpage_venus{
+left: -350px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .frontpage_venus{
+left: -400px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_venus{
+left: -450px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .frontpage_venus{
+left: -480px;
+}
+}
+
+.frontpage_jupiter {
+left: -50px;
+}
+
+@media screen and (max-width: 1600px) {
+  .frontpage_jupiter{
+left: -150px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .frontpage_jupiter{
+left: -175px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  .frontpage_jupiter{
+left: -200px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .frontpage_jupiter{
+left: -275px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .frontpage_jupiter{
+left: -325px;
+}
+}
+
+@media screen and (max-width: 700px) {
+  .frontpage_jupiter{
+left: -375px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .frontpage_jupiter{
+left: -400px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .frontpage_jupiter{
+left: -440px;
 }
 }
 
