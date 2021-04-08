@@ -1,5 +1,5 @@
 #instafeed {
-  max-width: 1080px;
+  max-width: 900px;
   width: 100%;
   margin: auto;
   display: flex;
@@ -11,9 +11,12 @@
   position: relative;
   width: 50%;
   background: white;
-  max-width: 270px;
-  max-height: 270px;
+  max-width: 300px;
+  max-height: 300px;
   overflow: hidden;
+  flex-basis: 34%;
+  border-style: solid;
+  color: black;
 }
 @media only screen and (min-width: 580px) {
   #instafeed a {
@@ -22,7 +25,7 @@
 }
 #instafeed a img {
   display: block;
-  width: 270px;
-  max-width: 270px;
+  width: 300px;
+  max-width: 300px;
   height: auto;
 }
