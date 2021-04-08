@@ -2,30 +2,25 @@
   max-width: 900px;
   width: 100%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+/*  flex-wrap: wrap;*/
 }
 #instafeed a {
   display: flex;
   align-items: center;
   position: relative;
-  width: 50%;
   background: white;
   max-width: 300px;
   max-height: 300px;
+  height: 100%;
   overflow: hidden;
-  flex-basis: 34%;
   border-style: solid;
   color: black;
 }
-@media only screen and (min-width: 580px) {
-  #instafeed a {
-    width: 25%;
-  }
-}
 #instafeed a img {
   display: block;
-  width: 300px;
   max-width: 300px;
   height: auto;
 }
