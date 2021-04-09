@@ -21,7 +21,7 @@
       debug: false,
       error: null,
       filter: null,
-      limit: 9,
+      limit: 30,
       mock: false,
       render: null,
       sort: null,
