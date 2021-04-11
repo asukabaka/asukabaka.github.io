@@ -9,6 +9,13 @@
   background-color: black;
 }
 
+@media screen and (max-width: 600px) {
+  #instafeed {
+    max-width: calc(60vw + 15px);
+    grid-gap: 7.5px;
+  }
+}
+
 #instafeed a {
   display: flex;
   align-items: center;
