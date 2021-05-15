@@ -22,8 +22,8 @@ html.is-leaving .transition-fade{
 }
 
 .swup-progress-bar {
-  height: 4px;
-  background-color: blue;
+  height: 5px;
+  background-color: white;
 }
 
 p{

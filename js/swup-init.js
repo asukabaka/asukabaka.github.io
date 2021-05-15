@@ -1,13 +1,14 @@
-const options = {
-  className: 'swup-progress-bar',
-  transition: 300,
-  delay: 300
-}
 
 
 const swup = new Swup(
 {
-  plugins: [new SwupProgressPlugin(options)]
+  plugins: [new SwupProgressPlugin(
+  {
+  className: 'swup-progress-bar',
+  transition: 500,
+  delay: 0
+}
+)]
 
 }
 ); // only this line when included with script tag
