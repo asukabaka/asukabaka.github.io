@@ -1,5 +1,3 @@
-import SwupProgressPlugin from 'SwupProgressPlugin.js';
-
 const options = {
   className: 'swup-progress-bar',
   transition: 300,
