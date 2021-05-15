@@ -26,11 +26,11 @@
   </head>
 
 <body>
-<div class="bg-image_foxhound"></div>
-
+  <div class="swup-progress-bar"></div>
+  <main id="swup" class="transition-fade">
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
-    <a class="topbar-responsive-logo" href="index.html">
+    <a class="topbar-responsive-logo" href="/index.html">
       <div class="SFD_logo_long" alt="bear logo speed factory design"></div>
     </a>
   </div>
@@ -44,7 +44,7 @@
     </div>
   </div>
 </nav>
-
+  <!-- <div class="bg-image_foxhound"></div> -->
   <div class="front_artwork">
     <video muted controls autoplay loop class="video">
       <source src="videos/foxhound.mp4" type="video/mp4">
@@ -136,7 +136,7 @@ Betrayed by her own country during mission Operation: [REDACTED]. FOXHOUND takes
   <div class="SFD_logo_tall"  alt="bear logo speed factory design"></div>
 </a>
 </div>
-
+</main>
 <footer class="marketing-site-footer">
 
   <div class="marketing-site-footer-bottom">
@@ -159,9 +159,11 @@ Betrayed by her own country during mission Operation: [REDACTED]. FOXHOUND takes
       </div>
     </div>
   </div>
-
 </footer>
 <script  src="js/lazyloading.js"></script>
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+<script src="js/SwupProgressPlugin.js"></script>
+<script defer src="js/swup-init.js"></script>
 </body>
 
 </html>

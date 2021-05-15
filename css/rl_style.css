@@ -6,6 +6,26 @@ a{
   color: white;
 }
 
+.transition-fade{
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade{
+  opacity: 1;
+  transform: translateY(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.swup-progress-bar {
+  height: 4px;
+  background-color: blue;
+}
+
 p{
   font-family: 'Lato', sans-serif;
   text-align: center;
