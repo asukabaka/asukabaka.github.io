@@ -14,13 +14,17 @@ a{
 
 html.is-animating .transition-fade{
   opacity: 1;
-  position: fixed;
+
   transform: translateY(100%);
 }
 
 html.is-leaving .transition-fade{
   opacity: 0;
   transform: translateY(0);
+}
+
+html.is-rendering .transition-fade{
+  position: fixed;
 }
 
 .swup-progress-bar {
