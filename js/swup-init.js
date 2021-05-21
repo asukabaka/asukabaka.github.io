@@ -9,6 +9,7 @@ const swup = new Swup(
   delay: 0
 }
 )]
+  
 
 }
 ); // only this line when included with script tag

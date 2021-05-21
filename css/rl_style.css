@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  overflow-y: scroll;
 }
 
 a{
@@ -13,11 +14,12 @@ a{
 
 html.is-animating .transition-fade{
   opacity: 1;
+  position: fixed;
   transform: translateY(100%);
 }
 
 html.is-leaving .transition-fade{
-  opacity: 1;
+  opacity: 0;
   transform: translateY(0);
 }
 
@@ -43,6 +45,10 @@ h1{
   font-size: 2rem;
   letter-spacing: 7px;
   text-shadow: 2px 2px 2px #000000;
+}
+
+h1.inquiries_message{
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 80em) {
@@ -550,9 +556,9 @@ i{
 
 .hero-section_protest {
 
-  background: url("../images/protest_fashion_text.jpg") 50% no-repeat;
+  background: url("../images/protest_banner.jpg") 50% no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 1000px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -568,17 +574,11 @@ i{
 
 @media screen and (max-width: 1000px) {
 .hero-section_protest {
-  background: url("../images/protest_fashion_text_small.jpg") 50% no-repeat;
-  height: 175px;
+  background: url("../images/protest_banner_small.jpg") 50% no-repeat;
+  height: 600px;
 }
 }
 
-@media screen and (max-width: 750px) {
-.hero-section_protest {
-  background: url("../images/protest_fashion_text_smallest.jpg") 50% no-repeat;
-  height: 141px;
-}
-}
 
 .hero-section_misa {
 
@@ -1627,91 +1627,6 @@ font-size: 1rem;
   position: fixed;
   z-index: -1000;
   opacity: .3;
-}
-
-.bg-image_mona-chan {
-  /* The image used */
-  background-image: url(../images/mona-chan_small.jpg);
-
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
-  /* Full height */
-  height: 100%;
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  z-index: -1000;
-  opacity: .3;
-}
-
-.bg-image_yorha {
-  /* The image used */
-  background-image: url(../images/cyberpunk_yorha_lineup_2_small.jpg);
-
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
-  /* Full height */
-  height: 100%;
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: fixed;
-  z-index: -1000;
-  opacity: .3;
-}
-
-.bg-image_kenshin {
-  /* The image used */
-  background-image: url(../images/kenshin_banner.jpg);
-
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
-  /* Full height */
-  height: 100%;
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: fixed;
-  z-index: -1000;
-  opacity: .3;
-}
-
-.bg-image_umbrella {
-  /* The image used */
-  background-image: url(../images/robot_small.png);
-
-  /* Add the blur effect */
-/*  filter: blur(2px);
-  -webkit-filter: blur(2px);
-*/
-  /* Full height */
-  height: 100vh;
-  width: 100vw;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  z-index: -1000;
-  opacity: .5;
-  overflow: hidden;
 }
 
 .image_assets:hover {
