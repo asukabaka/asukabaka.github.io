@@ -5,7 +5,7 @@ const swup = new Swup(
   plugins: [new SwupProgressPlugin(
   {
   className: 'swup-progress-bar',
-  transition: 700,
+  transition: 800,
   delay: 0
 }
 )]
