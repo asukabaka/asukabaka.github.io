@@ -576,10 +576,31 @@ i{
   transition: ease 1s;
 }
 
+@media screen and (max-width: 1400px) {
+.hero-section_protest {
+  background-position: 50%;
+  height: 750px;
+}
+}
+
 @media screen and (max-width: 1000px) {
 .hero-section_protest {
-  background: url("../images/protest_banner_small.jpg") 50% no-repeat;
+  background-position: 50%;
   height: 600px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.hero-section_protest {
+  background-position: 50%;
+  height: 400px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.hero-section_protest {
+  background-position: 50%;
+  height: 250px;
 }
 }
 
