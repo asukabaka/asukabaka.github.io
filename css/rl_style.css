@@ -762,6 +762,12 @@ i{
   opacity: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .frontpage_artwork_text_top:hover {
+    opacity: 0;
+  }
+}
+
 .frontpage_artwork_text_left{
   font-family: 'Lato', sans-serif;
   text-align: center;
