@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Van Nguyen - Project 2</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Load the js library -->
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <!-- Load external Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="scene">
+
+      <div class="layer1" data-depth="0">
+        <img src="images/1.png">
+      </div>
+      <svg class="shooting_star1" height="800" width="800" opacity="0">
+      <path
+        d="M -900 -950 L 2000 855"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-width="1"
+        fill="none"
+      />
+    </svg>
+    <svg class="shooting_star2" height="800" width="800" opacity="0">
+      <path
+        d="M -900 -950 L 900 755"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-width="1"
+        fill="none"
+      />
+    </svg>
+    <svg class="shooting_star3" height="800" width="800" opacity="0">
+      <path
+        d="M -900 -950 L 1300 755"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-width="1"
+        fill="none"
+      />
+    </svg>
+    <svg class="shooting_star4" height="800" width="800" opacity="0">
+      <path
+        d="M -700 -1050 L 1800 655"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-width="1"
+        fill="none"
+      />
+    </svg>
+    <svg class="shooting_star5" height="800" width="800" opacity="0">
+      <path
+        d="M -700 -1050 L 1900 655"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-width="1"
+        fill="none"
+      />
+    </svg>
+      <canvas id="projector" data-depth="0.1"></canvas>
+      <div class="layer2" data-depth="0.07">
+        <img src="images/2.png">
+      </div>
+      <!-- <div class="layer3" data-depth="0.1">
+        <img src="images/3.png">
+      </div> -->
+      <!-- <div class="layer4" data-depth="0.2">
+        <img src="images/4.png">
+      </div>
+      <div class="layer5" data-depth="-0.3">
+        <img src="images/5.png">
+      </div>
+      <div class="layer6" data-depth="0.35">
+        <img src="images/6.png">
+      </div> -->
+      <div class="layer7" data-depth="0.4">
+        <img src="images/7.png">
+      </div>
+      <div class="layer8" data-depth="-.05">
+        <img src="images/8.png">
+      </div>
+      <div class="layer9" data-depth="0.5">
+        <img src="images/9.png">
+      </div>
+      <div class="layer10" data-depth="-0.2">
+        <img src="images/10.png">
+      </div>
+      <div class="layer11" data-depth="0">
+          <img src="images/11.png">
+      </div>
+    </div>
+  </div>
+  <script src='easeljs.js'></script>
+  <script src='TweenMax.js'></script>
+  <script  src="bokeh.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

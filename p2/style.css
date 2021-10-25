@@ -1,0 +1,45 @@
+
+body {
+margin: 0;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+.layer3 {
+  width:85%;
+  height:auto;
+  position:absolute;
+}
+.layer10{
+  top:50%;
+  position: absolute;
+}
+.container{
+  margin: 0 auto;
+  width:75vw;
+  /* max-width: 100%; */
+  position: relative;
+    overflow: hidden;
+}
+
+.content{
+  background-color: white;
+}
+
+#scene{
+  margin: 0;
+  padding: 0;
+}
+
+#projector {
+  position: absolute; 
+  top: 200px;
+  left: 0px;
+  width:100vw;
+  height:1000px;
+  overflow: hidden;
+}
