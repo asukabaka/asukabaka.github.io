@@ -1,0 +1,135 @@
+img{
+  display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 1228px;
+  height: 100%;
+}
+
+.text .grid{
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-areas: "title skills software"
+                       "synopsis synopsis synopsis"
+                        ;
+}
+
+@media screen and (max-width: 700px) {
+.text .grid {
+  grid-template-columns: repeat(1, 4fr);
+  grid-template-areas: "title"
+                       "skills"
+                       "software"
+                       "synopsis"
+                        ;
+}
+}
+
+
+.title{
+  grid-area: title;
+  width: 100%;
+  text-align: left;
+}
+
+.title h2{
+  padding-bottom: 15px;
+}
+
+.skills{
+  grid-area: skills;
+  width: 100%;
+  text-align: left;
+}
+
+.skills h2{
+  padding-bottom: 15px;
+}
+
+.software{
+  grid-area: software;
+  width: 100%; 
+  text-align: left;
+}
+
+.software h2{
+  padding-bottom: 15px;
+}
+
+.synopsis{
+  grid-area: synopsis;
+  width: 100%; 
+  text-align: left;
+}
+
+.synopsis h2{
+  padding-bottom: 15px;
+}
+
+.nav-bar{
+  background: rgba(255, 255, 255, 0.9);
+  mix-blend-mode: exclusion;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-family: 'Lato', sans-serif;
+font-weight: 300;
+font-size: .9em;
+  letter-spacing: 6px;
+}
+
+.nav-grid{
+  display: grid;
+  color: black;
+  margin: auto;
+  padding: 1rem 0rem;
+  max-width: 1228px;
+  grid-gap: 80px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "homepage homepage homepage homepage about illustration design motion"
+                        ;
+}
+
+.homepage{
+  grid-area: homepage;
+  width: 100%;
+  text-align: left;
+}
+
+.about{
+  grid-area: about;
+  width: 100%;
+  text-align: right;
+}
+
+.illustration{
+  grid-area: illustration;
+  width: 100%;
+  text-align: right;
+}
+
+.design{
+  grid-area: design;
+  width: 100%;
+  text-align: right;
+}
+
+.motion{
+  grid-area: motion;
+  width: 100%;
+  text-align: right;
+}
+
+.slide{ 
+    top: 0px;
+    left: 0px;
+  }
