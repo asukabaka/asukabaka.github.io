@@ -73,8 +73,8 @@ img{
 }
 
 .nav-bar{
-  background: rgba(255, 255, 255, 0.9);
-  mix-blend-mode: exclusion;
+  background: rgba(255, 255, 255, 1);
+  /*mix-blend-mode: exclusion;*/
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -99,34 +99,53 @@ font-size: .9em;
                         ;
 }
 
+@media screen and (max-width: 700px) {
+.nav-grid {
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 5fr);
+  grid-template-areas: "homepage"
+                       "about"
+                       "illustration"
+                       "design"
+                       "motion"
+                        ;
+}
+}
+
+.about{
+  grid-area: about;
+  width: 100%;
+}
+
+.illustration{
+  grid-area: illustration;
+  width: 100%;
+}
+
+.design{
+  grid-area: design;
+  width: 100%;
+}
+
+.motion{
+  grid-area: motion;
+  width: 100%;
+}
+
+.nav-item{
+  text-align: right;
+}
+
 .homepage{
   grid-area: homepage;
   width: 100%;
   text-align: left;
 }
 
-.about{
-  grid-area: about;
-  width: 100%;
-  text-align: right;
-}
-
-.illustration{
-  grid-area: illustration;
-  width: 100%;
-  text-align: right;
-}
-
-.design{
-  grid-area: design;
-  width: 100%;
-  text-align: right;
-}
-
-.motion{
-  grid-area: motion;
-  width: 100%;
-  text-align: right;
+@media screen and (max-width: 700px) {
+  .nav-item{
+    text-align: center;
+  }
 }
 
 .slide{ 
